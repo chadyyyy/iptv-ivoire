@@ -1,0 +1,11 @@
+{
+  "regions": ["cdg1"],
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "s-maxage=86400" }
+      ]
+    }
+  ]
+}
