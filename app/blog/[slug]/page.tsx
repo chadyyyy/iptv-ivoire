@@ -7,6 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getArticleSchema } from '@/lib/schema'
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import Image from 'next/image'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -76,6 +77,16 @@ export default async function BlogPostPage({ params }: Props) {
                 </span>
                 <span style={{ color: '#6B7280', fontSize: '0.82rem' }}>⏱ {post.readingTime}</span>
               </div>
+              
+              <div style={{ marginTop: '2.5rem', borderRadius: '1rem', overflow: 'hidden', border: '1px solid var(--color-border)', position: 'relative', width: '100%', aspectRatio: '16/9' }}>
+                <Image 
+                  src={post.image} 
+                  alt={post.title} 
+                  fill 
+                  style={{ objectFit: 'cover' }} 
+                  priority 
+                />
+              </div>
             </div>
           </section>
 
@@ -98,7 +109,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" id={`blog-${slug}-cta`} className="btn-whatsapp">
                     📱 Activer via WhatsApp
                   </a>
-                  <Link href="/abonnement" className="btn-secondary">Voir les tarifs</Link>
+                  <Link href="/abonnement-iptv-cote-divoire" className="btn-secondary">Voir les tarifs</Link>
                 </div>
               </div>
 
