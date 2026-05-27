@@ -113,7 +113,7 @@ export default function AbonnementPage() {
                     <Trophy size={20} color="#F97316" /> Coupe du Monde 2026 en IPTV
                   </h3>
                   <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Ne manquez aucun match des Éléphants ! Notre abonnement IPTV inclut toutes les chaînes sportives (beIN Sports, Canal+ Sport, NCI) pour vivre la <strong>Coupe du Monde 2026 en direct</strong> depuis votre salon sans payer des fortunes.
+                    Ne manquez aucun match des Éléphants ! Notre abonnement IPTV inclut toutes les chaînes sportives (beIN Sports, Canal+ Sport, NCI) pour vivre la <Link href="/blog/cote-divoire-coupe-du-monde-2026-streaming" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Coupe du Monde 2026 en direct</strong></Link> depuis votre salon sans payer des fortunes.
                   </p>
                 </div>
                 <div className="card" style={{ padding: '1.5rem' }}>
@@ -121,7 +121,7 @@ export default function AbonnementPage() {
                     <Smartphone size={20} color="#F97316" /> Paiement Orange Money & Wave
                   </h3>
                   <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Nous avons simplifié l&apos;achat en Afrique de l&apos;Ouest. Payez votre abonnement IPTV facilement, en FCFA, et en toute sécurité via <strong>Orange Money, Wave, MTN MoMo ou Moov Money</strong>.
+                    Nous avons simplifié l&apos;achat en Afrique de l&apos;Ouest. Payez votre abonnement IPTV facilement, en FCFA, et en toute sécurité via <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Orange Money, Wave, MTN MoMo ou Moov Money</strong></Link>.
                   </p>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function AbonnementPage() {
 
               <div style={{ marginBottom: '1.5rem', background: 'var(--color-surface-2)', padding: '1.25rem', borderRadius: '12px' }}>
                 <h4 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Quels sont les appareils compatibles ?</h4>
-                <p style={{ fontSize: '0.95rem', margin: 0, color: 'var(--color-text-muted)' }}>Notre abonnement fonctionne sur tous les supports : Smart TV (Samsung, LG), Android TV, Apple TV, smartphones (iOS/Android), tablettes, et ordinateurs (PC/Mac) via l&apos;application IPTV Smarters Pro par exemple.</p>
+                <p style={{ fontSize: '0.95rem', margin: 0, color: 'var(--color-text-muted)' }}>Notre abonnement fonctionne sur tous les supports : Smart TV (Samsung, LG), Android TV, Apple TV, smartphones (iOS/Android), tablettes, et ordinateurs (PC/Mac) via l&apos;application <Link href="/blog/comment-installer-iptv-smarters-pro" style={{ color: '#F97316', textDecoration: 'underline' }}>IPTV Smarters Pro</Link> par exemple.</p>
               </div>
               
               <div style={{ marginBottom: '1.5rem', background: 'var(--color-surface-2)', padding: '1.25rem', borderRadius: '12px', borderLeft: '4px solid #16A34A' }}>

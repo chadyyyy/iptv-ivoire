@@ -461,7 +461,7 @@ export default function HomePage() {
               ))}
             </div>
 
-            <Link href="/installation" style={{
+            <Link href="/blog/comment-installer-iptv-smarters-pro" style={{
               display: 'inline-block', marginTop: '2rem',
               color: '#F97316', textDecoration: 'none',
               fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem',
@@ -502,7 +502,7 @@ export default function HomePage() {
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <Link href="/chaines" className="btn-secondary" style={{ display: 'inline-flex' }}>
+              <Link href="/blog/iptv-abidjan-guide-complet" className="btn-secondary" style={{ display: 'inline-flex' }}>
                 Voir la liste complète des chaînes →
               </Link>
             </div>
@@ -632,7 +632,7 @@ export default function HomePage() {
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-              <Link href="/faq" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700 }}>
+              <Link href="/blog/meilleur-abonnement-iptv-cote-divoire-2026" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700 }}>
                 Voir toutes les questions →
               </Link>
             </div>
