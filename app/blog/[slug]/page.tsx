@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
-import { getArticleSchema } from '@/lib/schema'
+import { getArticleSchema, getBreadcrumbSchema } from '@/lib/schema'
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
@@ -45,10 +45,16 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound()
 
   const schema = getArticleSchema(post)
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: 'https://iptvivoire.com' },
+    { name: 'Blog', url: 'https://iptvivoire.com/blog' },
+    { name: post.title, url: `https://iptvivoire.com/blog/${post.slug}` },
+  ])
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main>
         <article>

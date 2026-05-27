@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
-import { getProductSchema } from '@/lib/schema'
+import { getProductSchema, getBreadcrumbSchema } from '@/lib/schema'
 
 import { Trophy, Star, ShieldCheck, Tv, Film, PlayCircle, Smartphone, MessageCircle, Zap } from 'lucide-react'
 
@@ -30,8 +30,14 @@ const features = [
 ]
 
 export default function AbonnementPage() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: 'https://iptvivoire.com' },
+    { name: 'Abonnement IPTV Côte d\'Ivoire', url: 'https://iptvivoire.com/abonnement-iptv-cote-divoire' },
+  ])
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {plans.map((p, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(getProductSchema({ name: `IPTV Ivoire — ${p.name}`, price: p.schemaPrice, description: `Abonnement IPTV ${p.name} — ${p.perMonth}` })) }} />
       ))}

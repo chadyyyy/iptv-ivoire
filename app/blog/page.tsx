@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { getAllPosts } from '@/lib/blog'
+import { getBreadcrumbSchema } from '@/lib/schema'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "Blog IPTV Côte d'Ivoire — Guides, Conseils et Actualités",
@@ -11,9 +13,14 @@ export const metadata: Metadata = {
 
 export default function BlogIndexPage() {
   const posts = getAllPosts()
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: 'https://iptvivoire.com' },
+    { name: 'Blog', url: 'https://iptvivoire.com/blog' },
+  ])
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Header />
       <main>
         <section className="section geo-pattern">
@@ -35,20 +42,25 @@ export default function BlogIndexPage() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.5rem' }}>
                 {posts.map(post => (
                   <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
-                    <article className="card" style={{ cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                      <div style={{ marginBottom: '0.75rem' }}>
-                        <span style={{
-                          background: 'rgba(249,115,22,0.1)', border: '1px solid rgba(249,115,22,0.2)',
-                          color: '#F97316', padding: '0.2rem 0.6rem', borderRadius: '0.4rem',
-                          fontSize: '0.72rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700,
-                        }}>{post.category}</span>
-                        <span style={{ color: '#6B7280', fontSize: '0.72rem', marginLeft: '0.5rem' }}>{post.readingTime}</span>
+                    <article className="card" style={{ cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column', padding: 0, overflow: 'hidden' }}>
+                      <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9' }}>
+                        <Image src={post.image} alt={post.title} fill style={{ objectFit: 'cover' }} />
                       </div>
-                      <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', fontSize: '1rem', marginBottom: '0.6rem', lineHeight: 1.4, flex: 1 }}>{post.title}</h2>
-                      <p style={{ color: '#6B7280', fontSize: '0.82rem', lineHeight: 1.65, marginBottom: '1rem' }}>{post.description}</p>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
-                        <span style={{ color: '#6B7280', fontSize: '0.75rem' }}>{new Date(post.publishedAt).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-                        <span style={{ color: '#F97316', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem' }}>Lire →</span>
+                      <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                        <div style={{ marginBottom: '0.75rem' }}>
+                          <span style={{
+                            background: 'rgba(249,115,22,0.1)', border: '1px solid rgba(249,115,22,0.2)',
+                            color: '#F97316', padding: '0.2rem 0.6rem', borderRadius: '0.4rem',
+                            fontSize: '0.72rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700,
+                          }}>{post.category}</span>
+                          <span style={{ color: '#6B7280', fontSize: '0.72rem', marginLeft: '0.5rem' }}>{post.readingTime}</span>
+                        </div>
+                        <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', fontSize: '1rem', marginBottom: '0.6rem', lineHeight: 1.4, flex: 1 }}>{post.title}</h2>
+                        <p style={{ color: '#6B7280', fontSize: '0.82rem', lineHeight: 1.65, marginBottom: '1rem' }}>{post.description}</p>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
+                          <span style={{ color: '#6B7280', fontSize: '0.75rem' }}>{new Date(post.publishedAt).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                          <span style={{ color: '#F97316', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem' }}>Lire →</span>
+                        </div>
                       </div>
                     </article>
                   </Link>

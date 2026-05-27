@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
-import { getFAQSchema, getProductSchema, getHowToSchema, getReviewSchema } from '@/lib/schema'
+import { getFAQSchema, getProductSchema, getHowToSchema, getReviewSchema, getBreadcrumbSchema } from '@/lib/schema'
 import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck, Play, Globe, Gamepad2, Laptop, HardDrive, Target, CreditCard, PlayCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -119,6 +119,9 @@ export default function HomePage() {
   const faqSchema = getFAQSchema(faqs)
   const howToSchema = getHowToSchema()
   const reviewSchema = getReviewSchema()
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: 'https://iptvivoire.com' },
+  ])
   const productSchemas = plans.map(p => getProductSchema({
     name: `IPTV Ivoire — Abonnement ${p.name}`,
     price: p.schemaPrice,
@@ -130,6 +133,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {productSchemas.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
