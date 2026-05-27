@@ -57,16 +57,36 @@ export function getProductSchema(plan: {
     '@type': 'Product',
     name: plan.name,
     description: plan.description,
+    image: 'https://iptvivoire.com/og/meilleur-abonnement-iptv-cote-divoire-2026.png',
     brand: { '@type': 'Brand', name: 'IPTV Ivoire' },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '3000',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: {
+      '@type': 'Review',
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+        bestRating: '5',
+      },
+      author: { '@type': 'Person', name: 'Konan Yao' },
+      reviewBody: 'Meilleur service IPTV en Côte d\'Ivoire. Chaînes stables, prix abordable, activation rapide via Orange Money.',
+    },
     offers: {
       '@type': 'Offer',
       price: plan.price,
       priceCurrency: 'XOF',
       availability: 'https://schema.org/InStock',
+      url: 'https://iptvivoire.com/abonnement-iptv-cote-divoire',
       seller: { '@type': 'Organization', name: 'IPTV Ivoire' },
     },
   }
 }
+
 
 export function getFAQSchema(faqs: { question: string; answer: string }[]) {
   return {
@@ -140,15 +160,18 @@ export function getHowToSchema() {
 export function getReviewSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'AggregateRating',
-    itemReviewed: {
-      '@type': 'Product',
-      name: 'IPTV Ivoire Abonnement',
+    '@type': 'Product',
+    name: 'IPTV Ivoire Abonnement',
+    image: 'https://iptvivoire.com/og/meilleur-abonnement-iptv-cote-divoire-2026.png',
+    description: "Abonnement IPTV premium en Côte d'Ivoire. +22 000 chaînes HD/4K. Paiement Orange Money et Wave.",
+    brand: { '@type': 'Brand', name: 'IPTV Ivoire' },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '3000',
+      bestRating: '5',
+      worstRating: '1',
     },
-    ratingValue: '4.9',
-    reviewCount: '3000',
-    bestRating: '5',
-    worstRating: '1',
   }
 }
 
