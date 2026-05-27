@@ -65,9 +65,6 @@ export const metadata: Metadata = {
       'fr': 'https://iptvivoire.com',
     },
   },
-  verification: {
-    google: 'REPLACE_WITH_GSC_VERIFICATION_CODE',
-  },
 }
 
 export default function RootLayout({
