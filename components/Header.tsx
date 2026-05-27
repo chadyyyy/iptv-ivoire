@@ -35,15 +35,19 @@ export default function Header() {
       }}>
         {/* Logo */}
         <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <div style={{
-            width: 36, height: 36,
-            background: 'linear-gradient(135deg, #F97316, #EA580C)',
-            borderRadius: '8px',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontFamily: 'Outfit, sans-serif',
-            fontWeight: 900, fontSize: '1rem', color: 'white',
-            flexShrink: 0,
-          }}>IV</div>
+          <svg width="36" height="36" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+            <defs>
+              <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#FDBA74" />
+                <stop offset="100%" stopColor="#EA580C" />
+              </linearGradient>
+              <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="12" stdDeviation="10" floodOpacity="0.25" />
+              </filter>
+            </defs>
+            <rect width="512" height="512" rx="112" fill="url(#orangeGrad)" />
+            <path d="M190 150 L370 256 L190 362 Z" fill="#ffffff" filter="url(#shadow)" />
+          </svg>
           <span style={{
             fontFamily: 'Outfit, sans-serif',
             fontWeight: 800,

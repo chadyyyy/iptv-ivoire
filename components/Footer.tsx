@@ -35,14 +35,19 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
-              <div style={{
-                width: 36, height: 36,
-                background: 'linear-gradient(135deg, #F97316, #EA580C)',
-                borderRadius: '8px',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: 'Outfit, sans-serif',
-                fontWeight: 900, fontSize: '0.95rem', color: 'white',
-              }}>IV</div>
+              <svg width="36" height="36" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+                <defs>
+                  <linearGradient id="orangeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#FDBA74" />
+                    <stop offset="100%" stopColor="#EA580C" />
+                  </linearGradient>
+                  <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+                    <feDropShadow dx="0" dy="12" stdDeviation="10" floodOpacity="0.25" />
+                  </filter>
+                </defs>
+                <rect width="512" height="512" rx="112" fill="url(#orangeGrad2)" />
+                <path d="M190 150 L370 256 L190 362 Z" fill="#ffffff" filter="url(#shadow2)" />
+              </svg>
               <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.05rem', color: 'var(--color-text)' }}>
                 IPTV <span style={{ color: '#F97316' }}>Ivoire</span>
               </span>
