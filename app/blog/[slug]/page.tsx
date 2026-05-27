@@ -7,6 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getArticleSchema } from '@/lib/schema'
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import remarkGfm from 'remark-gfm'
 import Image from 'next/image'
 
 type Props = { params: Promise<{ slug: string }> }
@@ -94,7 +95,10 @@ export default async function BlogPostPage({ params }: Props) {
           <section className="section" style={{ paddingTop: '2.5rem' }}>
             <div className="container" style={{ maxWidth: '760px' }}>
               <div className="prose">
-                <MDXRemote source={post.content} />
+                <MDXRemote 
+                  source={post.content} 
+                  options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+                />
               </div>
 
               {/* CTA after article */}
