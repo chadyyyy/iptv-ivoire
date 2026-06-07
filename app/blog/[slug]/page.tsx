@@ -123,6 +123,35 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
               </div>
 
+              {/* Internal links — SEO keyword-rich anchors */}
+              <nav aria-label="Articles connexes" style={{ marginTop: '2.5rem', padding: '1.5rem', background: 'var(--color-surface-2)', borderRadius: '12px', border: '1px solid var(--color-border)' }}>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, color: 'var(--color-text)', fontSize: '1rem', marginBottom: '1rem' }}>
+                  À lire aussi
+                </h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                  <li>
+                    <Link href="/abonnement-iptv-cote-divoire" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                      → Abonnement IPTV Côte d&apos;Ivoire — Offre Coupe du Monde 2026
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/cote-divoire-coupe-du-monde-2026-streaming" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                      → Regarder la Coupe du Monde 2026 en IPTV en Côte d&apos;Ivoire
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/comment-installer-iptv-smarters-pro" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                      → Comment installer IPTV Smarters Pro (Guide complet)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                      → Payer son IPTV par Orange Money et Wave en Côte d&apos;Ivoire
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+
               {/* Tags */}
               {post.keywords.length > 0 && (
                 <div style={{ marginTop: '2rem' }}>
