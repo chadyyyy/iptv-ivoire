@@ -8,6 +8,21 @@ const config: NextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  async redirects() {
+    return [
+      // Fix common short URLs Google might have crawled
+      {
+        source: '/abonnement',
+        destination: '/abonnement-iptv-cote-divoire',
+        permanent: true,
+      },
+      {
+        source: '/blog/iptv-cote-divoire-coupe-du-monde-2026-streaming',
+        destination: '/blog/cote-divoire-coupe-du-monde-2026-streaming',
+        permanent: true,
+      },
+    ]
+  },
   headers: async () => [
     {
       source: '/(.*)',
