@@ -8,8 +8,9 @@ import { getFAQSchema, getProductSchema, getHowToSchema, getReviewSchema, getBre
 import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck, Play, Globe, Gamepad2, Laptop, HardDrive, Target, CreditCard, PlayCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "IPTV Côte d'Ivoire — +22 000 Chaînes dès 2 500 FCFA | Orange Money & Wave",
-  description: "Meilleur abonnement IPTV en Côte d'Ivoire. +22 000 chaînes HD/4K, VOD illimitée. Paiement Orange Money, Wave, MTN. Activation immédiate. Essai gratuit 24h.",
+  title: "🏆 IPTV Côte d'Ivoire — Coupe du Monde 2026 dès 5 900 FCFA | Orange Money & Wave",
+  description: "Regardez la Coupe du Monde 2026 avec les Éléphants en IPTV. +22 000 chaînes HD/4K. Offre spéciale CDM : 2 mois à 5 900 FCFA. Paiement Orange Money & Wave. Activation en 5 min.",
+  keywords: ['iptv cote divoire', 'iptv coupe du monde 2026', 'iptv abonnement fcfa', 'orange money iptv', 'iptv abidjan'],
 }
 
 const faqs = [
@@ -23,7 +24,7 @@ const faqs = [
   },
   {
     question: "Quel est le meilleur abonnement IPTV à Abidjan ?",
-    answer: "Notre abonnement 3 mois à 2 000 FCFA/mois est le plus populaire à Abidjan. Il offre le meilleur rapport qualité-prix avec +22 000 chaînes HD/4K, la VOD illimitée et un support WhatsApp 24/7.",
+    answer: "Notre offre Coupe du Monde 3 mois à 7 900 FCFA (soit 2 633 FCFA/mois) est la plus populaire à Abidjan. Elle couvre tout le tournoi CDM 2026 avec +22 000 chaînes HD/4K, la VOD illimitée et un support WhatsApp 24/7.",
   },
   {
     question: "Puis-je regarder la Coupe du Monde 2026 sur IPTV ?",
@@ -35,7 +36,7 @@ const faqs = [
   },
   {
     question: "Combien coûte un abonnement IPTV en Côte d'Ivoire ?",
-    answer: "Nos abonnements démarrent à 2 500 FCFA par mois (1 mois), 2 000 FCFA/mois (3 mois), ou 1 500 FCFA/mois pour 12 mois. Paiement via Orange Money, Wave, MTN MoMo ou Moov Money.",
+    answer: "Pendant la promo Coupe du Monde 2026 : 2 mois à 5 900 FCFA, 3 mois à 7 900 FCFA, ou offre annuelle à 24 900 FCFA (13 mois). Paiement via Orange Money, Wave, MTN MoMo ou Moov Money.",
   },
   {
     question: "L'IPTV est-il légal en Côte d'Ivoire ?",
@@ -48,50 +49,59 @@ const faqs = [
 ]
 
 const testimonials = [
-  { name: "Koné A.", city: "Abidjan", text: "Je paye avec Wave, reçois mes codes sur WhatsApp et je regarde tout sur ma Smart TV. Parfait !", stars: 5 },
+  { name: "Koné A.", city: "Abidjan", text: "J'ai pris l'offre 3 mois CDM à 7 900 FCFA, paiement Wave en 2 min, codes reçus sur WhatsApp. Impeccable !", stars: 5 },
   { name: "Diallo M.", city: "Bouaké", text: "Meilleur service IPTV en Côte d'Ivoire. Toutes les chaînes en HD, même RTI et Canal+. Je recommande !", stars: 5 },
-  { name: "Yao F.", city: "Yamoussoukro", text: "Abonnement 12 mois à 1 500 FCFA/mois, ça coûte moins qu'un mois de Canal+. Qualité excellente !", stars: 5 },
+  { name: "Yao F.", city: "Yamoussoukro", text: "L'offre annuelle à 24 900 FCFA, ça coûte moins qu'un trimestre de Canal+. Qualité excellente !", stars: 5 },
   { name: "Touré B.", city: "Abidjan (Cocody)", text: "Activation en 3 minutes via Orange Money. Service impeccable, support très réactif sur WhatsApp.", stars: 5 },
   { name: "N'Dri C.", city: "Daloa", text: "Je regarde beIN Sports, toutes les chaînes françaises et les chaînes ivoiriennes sans aucun problème.", stars: 5 },
-  { name: "Bamba S.", city: "San-Pédro", text: "Parfait pour regarder la Coupe du Monde 2026 avec les Éléphants de Côte d'Ivoire !", stars: 5 },
+  { name: "Bamba S.", city: "San-Pédro", text: "Offre Coupe du Monde 2 mois à 5 900 FCFA — parfait pour voir tous les matchs des Éléphants !", stars: 5 },
 ]
 
 const plans = [
   {
-    name: '1 Mois',
-    price: '2 500',
-    perMonth: '2 500 FCFA',
-    total: '2 500 FCFA',
+    id: 'cdm-2m',
+    name: 'Offre CDM — 2 mois',
+    originalPrice: '7 800',
+    promoPrice: '5 900',
+    perMonth: '2 950 FCFA/mois',
     badge: null,
+    badgeBg: '',
+    promoLabel: '-24% · Expire 11 juin',
     emoji: <Star size={32} color="#F97316" />,
-    schemaPrice: '2500',
+    schemaPrice: '5900',
     payment: 'Orange Money',
-    freeMonth: false,
-    features: ['+22 000 chaînes HD/4K', 'VOD illimitée (120 000+ films)', 'Chaînes ivoiriennes (RTI 1, RTI 2, La 3)', 'Support WhatsApp 24/7', 'Activation en 5 minutes', 'Jusqu\'à 5 appareils simultanés'],
+    features: ['🏆 Tous les matchs CDM 2026', '📺 BeIN Sports + TF1 + France 2', '🇨🇮 Les Éléphants en direct', '🎥 HD/4K sans coupure', '⚡ Activation en 5 minutes'],
+    featured: false,
   },
   {
-    name: '3 Mois',
-    price: '2 000',
-    perMonth: '2 000 FCFA/mois',
-    total: '6 000 FCFA',
-    badge: 'POPULAIRE',
+    id: 'cdm-3m',
+    name: 'Offre CDM — 3 mois',
+    originalPrice: '11 700',
+    promoPrice: '7 900',
+    perMonth: '2 633 FCFA/mois',
+    badge: 'Mondial 2026',
+    badgeBg: 'linear-gradient(135deg, #F97316, #EA580C)',
+    promoLabel: '-32% · Offre limitée',
     emoji: <ShieldCheck size={32} color="#F97316" />,
-    schemaPrice: '6000',
+    schemaPrice: '7900',
     payment: 'Wave',
-    freeMonth: false,
-    features: ['+22 000 chaînes HD/4K', 'VOD illimitée (120 000+ films)', 'Chaînes ivoiriennes (RTI 1, RTI 2, La 3)', 'Support WhatsApp 24/7 prioritaire', 'Activation en 5 minutes', 'Jusqu\'à 5 appareils simultanés'],
+    features: ['🏆 Tous les matchs CDM 2026', '📺 BeIN Sports + TF1 + France 2', '🇨🇮 Les Éléphants en direct', '🎥 HD/4K sans coupure', '📡 +22 000 chaînes incluses', '💬 Support WhatsApp prioritaire'],
+    featured: true,
   },
   {
-    name: '12 Mois',
-    price: '1 500',
-    perMonth: '1 500 FCFA/mois',
-    total: '18 000 FCFA',
-    badge: 'MEILLEUR PRIX',
+    id: 'cdm-annual',
+    name: 'Offre Annuelle + CDM',
+    originalPrice: '35 900',
+    promoPrice: '24 900',
+    perMonth: '2 075 FCFA/mois · 13 mois',
+    badge: 'Meilleur prix',
+    badgeBg: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
+    promoLabel: '-30% CDM · +1 mois offert',
     emoji: <Trophy size={32} color="#F97316" />,
-    schemaPrice: '18000',
+    schemaPrice: '24900',
     payment: 'MTN MoMo',
-    freeMonth: true,
-    features: ['+22 000 chaînes HD/4K', 'VOD illimitée (120 000+ films)', 'Chaînes ivoiriennes (RTI 1, RTI 2, La 3)', 'Support WhatsApp VIP 24/7', 'Activation en 5 minutes', 'Jusqu\'à 5 appareils simultanés'],
+    features: ['📅 Tout inclus · 13 mois', '🏆 CDM 2026 complet', '📡 +22 000 chaînes', '🎬 VOD 120 000+ films', '💬 Support VIP WhatsApp'],
+    featured: false,
   },
 ]
 
@@ -123,9 +133,9 @@ export default function HomePage() {
     { name: 'Accueil', url: 'https://iptvivoire.com' },
   ])
   const productSchemas = plans.map(p => getProductSchema({
-    name: `IPTV Ivoire — Abonnement ${p.name}`,
+    name: `IPTV Ivoire — ${p.name}`,
     price: p.schemaPrice,
-    description: `Abonnement IPTV ${p.name} — ${p.perMonth} — +22 000 chaînes HD/4K en Côte d'Ivoire`,
+    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — +22 000 chaînes HD/4K en Côte d'Ivoire`,
   }))
 
   return (
@@ -173,10 +183,9 @@ export default function HomePage() {
               marginBottom: '1.25rem',
               lineHeight: 1.15,
             }}>
-              IPTV Côte d&apos;Ivoire<br />
-              <span className="gradient-text">+22 000 Chaînes</span>{' '}
-              dès{' '}
-              <span style={{ color: '#F97316' }}>2 500 FCFA</span>
+              IPTV Côte d&apos;Ivoire 🇨🇮<br />
+              <span className="gradient-text">Coupe du Monde 2026</span>{' '}dès{' '}
+              <span style={{ color: '#F97316' }}>5 900 FCFA</span>
             </h1>
 
             <p style={{
@@ -318,86 +327,80 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ─── PRICING ─── */}
-        <section className="section" id="abonnements">
+        {/* ─── PRICING CDM ─── */}
+        <section id="abonnements" style={{ background: '#0F172A', padding: '4rem 1.5rem' }}>
           <div className="container">
-            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-              <span className="section-label">Tarifs</span>
-              <h2 className="section-title">Choisissez votre forfait IPTV</h2>
-              <p className="section-subtitle" style={{ margin: '0 auto' }}>
-                Tous les prix en <strong style={{ color: '#F97316' }}>FCFA</strong>. Paiement via mobile money. Activation immédiate.
-              </p>
+            <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
+              <span style={{ color: 'rgba(249,115,22,0.8)', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>🏆 Offre Coupe du Monde — Limitée au 11 juin</span>
+            </div>
+            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', color: '#FFFFFF', marginBottom: '0.5rem' }}>Choisissez votre forfait CDM</h2>
+              <p style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'Outfit, sans-serif', fontSize: '0.95rem' }}>Prix en FCFA · Paiement mobile money · Activation en 5 minutes</p>
             </div>
 
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '1.5rem',
-              maxWidth: '960px',
-              margin: '0 auto',
-            }}>
-              {plans.map((plan, i) => (
-                <div key={plan.name} className="card" style={{
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem', maxWidth: '1050px', margin: '0 auto' }}>
+              {plans.map((plan) => (
+                <div key={plan.id} style={{
                   position: 'relative',
-                  border: i === 1 ? '2px solid rgba(249,115,22,0.5)' : undefined,
-                  background: i === 1 ? 'rgba(249,115,22,0.05)' : undefined,
+                  background: plan.featured ? 'linear-gradient(145deg, #1E293B, #0F172A)' : 'rgba(255,255,255,0.04)',
+                  border: plan.featured ? '2px solid rgba(249,115,22,0.6)' : '1px solid rgba(255,255,255,0.08)',
+                  borderRadius: '16px',
+                  padding: '2rem 1.5rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  boxShadow: plan.featured ? '0 0 40px rgba(249,115,22,0.15)' : 'none',
                 }}>
                   {plan.badge && (
-                    <div style={{
-                      position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)',
-                      background: i === 2 ? 'linear-gradient(135deg, #F59E0B, #D97706)' : 'linear-gradient(135deg, #F97316, #EA580C)',
-                      color: 'var(--color-text)', fontFamily: 'Outfit, sans-serif', fontWeight: 800,
-                      fontSize: '0.7rem', letterSpacing: '0.08em',
-                      padding: '0.3rem 1rem', borderRadius: '999px',
-                      whiteSpace: 'nowrap',
-                    }}>
+                    <div style={{ position: 'absolute', top: '-13px', left: '50%', transform: 'translateX(-50%)', background: plan.badgeBg, color: '#fff', fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.05em', padding: '0.3rem 1rem', borderRadius: '999px', whiteSpace: 'nowrap' }}>
                       {plan.badge}
                     </div>
                   )}
 
-                  <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-                    <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>{plan.emoji}</div>
-                    <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.3rem', color: 'var(--color-text)', marginBottom: '0.5rem' }}>{plan.name}</h3>
-                    <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '2.5rem', color: '#F97316', lineHeight: 1 }}>
-                      {plan.total.replace(' FCFA', '')} <span style={{ fontSize: '1rem', fontWeight: 600, color: '#9CA3AF' }}>FCFA</span>
-                    </div>
-                    {plan.name !== '1 Mois' && (
-                      <div style={{ fontSize: '0.9rem', color: '#6B7280', marginTop: '0.4rem' }}>soit <strong style={{ color: '#9CA3AF' }}>{plan.price} FCFA</strong> / mois</div>
-                    )}
-                    {plan.freeMonth && (
-                      <div style={{ marginTop: '0.75rem', background: 'rgba(34,197,94,0.1)', color: '#16A34A', padding: '0.35rem 0.75rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 800, display: 'inline-block' }}>
-                        + 1 MOIS GRATUIT
-                      </div>
-                    )}
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1rem', color: 'rgba(255,255,255,0.7)', marginBottom: '1rem' }}>{plan.name}</h3>
+
+                  <div style={{ color: 'rgba(255,255,255,0.3)', fontFamily: 'Outfit, sans-serif', fontSize: '0.9rem', textDecoration: 'line-through', marginBottom: '0.2rem' }}>
+                    {plan.originalPrice} FCFA
                   </div>
 
-                  <ul style={{ listStyle: 'none', marginBottom: '1.75rem' }}>
-                    {plan.features.map(f => (
-                      <li key={f} style={{
-                        display: 'flex', alignItems: 'flex-start', gap: '0.6rem',
-                        padding: '0.45rem 0',
-                        borderBottom: '1px solid var(--color-border)',
-                        color: '#9CA3AF', fontSize: '0.875rem',
-                      }}>
-                        <span style={{ color: '#4ADE80', flexShrink: 0, marginTop: '0.1rem' }}>✓</span>
-                        {f}
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem', marginBottom: '0.25rem' }}>
+                    <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(2.2rem, 5vw, 3rem)', color: '#FFFFFF', lineHeight: 1 }}>{plan.promoPrice}</span>
+                    <span style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: '1rem' }}>FCFA</span>
+                  </div>
+
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem', fontFamily: 'Outfit, sans-serif', marginBottom: '0.85rem' }}>{plan.perMonth}</div>
+
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: 'rgba(249,115,22,0.12)', border: '1px solid rgba(249,115,22,0.3)', color: '#FB923C', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.72rem', padding: '0.25rem 0.65rem', borderRadius: '999px', marginBottom: '1.25rem', width: 'fit-content' }}>
+                    ⏱ {plan.promoLabel}
+                  </div>
+
+                  <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1.5rem', display: 'flex', flexDirection: 'column', gap: '0.45rem', flex: 1 }}>
+                    {plan.features.map((f) => (
+                      <li key={f} style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'Outfit, sans-serif', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <span style={{ color: '#22C55E', flexShrink: 0 }}>✓</span>{f}
                       </li>
                     ))}
                   </ul>
 
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                    id={`plan-cta-${plan.name.toLowerCase().replace(' ', '-')}`}
-                    className={i === 1 ? 'btn-primary' : 'btn-secondary'}
-                    style={{ width: '100%', textAlign: 'center', justifyContent: 'center', marginBottom: '0.75rem' }}>
-                    Payer via {plan.payment}
+                  <a
+                    href={`${WHATSAPP_URL}&text=${encodeURIComponent(`Bonjour ! Je veux activer l'offre CDM "${plan.name}" à ${plan.promoPrice} FCFA. Merci !`)}`}
+                    target="_blank" rel="noopener noreferrer"
+                    id={`plan-cta-${plan.id}`}
+                    style={{ display: 'block', textAlign: 'center', padding: '0.85rem 1rem', borderRadius: '10px', fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.95rem', textDecoration: 'none', background: plan.featured ? 'linear-gradient(135deg, #F97316, #EA580C)' : 'rgba(255,255,255,0.07)', color: plan.featured ? '#FFFFFF' : 'rgba(255,255,255,0.85)', border: plan.featured ? 'none' : '1px solid rgba(255,255,255,0.15)', marginBottom: '0.75rem' }}>
+                    Activer via {plan.payment}
                   </a>
-                  
+
                   <div style={{ textAlign: 'center' }}>
-                    <Link href="/abonnement-iptv-cote-divoire" className="nav-link" style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--color-primary)' }}>
+                    <Link href="/abonnement-iptv-cote-divoire" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'rgba(249,115,22,0.7)', textDecoration: 'none', fontFamily: 'Outfit, sans-serif' }}>
                       Voir tous les détails →
                     </Link>
                   </div>
                 </div>
+              ))}
+            </div>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', marginTop: '2.5rem' }}>
+              {['✅ Paiement sécurisé', '⚡ Activation en 5 min', '💬 Support WhatsApp 24/7', '🔄 Sans engagement'].map(t => (
+                <span key={t} style={{ color: 'rgba(255,255,255,0.35)', fontFamily: 'Outfit, sans-serif', fontSize: '0.8rem' }}>{t}</span>
               ))}
             </div>
           </div>
@@ -533,7 +536,7 @@ export default function HomePage() {
               position: 'relative',
             }}>
               {[
-                { step: '01', icon: <Target size={28} color="#F97316" />, title: 'Choisissez votre forfait', desc: 'Sélectionnez 1 mois (2 500 FCFA), 3 mois (2 000 FCFA/mois) ou 12 mois (1 500 FCFA/mois).' },
+                { step: '01', icon: <Target size={28} color="#F97316" />, title: 'Choisissez votre forfait CDM', desc: 'Offre 2 mois à 5 900 FCFA, 3 mois à 7 900 FCFA, ou annuel à 24 900 FCFA. Tous les matchs inclus !' },
                 { step: '02', icon: <CreditCard size={28} color="#F97316" />, title: 'Payez par mobile money', desc: 'Orange Money, Wave ou MTN MoMo en 2 minutes depuis votre téléphone.' },
                 { step: '03', icon: <Play size={28} color="#F97316" />, title: 'Regardez immédiatement', desc: "Codes d'accès reçus sur WhatsApp dans les 5 minutes. Profitez de +22 000 chaînes !" },
               ].map(step => (
