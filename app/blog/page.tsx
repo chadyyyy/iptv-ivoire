@@ -9,6 +9,9 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: "Blog IPTV Côte d'Ivoire — Guides, Conseils et Actualités",
   description: "Guides complets sur l'IPTV en Côte d'Ivoire. Installation, paiement Orange Money et Wave, Coupe du Monde 2026, comparatifs et actualités IPTV.",
+  alternates: {
+    canonical: 'https://iptvivoire.com/blog',
+  },
 }
 
 export default function BlogIndexPage() {

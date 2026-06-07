@@ -113,7 +113,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Prêt à activer votre IPTV ?
                 </h2>
                 <p style={{ color: '#9CA3AF', fontSize: '0.9rem', marginBottom: '1.25rem' }}>
-                  Dès 2 500 FCFA/mois · Paiement Orange Money & Wave · Activation en 5 minutes
+                  Paiement Orange Money &amp; Wave · Activation en 5 minutes
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem' }}>
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" id={`blog-${slug}-cta`} className="btn-whatsapp">
