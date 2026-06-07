@@ -8,8 +8,8 @@ import { getFAQSchema, getProductSchema, getHowToSchema, getReviewSchema, getBre
 import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck, Play, Globe, Gamepad2, Laptop, HardDrive, Target, CreditCard, PlayCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "🏆 IPTV Côte d'Ivoire — Coupe du Monde 2026 dès 5 900 FCFA | Orange Money & Wave",
-  description: "Regardez la Coupe du Monde 2026 avec les Éléphants en IPTV. +22 000 chaînes HD/4K. Offre spéciale CDM : 2 mois à 5 900 FCFA. Paiement Orange Money & Wave. Activation en 5 min.",
+  title: "IPTV Côte d'Ivoire — +22 000 Chaînes | Coupe du Monde 2026 | Orange Money & Wave",
+  description: "Meilleur abonnement IPTV en Côte d'Ivoire. +22 000 chaînes HD/4K, VOD illimitée. Regardez la Coupe du Monde 2026. Paiement Orange Money, Wave, MTN. Activation immédiate.",
   keywords: ['iptv cote divoire', 'iptv coupe du monde 2026', 'iptv abonnement fcfa', 'orange money iptv', 'iptv abidjan'],
 }
 
