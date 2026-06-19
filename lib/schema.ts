@@ -187,3 +187,21 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
     })),
   }
 }
+
+export function getWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'IPTV Ivoire',
+    url: 'https://iptvivoire.com',
+    potentialAction: {
+      '@type': 'SearchAction',
+      'query-input': 'required name=search_term_string',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://iptvivoire.com/blog?q={search_term_string}',
+      },
+    },
+  }
+}
+

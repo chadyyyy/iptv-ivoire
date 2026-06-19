@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { getOrganizationSchema, getLocalBusinessSchema } from '@/lib/schema'
+import { getOrganizationSchema, getLocalBusinessSchema, getWebSiteSchema } from '@/lib/schema'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
@@ -65,6 +65,10 @@ export const metadata: Metadata = {
       'fr': 'https://iptvivoire.com',
     },
   },
+  other: {
+    'geo.region': 'CI',
+    'geo.placename': 'Abidjan',
+  },
 }
 
 export default function RootLayout({
@@ -74,9 +78,10 @@ export default function RootLayout({
 }) {
   const orgSchema = getOrganizationSchema()
   const bizSchema = getLocalBusinessSchema()
+  const websiteSchema = getWebSiteSchema()
 
   return (
-    <html lang="fr">
+    <html lang="fr-CI">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -87,6 +92,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(bizSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body>
