@@ -4,12 +4,12 @@ import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
-import { getFAQSchema, getProductSchema, getHowToSchema, getReviewSchema, getBreadcrumbSchema } from '@/lib/schema'
+import { getFAQSchema, getProductSchema, getHowToSchema, getBreadcrumbSchema } from '@/lib/schema'
 import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck, Play, Globe, Gamepad2, Laptop, HardDrive, Target, CreditCard, PlayCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "IPTV Côte d'Ivoire — Coupe du Monde 2026 | Orange Money & Wave",
-  description: "Meilleur abonnement IPTV en Côte d'Ivoire. +22 000 chaînes HD/4K, VOD illimitée. Regardez la CDM 2026. Paiement Orange Money & Wave. Activation immédiate.",
+  title: "IPTV Côte d'Ivoire — +22 000 Chaînes dès 5 900 FCFA | Orange Money & Wave",
+  description: "Meilleur abonnement IPTV en Côte d'Ivoire. +22 000 chaînes HD/4K, VOD illimitée. Paiement Orange Money, Wave, MTN. Activation immédiate. Essai gratuit 24h.",
   keywords: ['iptv cote divoire', 'iptv coupe du monde 2026', 'abonnement iptv fcfa', 'orange money iptv', 'iptv abidjan'],
   alternates: {
     canonical: 'https://iptvivoire.com',
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "Quel est le meilleur abonnement IPTV à Abidjan ?",
-    answer: "Notre offre Coupe du Monde 3 mois à 7 900 FCFA (soit 2 633 FCFA/mois) est la plus populaire à Abidjan. Elle couvre tout le tournoi CDM 2026 avec +22 000 chaînes HD/4K, la VOD illimitée et un support WhatsApp 24/7.",
+    answer: "Notre offre 3 mois à 7 900 FCFA (soit 2 633 FCFA/mois) est la plus populaire à Abidjan. Elle inclut +22 000 chaînes HD/4K, la VOD illimitée et un support WhatsApp 24/7.",
   },
   {
     question: "Puis-je regarder la Coupe du Monde 2026 sur IPTV ?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: "Combien coûte un abonnement IPTV en Côte d'Ivoire ?",
-    answer: "Pendant la promo Coupe du Monde 2026 : 2 mois à 5 900 FCFA, 3 mois à 7 900 FCFA, ou offre annuelle à 24 900 FCFA (13 mois). Paiement via Orange Money, Wave, MTN MoMo ou Moov Money.",
+    answer: "Nos abonnements : 2 mois à 5 900 FCFA, 3 mois à 7 900 FCFA, ou offre annuelle à 24 900 FCFA (13 mois). Paiement via Orange Money, Wave, MTN MoMo ou Moov Money.",
   },
   {
     question: "L'IPTV est-il légal en Côte d'Ivoire ?",
@@ -52,12 +52,12 @@ const faqs = [
 ]
 
 const testimonials = [
-  { name: "Koné A.", city: "Abidjan", text: "J'ai pris l'offre 3 mois CDM à 7 900 FCFA, paiement Wave en 2 min, codes reçus sur WhatsApp. Impeccable !", stars: 5 },
+  { name: "Koné A.", city: "Abidjan", text: "J'ai pris l'offre 3 mois, paiement Wave en 2 min, codes reçus sur WhatsApp. Impeccable !", stars: 5 },
   { name: "Diallo M.", city: "Bouaké", text: "Meilleur service IPTV en Côte d'Ivoire. Toutes les chaînes en HD, même RTI et Canal+. Je recommande !", stars: 5 },
-  { name: "Yao F.", city: "Yamoussoukro", text: "L'offre annuelle à 24 900 FCFA, ça coûte moins qu'un trimestre de Canal+. Qualité excellente !", stars: 5 },
+  { name: "Yao F.", city: "Yamoussoukro", text: "L'offre annuelle, ça coûte moins qu'un trimestre de Canal+. Qualité excellente !", stars: 5 },
   { name: "Touré B.", city: "Abidjan (Cocody)", text: "Activation en 3 minutes via Orange Money. Service impeccable, support très réactif sur WhatsApp.", stars: 5 },
   { name: "N'Dri C.", city: "Daloa", text: "Je regarde beIN Sports, toutes les chaînes françaises et les chaînes ivoiriennes sans aucun problème.", stars: 5 },
-  { name: "Bamba S.", city: "San-Pédro", text: "Offre Coupe du Monde 2 mois à 5 900 FCFA — parfait pour voir tous les matchs des Éléphants !", stars: 5 },
+  { name: "Bamba S.", city: "San-Pédro", text: "Parfait pour voir tous les matchs des Éléphants en Coupe du Monde ! Qualité au top.", stars: 5 },
 ]
 
 const plans = [
@@ -69,7 +69,7 @@ const plans = [
     perMonth: '2 950 FCFA/mois',
     badge: null,
     badgeBg: '',
-    promoLabel: '-24% · Expire 11 juin',
+    promoLabel: '-24% · Offre CDM 2026',
     emoji: <Star size={32} color="#F97316" />,
     schemaPrice: '5900',
     payment: 'Orange Money',
@@ -84,7 +84,7 @@ const plans = [
     perMonth: '2 633 FCFA/mois',
     badge: 'Mondial 2026',
     badgeBg: 'linear-gradient(135deg, #F97316, #EA580C)',
-    promoLabel: '-32% · Offre limitée',
+    promoLabel: '-32% · Le plus populaire',
     emoji: <ShieldCheck size={32} color="#F97316" />,
     schemaPrice: '7900',
     payment: 'Wave',
@@ -99,7 +99,7 @@ const plans = [
     perMonth: '2 075 FCFA/mois · 13 mois',
     badge: 'Meilleur prix',
     badgeBg: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
-    promoLabel: '-30% CDM · +1 mois offert',
+    promoLabel: '-30% · +1 mois offert',
     emoji: <Trophy size={32} color="#F97316" />,
     schemaPrice: '24900',
     payment: 'MTN MoMo',
@@ -131,7 +131,6 @@ const devices = [
 export default function HomePage() {
   const faqSchema = getFAQSchema(faqs)
   const howToSchema = getHowToSchema()
-  const reviewSchema = getReviewSchema()
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://iptvivoire.com' },
   ])
@@ -145,7 +144,7 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {productSchemas.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
@@ -186,11 +185,10 @@ export default function HomePage() {
               marginBottom: '1.25rem',
               lineHeight: 1.15,
             }}>
-              IPTV Côte d&apos;Ivoire —{' '}
-              <span className="gradient-text">Regardez +22 000 Chaînes</span>
-              <br />
-              <span style={{ color: '#F97316' }}>Coupe du Monde 2026</span>{' '}dès{' '}
-              <span style={{ fontWeight: 900 }}>5 900 FCFA</span>
+              IPTV Côte d&apos;Ivoire<br />
+              <span className="gradient-text">+22 000 Chaînes</span>{' '}
+              dès{' '}
+              <span style={{ color: '#F97316' }}>5 900 FCFA</span>
             </h1>
 
             <p style={{
@@ -336,10 +334,10 @@ export default function HomePage() {
         <section id="abonnements" style={{ background: '#0F172A', padding: '4rem 1.5rem' }}>
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
-              <span style={{ color: 'rgba(249,115,22,0.8)', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>🏆 Offre Coupe du Monde — Limitée au 11 juin</span>
+              <span style={{ color: 'rgba(249,115,22,0.8)', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>🏆 Offre Spéciale Coupe du Monde 2026</span>
             </div>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', color: '#FFFFFF', marginBottom: '0.5rem' }}>Choisissez votre forfait CDM</h2>
+              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', color: '#FFFFFF', marginBottom: '0.5rem' }}>Choisissez votre forfait IPTV</h2>
               <p style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'Outfit, sans-serif', fontSize: '0.95rem' }}>Prix en FCFA · Paiement mobile money · Activation en 5 minutes</p>
             </div>
 

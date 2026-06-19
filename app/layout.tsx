@@ -6,7 +6,7 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 export const metadata: Metadata = {
   metadataBase: new URL('https://iptvivoire.com'),
   title: {
-    default: "IPTV Côte d'Ivoire — Abonnement dès 2 500 FCFA | Orange Money & Wave",
+    default: "IPTV Côte d'Ivoire — +22 000 Chaînes HD/4K | Orange Money & Wave",
     template: '%s | IPTV Ivoire',
   },
   description:
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     locale: 'fr_CI',
     url: 'https://iptvivoire.com',
     siteName: 'IPTV Ivoire',
-    title: "IPTV Côte d'Ivoire — Abonnement dès 2 500 FCFA",
-    description: '+22 000 chaînes HD. Paiement Orange Money & Wave. Essai gratuit 24h.',
+    title: "IPTV Côte d'Ivoire — +22 000 Chaînes HD/4K | Orange Money & Wave",
+    description: '+22 000 chaînes HD/4K. Paiement Orange Money & Wave. Activation immédiate.',
     images: [
       {
         url: '/og/homepage.jpg',
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "IPTV Côte d'Ivoire dès 2 500 FCFA",
-    description: "+22 000 chaînes. Orange Money & Wave. Essai gratuit.",
+    title: "IPTV Côte d'Ivoire — +22 000 Chaînes HD/4K",
+    description: '+22 000 chaînes HD/4K. Paiement Orange Money & Wave. Activation immédiate.',
     images: ['/og/homepage.jpg'],
   },
   alternates: {

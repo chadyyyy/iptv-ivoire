@@ -29,7 +29,7 @@ export function getLocalBusinessSchema() {
     description: "Service IPTV premium en Côte d'Ivoire — +22 000 chaînes, paiement Orange Money et Wave",
     url: 'https://iptvivoire.com',
     image: 'https://iptvivoire.com/og/homepage.jpg',
-    priceRange: '2500-15000 FCFA',
+    priceRange: '5900-24900 FCFA',
     currenciesAccepted: 'XOF',
     paymentAccepted: 'Orange Money, Wave, MTN MoMo, Moov Money',
     areaServed: 'CI',
@@ -138,7 +138,7 @@ export function getHowToSchema() {
       {
         '@type': 'HowToStep',
         name: 'Choisissez votre forfait',
-        text: 'Sélectionnez 1 mois (2 500 FCFA), 3 mois (2 000 FCFA/mois) ou 12 mois (1 500 FCFA/mois).',
+        text: 'Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou 12 mois (24 900 FCFA).',
         position: 1,
       },
       {

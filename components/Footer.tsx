@@ -6,7 +6,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 
 const footerLinks = [
   { href: '/', label: 'Accueil' },
-  { href: '/abonnement', label: 'Abonnement' },
+  { href: '/abonnement-iptv-cote-divoire', label: 'Abonnement' },
   { href: '/chaines', label: 'Chaînes' },
   { href: '/installation', label: 'Installation' },
   { href: '/paiement', label: 'Paiement' },

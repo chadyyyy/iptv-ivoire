@@ -7,9 +7,7 @@ import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 import { Tv, Film, PlayCircle, Trophy, Smartphone, MessageCircle, Zap, ShieldCheck, Star, Clock } from 'lucide-react'
 
-// Promo ends June 11, 2026 at 23:59 local time
-const PROMO_END = new Date('2026-06-11T23:59:00')
-const WORLD_CUP_START = new Date('2026-06-11T00:00:00')
+// World Cup runs June 11 - July 19, 2026
 const WORLD_CUP_END = new Date('2026-07-19T23:59:00')
 
 const promoPlans = [
@@ -21,7 +19,7 @@ const promoPlans = [
     perMonth: '2 950 FCFA/mois',
     badge: null,
     badgeBg: '',
-    promoLabel: 'Promo -24% · Expire 11 juin',
+    promoLabel: '-24% · Offre CDM 2026',
     promoColor: '#F97316',
     subtitle: 'couvre tout le tournoi',
     payment: 'Orange Money',
@@ -44,7 +42,7 @@ const promoPlans = [
     perMonth: '2 633 FCFA/mois',
     badge: 'Mondial 2026',
     badgeBg: 'linear-gradient(135deg, #F97316, #EA580C)',
-    promoLabel: 'Promo -32% · Offre limitée',
+    promoLabel: '-32% · Le plus populaire',
     promoColor: '#F97316',
     subtitle: 'soit 2 633 FCFA/mois',
     payment: 'Wave',
@@ -68,7 +66,7 @@ const promoPlans = [
     perMonth: '2 075 FCFA/mois · 13 mois',
     badge: 'Meilleur prix',
     badgeBg: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
-    promoLabel: '-30% promo CDM · + 1 mois offert',
+    promoLabel: '-30% · +1 mois offert',
     promoColor: '#0EA5E9',
     subtitle: 'soit 2 075 FCFA/mois · 13 mois',
     payment: 'MTN MoMo',
@@ -145,7 +143,7 @@ function CountdownBox({ value, label }: { value: number; label: string }) {
 }
 
 export default function AbonnementPage() {
-  const countdown = useCountdown(PROMO_END)
+  const countdown = useCountdown(WORLD_CUP_END)
 
   const whatsappMsg = (plan: typeof promoPlans[0]) =>
     `${WHATSAPP_URL}&text=${encodeURIComponent(`Bonjour ! Je veux activer l'offre CDM 2026 "${plan.name}" à ${plan.promoPrice} FCFA. Merci !`)}`
@@ -172,7 +170,7 @@ export default function AbonnementPage() {
 
             <div style={{ display: 'inline-block', background: 'rgba(249,115,22,0.15)', border: '1px solid rgba(249,115,22,0.4)', borderRadius: '999px', padding: '0.35rem 1.1rem', marginBottom: '1rem' }}>
               <span style={{ color: '#FB923C', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.06em' }}>
-                🔴 OFFRE LIMITÉE — COUPE DU MONDE 2026
+                🏆 OFFRE SPÉCIALE COUPE DU MONDE 2026
               </span>
             </div>
 
@@ -191,14 +189,14 @@ export default function AbonnementPage() {
               {' '}en Coupe du Monde
             </h1>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'Outfit, sans-serif', fontSize: '1rem', marginBottom: '2rem' }}>
-              11 juin → 19 juillet 2026 · Côte d&apos;Ivoire qualifiée · Offre valable jusqu&apos;au 11 juin 23h59
+              11 juin → 19 juillet 2026 · Côte d&apos;Ivoire qualifiée · Offre valable pendant le Mondial
             </p>
 
             {/* COUNTDOWN */}
             {!countdown.expired ? (
               <div>
                 <div style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'Outfit, sans-serif', fontSize: '0.8rem', marginBottom: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                  ⏱ Offre expire dans
+                  ⏱ Fin du Mondial dans
                 </div>
                 <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
                   <CountdownBox value={countdown.days} label="jours" />
