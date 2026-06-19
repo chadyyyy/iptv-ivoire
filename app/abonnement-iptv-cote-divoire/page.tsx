@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 import { Tv, Film, PlayCircle, Trophy, Smartphone, MessageCircle, Zap, ShieldCheck, Star, Clock } from 'lucide-react'
+import { getProductSchema, getBreadcrumbSchema } from '@/lib/schema'
 
 // World Cup runs June 11 - July 19, 2026
 const WORLD_CUP_END = new Date('2026-07-19T23:59:00')
@@ -148,8 +149,23 @@ export default function AbonnementPage() {
   const whatsappMsg = (plan: typeof promoPlans[0]) =>
     `${WHATSAPP_URL}&text=${encodeURIComponent(`Bonjour ! Je veux activer l'offre CDM 2026 "${plan.name}" à ${plan.promoPrice} FCFA. Merci !`)}`
 
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Accueil', url: 'https://iptvivoire.com' },
+    { name: "Abonnement IPTV Côte d'Ivoire", url: 'https://iptvivoire.com/abonnement-iptv-cote-divoire' },
+  ])
+
+  const productSchemas = promoPlans.map(p => getProductSchema({
+    name: p.name,
+    price: p.schemaPrice,
+    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — +22 000 chaînes HD/4K en Côte d'Ivoire`,
+  }))
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {productSchemas.map((s, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+      ))}
       <Header />
       <main>
         {/* ── HERO BANNER CDM ── */}
