@@ -15,6 +15,7 @@ const blogSlugs = [
   'iptv-4k-cote-divoire',
   'cote-divoire-coupe-du-monde-2026-streaming',
   'iptv-senegal-meilleur-abonnement-2026',
+  'iptv-rdc-meilleur-abonnement-2026',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
