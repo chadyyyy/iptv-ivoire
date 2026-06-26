@@ -121,9 +121,14 @@ export default function Footer() {
 
             <div style={{ marginTop: '1.25rem' }}>
               <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', fontSize: '0.95rem', marginBottom: '0.75rem' }}>Zones desservies</h3>
-              <p style={{ color: 'var(--color-text-dim)', fontSize: '0.8rem', lineHeight: 1.7 }}>
-                Abidjan · Yamoussoukro · Bouaké · Daloa · San-Pédro · Korhogo
-              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem 0.5rem', alignItems: 'center', color: 'var(--color-text-dim)', fontSize: '0.8rem', lineHeight: 1.7 }}>
+                <Link href="/iptv-abidjan" style={{ textDecoration: 'none', color: 'var(--color-text-dim)', fontWeight: 600 }} onMouseEnter={e => (e.target as HTMLElement).style.color = '#F97316'} onMouseLeave={e => (e.target as HTMLElement).style.color = 'var(--color-text-dim)'}>Abidjan</Link> • 
+                <Link href="/iptv-bouake" style={{ textDecoration: 'none', color: 'var(--color-text-dim)', fontWeight: 600 }} onMouseEnter={e => (e.target as HTMLElement).style.color = '#F97316'} onMouseLeave={e => (e.target as HTMLElement).style.color = 'var(--color-text-dim)'}>Bouaké</Link> • 
+                <Link href="/iptv-yamoussoukro" style={{ textDecoration: 'none', color: 'var(--color-text-dim)', fontWeight: 600 }} onMouseEnter={e => (e.target as HTMLElement).style.color = '#F97316'} onMouseLeave={e => (e.target as HTMLElement).style.color = 'var(--color-text-dim)'}>Yamoussoukro</Link> • 
+                <span>Daloa</span> • 
+                <span>San-Pédro</span> • 
+                <span>Korhogo</span>
+              </div>
             </div>
           </div>
         </div>

@@ -82,6 +82,43 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          {/* Dropdown for Cities */}
+          <div className="nav-dropdown" style={{ position: 'relative' }}>
+            <button className="nav-dropdown-btn" style={{
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              color: 'var(--color-text-muted)',
+              fontFamily: 'Outfit, sans-serif',
+              fontWeight: 600,
+              fontSize: '0.9rem',
+              padding: '0.5rem 0.75rem',
+              borderRadius: '0.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.25rem',
+              transition: 'all 0.2s',
+            }}>
+              Villes ▾
+            </button>
+            <div className="nav-dropdown-menu" style={{
+              position: 'absolute',
+              top: '100%',
+              left: 0,
+              background: '#ffffff',
+              border: '1px solid var(--color-border)',
+              borderRadius: '0.5rem',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
+              padding: '0.5rem 0',
+              minWidth: '160px',
+              display: 'none',
+              zIndex: 1000,
+            }}>
+              <Link href="/iptv-abidjan" className="nav-dropdown-item">Abidjan</Link>
+              <Link href="/iptv-bouake" className="nav-dropdown-item">Bouaké</Link>
+              <Link href="/iptv-yamoussoukro" className="nav-dropdown-item">Yamoussoukro</Link>
+            </div>
+          </div>
         </nav>
 
         {/* CTA + Burger */}
@@ -138,6 +175,26 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+
+          {/* Mobile Cities section */}
+          <div style={{ padding: '0.75rem 0', borderBottom: '1px solid var(--color-border)' }}>
+            <span style={{
+              display: 'block',
+              fontFamily: 'Outfit, sans-serif',
+              fontWeight: 800,
+              fontSize: '0.8rem',
+              color: 'var(--color-text-dim)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
+              marginBottom: '0.5rem',
+            }}>Nos Villes</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', paddingLeft: '0.5rem' }}>
+              <Link href="/iptv-abidjan" onClick={() => setOpen(false)} style={{ textDecoration: 'none', color: 'var(--color-text-muted)', fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: '0.9rem' }}>📍 IPTV Abidjan</Link>
+              <Link href="/iptv-bouake" onClick={() => setOpen(false)} style={{ textDecoration: 'none', color: 'var(--color-text-muted)', fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: '0.9rem' }}>📍 IPTV Bouaké</Link>
+              <Link href="/iptv-yamoussoukro" onClick={() => setOpen(false)} style={{ textDecoration: 'none', color: 'var(--color-text-muted)', fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: '0.9rem' }}>📍 IPTV Yamoussoukro</Link>
+            </div>
+          </div>
+
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
             className="btn-whatsapp" style={{ marginTop: '1rem', width: '100%' }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -152,6 +209,27 @@ export default function Header() {
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .burger-btn { display: flex !important; }
+        }
+        .nav-dropdown:hover .nav-dropdown-menu {
+          display: block !important;
+        }
+        .nav-dropdown:hover .nav-dropdown-btn {
+          color: var(--color-primary) !important;
+          background: rgba(249,115,22,0.06) !important;
+        }
+        .nav-dropdown-item {
+          display: block;
+          padding: 0.5rem 1rem;
+          color: var(--color-text-muted);
+          font-family: 'Outfit', sans-serif;
+          font-weight: 600;
+          font-size: 0.85rem;
+          text-decoration: none;
+          transition: all 0.2s;
+        }
+        .nav-dropdown-item:hover {
+          color: var(--color-primary) !important;
+          background: rgba(249,115,22,0.06) !important;
         }
       `}</style>
     </header>
