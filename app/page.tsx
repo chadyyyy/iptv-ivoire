@@ -198,8 +198,8 @@ export default function HomePage() {
               margin: '0 auto 2rem',
               lineHeight: 1.7,
             }}>
-              Regardez votre télé sur Smart TV, Android, iPhone et PC.<br />
-              Paiement <strong style={{ color: '#F97316' }}>Orange Money</strong> &amp; <strong style={{ color: '#25D366' }}>Wave</strong>. Activation immédiate.
+              IPTV #1 à Abidjan et en Côte d&apos;Ivoire. Regardez la télé sur Smart TV, Android, iPhone et PC.<br />
+              Paiement sécurisé <strong style={{ color: '#F97316' }}>Orange Money</strong> &amp; <strong style={{ color: '#25D366' }}>Wave</strong>. Activation immédiate.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
@@ -645,6 +645,52 @@ export default function HomePage() {
               <Link href="/blog/meilleur-abonnement-iptv-cote-divoire-2026" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700 }}>
                 Voir toutes les questions →
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ─── CITIES HUB ─── */}
+        <section className="section" style={{ background: 'var(--color-surface)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
+          <div className="container" style={{ textAlign: 'center' }}>
+            <span className="section-label">Couverture Locale</span>
+            <h2 className="section-title">IPTV disponible dans toute la Côte d&apos;Ivoire</h2>
+            <p className="section-subtitle" style={{ margin: '0 auto 2.5rem' }}>
+              Bénéficiez d&apos;une diffusion stable 4K et d&apos;un support de proximité dans votre ville. Sélectionnez votre ville pour voir l&apos;offre locale :
+            </p>
+
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: '1rem',
+              maxWidth: '850px',
+              margin: '0 auto',
+            }}>
+              {[
+                { name: 'Abidjan', href: '/iptv-abidjan' },
+                { name: 'Bouaké', href: '/iptv-bouake' },
+                { name: 'Yamoussoukro', href: '/iptv-yamoussoukro' },
+              ].map(city => (
+                <Link key={city.name} href={city.href} style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  background: 'var(--color-surface-2)',
+                  border: '1px solid var(--color-border)',
+                  padding: '0.85rem 1.75rem',
+                  borderRadius: '999px',
+                  color: 'var(--color-text)',
+                  fontFamily: 'Outfit, sans-serif',
+                  fontWeight: 700,
+                  fontSize: '0.95rem',
+                  textDecoration: 'none',
+                  transition: 'border-color 0.2s, background-color 0.2s',
+                }}
+                className="city-badge-link"
+                >
+                  📍 IPTV {city.name}
+                </Link>
+              ))}
             </div>
           </div>
         </section>
