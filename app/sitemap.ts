@@ -20,9 +20,11 @@ const blogSlugs = [
   'france-vs-irak-coupe-du-monde-2026-streaming',
   'rdc-vs-colombie-coupe-du-monde-2026-streaming',
   'maroc-vs-haiti-coupe-du-monde-2026-streaming',
+  'meilleur-fournisseur-iptv-cote-divoire',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
+const citySlugs = ['iptv-abidjan', 'iptv-bouake', 'iptv-yamoussoukro']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://iptvivoire.com'
@@ -56,5 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...staticRoutes, ...blogRoutes, ...deviceRoutes]
+  const cityRoutes = citySlugs.map(slug => ({
+    url: `${base}/${slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
+  }))
+
+  return [...staticRoutes, ...blogRoutes, ...deviceRoutes, ...cityRoutes]
 }
