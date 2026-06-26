@@ -8,9 +8,9 @@ import { getFAQSchema, getProductSchema, getHowToSchema, getBreadcrumbSchema } f
 import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck, Play, Globe, Gamepad2, Laptop, HardDrive, Target, CreditCard, PlayCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "IPTV Côte d'Ivoire — +22 000 Chaînes dès 5 900 FCFA | Orange Money & Wave",
-  description: "Meilleur abonnement IPTV en Côte d'Ivoire. +22 000 chaînes HD/4K, VOD illimitée. Paiement Orange Money, Wave, MTN. Activation immédiate. Essai gratuit 24h.",
-  keywords: ['iptv cote divoire', 'iptv coupe du monde 2026', 'abonnement iptv fcfa', 'orange money iptv', 'iptv abidjan'],
+  title: "IPTV Côte d'Ivoire — 22 840 Chaînes en 4K dès 5 900 FCFA | Wave & Orange Money",
+  description: "Meilleur abonnement IPTV en Côte d'Ivoire. 22 840 chaînes HD/4K, 124 580 VOD. Paiement sécurisé Wave & Orange Money. Activation immédiate en 5 min. Essai gratuit 24h.",
+  keywords: ['iptv cote divoire', 'iptv coupe du monde 2026', 'abonnement iptv fcfa', 'wave iptv', 'orange money iptv', 'iptv abidjan'],
   alternates: {
     canonical: 'https://iptvivoire.com',
   },
@@ -88,7 +88,7 @@ const plans = [
     emoji: <ShieldCheck size={32} color="#F97316" />,
     schemaPrice: '7900',
     payment: 'Wave',
-    features: ['🏆 Tous les matchs CDM 2026', '📺 BeIN Sports + TF1 + France 2', '🇨🇮 Les Éléphants en direct', '🎥 HD/4K sans coupure', '📡 +22 000 chaînes incluses', '💬 Support WhatsApp prioritaire'],
+    features: ['🏆 Tous les matchs CDM 2026', '📺 BeIN Sports + TF1 + France 2', '🇨🇮 Les Éléphants en direct', '🎥 HD/4K sans coupure', '📡 22 840 chaînes incluses', '💬 Support WhatsApp prioritaire'],
     featured: true,
   },
   {
@@ -102,8 +102,8 @@ const plans = [
     promoLabel: '-30% · +1 mois offert',
     emoji: <Trophy size={32} color="#F97316" />,
     schemaPrice: '24900',
-    payment: 'MTN MoMo',
-    features: ['📅 Tout inclus · 13 mois', '🏆 CDM 2026 complet', '📡 +22 000 chaînes', '🎬 VOD 120 000+ films', '💬 Support VIP WhatsApp'],
+    payment: 'Wave / OM',
+    features: ['📅 Tout inclus · 13 mois', '🏆 CDM 2026 complet', '📡 22 840 chaînes', '🎬 VOD 124 580 films', '💬 Support VIP WhatsApp'],
     featured: false,
   },
 ]
@@ -112,9 +112,9 @@ const channelCategories = [
   { emoji: <PlayCircle size={32} color="#F97316" />, name: 'Chaînes Ivoiriennes', count: '15+', desc: 'RTI 1, RTI 2, La 3, NCI...' },
   { emoji: <Globe size={32} color="#F97316" />, name: 'Chaînes Africaines', count: '50+', desc: 'Sénégal, Mali, Cameroun...' },
   { emoji: <Trophy size={32} color="#F97316" />, name: 'Sport', count: '80+', desc: 'beIN Sports, Canal+ Sport, Eurosport...' },
-  { emoji: <Film size={32} color="#F97316" />, name: 'Cinéma & VOD', count: '120 000+', desc: 'Films et séries en streaming' },
+  { emoji: <Film size={32} color="#F97316" />, name: 'Cinéma & VOD', count: '124 580', desc: 'Films et séries en streaming' },
   { emoji: <Tv size={32} color="#F97316" />, name: 'Chaînes Françaises', count: '50+', desc: 'TF1, M6, France 2, Arte...' },
-  { emoji: <Globe size={32} color="#F97316" />, name: 'Internationales', count: '22 000+', desc: 'USA, UK, Turquie, Espagne...' },
+  { emoji: <Globe size={32} color="#F97316" />, name: 'Internationales', count: '22 840', desc: 'USA, UK, Turquie, Espagne...' },
   { emoji: <Trophy size={32} color="#F97316" />, name: 'Coupe du Monde 2026', count: '64 matchs', desc: 'Tous les matchs en direct !' },
   { emoji: <Gamepad2 size={32} color="#F97316" />, name: 'Kids & Famille', count: '30+', desc: 'Disney, Cartoon Network...' },
 ]
@@ -137,7 +137,7 @@ export default function HomePage() {
   const productSchemas = plans.map(p => getProductSchema({
     name: `IPTV Ivoire — ${p.name}`,
     price: p.schemaPrice,
-    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — +22 000 chaînes HD/4K en Côte d'Ivoire`,
+    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — 22 840 chaînes HD/4K en Côte d'Ivoire`,
   }))
 
   return (
@@ -174,7 +174,7 @@ export default function HomePage() {
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.5rem' }}>
               <span className="badge badge-primary">Coupe du Monde 2026</span>
               <span className="badge badge-green">Activation immédiate</span>
-              <span className="badge badge-gold">4.9/5 — 3 000+ clients</span>
+              <span className="badge badge-gold">4.9/5 — 3 420 clients</span>
             </div>
 
             <h1 style={{
@@ -186,7 +186,7 @@ export default function HomePage() {
               lineHeight: 1.15,
             }}>
               IPTV Côte d&apos;Ivoire<br />
-              <span className="gradient-text">+22 000 Chaînes</span>{' '}
+              <span className="gradient-text">22 840 Chaînes en 4K</span>{' '}
               dès{' '}
               <span style={{ color: '#F97316' }}>5 900 FCFA</span>
             </h1>
@@ -199,7 +199,7 @@ export default function HomePage() {
               lineHeight: 1.7,
             }}>
               IPTV #1 à Abidjan et en Côte d&apos;Ivoire. Regardez la télé sur Smart TV, Android, iPhone et PC.<br />
-              Paiement sécurisé <strong style={{ color: '#F97316' }}>Orange Money</strong> &amp; <strong style={{ color: '#25D366' }}>Wave</strong>. Activation immédiate.
+              Paiement sécurisé <strong style={{ color: '#25D366' }}>Wave</strong> &amp; <strong style={{ color: '#F97316' }}>Orange Money</strong>. Activation immédiate.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
@@ -253,9 +253,9 @@ export default function HomePage() {
               margin: '3rem auto 0',
             }}>
               {[
-                { value: '22 000+', label: 'Chaînes' },
-                { value: '120 000+', label: 'Films VOD' },
-                { value: '3 000+', label: 'Clients CI' },
+                { value: '22 840', label: 'Chaînes' },
+                { value: '124 580', label: 'Films VOD' },
+                { value: '3 420+', label: 'Clients CI' },
                 { value: '24/7', label: 'Support' },
               ].map(s => (
                 <div key={s.label} style={{ textAlign: 'center' }}>
@@ -271,14 +271,14 @@ export default function HomePage() {
         <section style={{ background: 'rgba(249,115,22,0.08)', borderTop: '1px solid rgba(249,115,22,0.15)', borderBottom: '1px solid rgba(249,115,22,0.15)', padding: '0.85rem 0', overflow: 'hidden' }}>
           <div className="ticker-track">
             {Array(4).fill([
-              'Plus de 3 000 clients en Côte d\'Ivoire',
+              'Plus de 3 420 clients satisfaits en Côte d\'Ivoire',
               'Noté 4.9/5 sur WhatsApp',
               'Support 24/7 en Français',
-              'Activation en moins de 5 minutes',
-              'Paiement Orange Money & Wave',
+              'Technologie Stream-Stable™ anti-coupures',
+              'Paiement sécurisé Wave & Orange Money',
               'Regardez la Coupe du Monde 2026',
-              '+22 000 chaînes HD/4K',
-              '120 000+ films en VOD',
+              '22 840 chaînes en direct HD/4K',
+              '124 580 films & séries en VOD',
             ]).flat().map((item, i) => (
               <span key={i} style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
@@ -582,7 +582,7 @@ export default function HomePage() {
               <div style={{ display: 'flex', justifyContent: 'center', gap: '4px', marginBottom: '0.5rem' }}>
                 {[1, 2, 3, 4, 5].map(i => <Star key={i} size={24} color="#F59E0B" fill="#F59E0B" />)}
               </div>
-              <p style={{ color: '#6B7280', fontFamily: 'Outfit, sans-serif', fontWeight: 600 }}>4.9/5 basé sur +3 000 avis</p>
+              <p style={{ color: '#6B7280', fontFamily: 'Outfit, sans-serif', fontWeight: 600 }}>4.9/5 basé sur 3 420 avis</p>
             </div>
 
             <div style={{

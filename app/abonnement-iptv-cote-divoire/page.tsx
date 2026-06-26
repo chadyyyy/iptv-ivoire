@@ -55,7 +55,7 @@ const promoPlans = [
       '📺 BeIN Sports + TF1 + France 2',
       '🇨🇮 Les Éléphants en direct',
       '🎥 HD/4K sans coupure',
-      '📡 +22 000 chaînes incluses',
+      '📡 22 840 chaînes incluses',
       '💬 Support WhatsApp prioritaire',
     ],
   },
@@ -70,23 +70,23 @@ const promoPlans = [
     promoLabel: '-30% · +1 mois offert',
     promoColor: '#0EA5E9',
     subtitle: 'soit 2 075 FCFA/mois · 13 mois',
-    payment: 'MTN MoMo',
+    payment: 'Wave / OM',
     paymentColor: '#FFCC00',
     featured: false,
     schemaPrice: '24900',
     features: [
       '📅 Tout inclus · 13 mois',
       '🏆 CDM 2026 complet',
-      '📡 +22 000 chaînes',
-      '🎬 VOD 120 000+ films',
+      '📡 22 840 chaînes',
+      '🎬 VOD 124 580 films',
       '💬 Support VIP WhatsApp',
     ],
   },
 ]
 
 const features = [
-  { icon: <Tv size={26} color="#F97316" />, title: '+22 000 chaînes', desc: 'HD et 4K disponibles' },
-  { icon: <Film size={26} color="#F97316" />, title: '120 000+ films VOD', desc: 'Films et séries en streaming' },
+  { icon: <Tv size={26} color="#F97316" />, title: '22 840 chaînes en direct', desc: 'HD et 4K avec Stream-Stable™' },
+  { icon: <Film size={26} color="#F97316" />, title: '124 580 films & séries', desc: 'Bibliothèque VOD mise à jour' },
   { icon: <PlayCircle size={26} color="#F97316" />, title: 'Chaînes ivoiriennes', desc: 'RTI 1, RTI 2, La 3, NCI...' },
   { icon: <Trophy size={26} color="#F97316" />, title: 'Sport en direct', desc: 'beIN Sports, Canal+ Sport...' },
   { icon: <Smartphone size={26} color="#F97316" />, title: '5 appareils simultanés', desc: 'Smart TV, mobile, PC...' },
@@ -157,7 +157,7 @@ export default function AbonnementPage() {
   const productSchemas = promoPlans.map(p => getProductSchema({
     name: p.name,
     price: p.schemaPrice,
-    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — +22 000 chaînes HD/4K en Côte d'Ivoire`,
+    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — 22 840 chaînes HD/4K en Côte d'Ivoire`,
   }))
 
   return (
@@ -414,10 +414,10 @@ export default function AbonnementPage() {
                 </div>
                 <div className="card" style={{ padding: '1.5rem' }}>
                   <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.75rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Smartphone size={20} color="#F97316" /> Paiement Orange Money &amp; Wave
+                    <Smartphone size={20} color="#F97316" /> Paiement Wave &amp; Orange Money
                   </h3>
                   <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Payez votre abonnement IPTV facilement, en FCFA, via <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Orange Money, Wave, MTN MoMo ou Moov Money</strong></Link>.
+                    Payez votre abonnement IPTV facilement, en FCFA, via <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Wave, Orange Money, MTN MoMo ou Moov Money</strong></Link>.
                   </p>
                 </div>
               </div>

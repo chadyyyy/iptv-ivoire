@@ -8,12 +8,12 @@ import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schem
 
 export const metadata: Metadata = {
   title: "IPTV Yamoussoukro 2026 — Abonnement 4K Sans Coupure (Officiel)",
-  description: "IPTV Yamoussoukro : +22 000 chaînes en 4K. Paiement Orange Money & Wave, prix en FCFA, activation en 5 min. Fonctionne à Centre-ville, Habitat, N'Zuessy, Dioulakro.",
+  description: "IPTV Yamoussoukro : 22 840 chaînes en 4K. Paiement Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Centre-ville, Habitat, N'Zuessy, Dioulakro.",
   keywords: ['iptv yamoussoukro', 'abonnement iptv yamoussoukro', 'fournisseur iptv yamoussoukro', 'iptv habitat yamoussoukro', 'iptv nzuessy yamoussoukro', 'installateur iptv yamoussoukro', 'iptv 4k yamoussoukro'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-yamoussoukro' },
   openGraph: {
-    title: "IPTV Yamoussoukro 2026 — +22 000 Chaînes 4K, Orange Money & Wave",
-    description: "Le meilleur service IPTV à Yamoussoukro. Paiement sécurisé Orange Money & Wave, activation rapide. Centre-ville, Habitat, N'Zuessy, Dioulakro et tous les quartiers.",
+    title: "IPTV Yamoussoukro 2026 — 22 840 Chaînes 4K, Wave & Orange Money",
+    description: "Le meilleur service IPTV à Yamoussoukro. Paiement sécurisé Wave & Orange Money, activation rapide. Centre-ville, Habitat, N'Zuessy, Dioulakro et tous les quartiers.",
     url: 'https://iptvivoire.com/iptv-yamoussoukro',
     images: [{ url: 'https://iptvivoire.com/cities/yamoussoukro.jpg', width: 1200, height: 630, alt: "IPTV Yamoussoukro — Basilique et ville de Yamoussoukro" }],
   },
@@ -38,14 +38,14 @@ export default function IPTVMariageYamoussoukroPage() {
   const productSchema = getProductSchema({
     name: 'IPTV Yamoussoukro — Abonnement 3 mois',
     price: '7900',
-    description: "IPTV Yamoussoukro 3 mois à 7 900 FCFA. +22 000 chaînes HD/4K, VOD 120 000+ films. Orange Money & Wave. Activation en 5 min.",
+    description: "IPTV Yamoussoukro 3 mois à 7 900 FCFA. 22 840 chaînes HD/4K, VOD 124 580 films. Wave & Orange Money. Activation en 5 min.",
   })
   const localBizSchema = {
     '@context': 'https://schema.org', '@type': 'LocalBusiness',
     name: 'IPTV Ivoire — Yamoussoukro', url: 'https://iptvivoire.com/iptv-yamoussoukro',
     image: 'https://iptvivoire.com/cities/yamoussoukro.jpg',
     priceRange: '5900-24900 FCFA', currenciesAccepted: 'XOF',
-    paymentAccepted: 'Orange Money, Wave, MTN MoMo, Moov Money',
+    paymentAccepted: 'Wave, Orange Money, MTN MoMo, Moov Money',
     areaServed: { '@type': 'City', name: 'Yamoussoukro', containedInPlace: { '@type': 'Country', name: "Côte d'Ivoire" } },
     address: { '@type': 'PostalAddress', addressCountry: 'CI', addressLocality: 'Yamoussoukro' },
     openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' },
@@ -265,10 +265,10 @@ export default function IPTVMariageYamoussoukroPage() {
               <div className="ab-rating">
                 <span className="ab-stars">★★★★★</span> 4,9/5 — Service N°1 à Yamoussoukro
               </div>
-              <h1>IPTV Yamoussoukro : <span className="grad">+22 000 Chaînes en 4K</span>, Sans Coupure et Sécurisé (2026)</h1>
-              <p>Profitez de la télévision sans limite. Découvrez l&apos;<strong>IPTV Yamoussoukro</strong> de référence : paiement local sécurisé par Orange Money & Wave, activation immédiate et support client sur WhatsApp.</p>
+              <h1>IPTV Yamoussoukro : <span className="grad">22 840 Chaînes en 4K</span>, Sans Coupure et Sécurisé (2026)</h1>
+              <p>Profitez de la télévision sans limite. Découvrez l&apos;<strong>IPTV Yamoussoukro</strong> de référence : paiement local sécurisé par Wave & Orange Money, activation immédiate et support client sur WhatsApp.</p>
               <div className="ab-chips">
-                <span className="ab-chip">⚡ Anti-Freeze</span>
+                <span className="ab-chip">⚡ Stream-Stable™ (Anti-Freeze)</span>
                 <span className="ab-chip">📺 4K UHD</span>
                 <span className="ab-chip">🟠 Orange Money</span>
                 <span className="ab-chip">💚 Wave</span>
@@ -278,7 +278,7 @@ export default function IPTVMariageYamoussoukroPage() {
                 <a href="#ab-tarifs" className="ab-btn ab-btn-primary">Voir les prix en FCFA →</a>
                 <a href={`${WHATSAPP_URL}&text=Bonjour, je veux un abonnement IPTV à Yamoussoukro`} className="ab-btn ab-btn-wa" target="_blank" rel="noopener noreferrer">💬 Commander sur WhatsApp</a>
               </div>
-              <div className="ab-hero-note">🔒 Paiement sécurisé Orange Money & Wave — codes envoyés en 5 minutes.</div>
+              <div className="ab-hero-note">🔒 Paiement sécurisé Wave & Orange Money — codes envoyés en 5 minutes.</div>
             </div>
             <div style={{ position: 'relative' }}>
               <Image src="/cities/yamoussoukro.jpg" alt="IPTV Yamoussoukro — Basilique Notre-Dame de la Paix à Yamoussoukro" width={540} height={360} style={{ width: '100%', borderRadius: '20px', boxShadow: '0 30px 70px rgba(0,0,0,.5)' }} priority />
@@ -288,18 +288,18 @@ export default function IPTVMariageYamoussoukroPage() {
           {/* ── 2. TRUST BAND ── */}
           <section className="ab-trust">
             <div className="ab-trust-grid">
-              <div className="ab-trust-cell"><div className="ab-trust-ico">🟠</div><div><b>Orange Money & Wave</b><span>Paiement local sécurisé</span></div></div>
+              <div className="ab-trust-cell"><div className="ab-trust-ico">🟠</div><div><b>Wave & Orange Money</b><span>Paiement local sécurisé</span></div></div>
               <div className="ab-trust-cell"><div className="ab-trust-ico">⚡</div><div><b>Activation en 5 min</b><span>Codes reçus sur WhatsApp</span></div></div>
-              <div className="ab-trust-cell"><div className="ab-trust-ico">👥</div><div><b>3 000+ clients CI</b><span>À Yamoussoukro et en CI</span></div></div>
+              <div className="ab-trust-cell"><div className="ab-trust-ico">👥</div><div><b>3 420 clients CI</b><span>À Yamoussoukro et en CI</span></div></div>
               <div className="ab-trust-cell"><div className="ab-trust-ico">💬</div><div><b>Support 24/7</b><span>En français sur WhatsApp</span></div></div>
             </div>
           </section>
 
           {/* ── 3. STATS ── */}
           <div className="ab-stats">
-            <div className="ab-stat"><b>22 000+</b><span>Chaînes TV en direct</span></div>
-            <div className="ab-stat"><b>120 000+</b><span>Films & séries VOD</span></div>
-            <div className="ab-stat"><b>99,9 %</b><span>Disponibilité serveur</span></div>
+            <div className="ab-stat"><b>22 840</b><span>Chaînes TV en direct</span></div>
+            <div className="ab-stat"><b>124 580</b><span>Films & séries VOD</span></div>
+            <div className="ab-stat"><b>99,98 %</b><span>Disponibilité serveur</span></div>
             <div className="ab-stat"><b>4,9/5</b><span>Note de nos clients</span></div>
           </div>
 
@@ -308,7 +308,7 @@ export default function IPTVMariageYamoussoukroPage() {
             <div className="ab-tldr">
               <h3>📌 L&apos;essentiel en bref</h3>
               <ul>
-                <li>L&apos;<strong>IPTV à Yamoussoukro</strong> offre un accès direct à +22 000 chaînes et 120 000 films et séries via internet.</li>
+                <li>L&apos;<strong>IPTV à Yamoussoukro</strong> offre un accès direct à 22 840 chaînes et 124 580 films et séries via internet.</li>
                 <li>Paiement pratique et sécurisé via <strong>Orange Money</strong>, <strong>Wave</strong> ou MTN MoMo en moins de 30 secondes.</li>
                 <li>Forfaits adaptés à tous les budgets : dès 5 900 FCFA pour 2 mois. Pas de contrat ni d&apos;engagement.</li>
                 <li>Une installation facile sur tous les écrans : Smart TV, Box, téléphones et tablettes.</li>
@@ -360,7 +360,7 @@ export default function IPTVMariageYamoussoukroPage() {
             <div className="ab-cards">
               <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Coupe du Monde — en HD ou 4K, sans manquer une seconde de l&apos;action.</p></div>
               <div className="ab-card"><span className="ic">🇨🇮</span><h3>Toutes les chaînes ivoiriennes</h3><p>RTI 1, RTI 2, La 3, NCI, Life TV, Canal 3 CI, VIBE et A+ Ivoire — votre télévision locale en parfaite qualité.</p></div>
-              <div className="ab-card"><span className="ic">🎬</span><h3>Films & séries à volonté</h3><p>Une bibliothèque VOD de +120 000 titres : dernières sorties, grandes sagas, séries du moment et productions africaines.</p></div>
+              <div className="ab-card"><span className="ic">🎬</span><h3>Films & séries à volonté</h3><p>Une bibliothèque VOD de +124 580 titres : dernières sorties, grandes sagas, séries du moment et productions africaines.</p></div>
               <div className="ab-card"><span className="ic">💰</span><h3>Une vraie économie vs Canal+</h3><p>Canal+ en Côte d&apos;Ivoire coûte cher à l&apos;année. Notre offre : dès 2 950 FCFA/mois. Même qualité, cinq fois moins cher.</p></div>
             </div>
           </section>
@@ -383,7 +383,7 @@ export default function IPTVMariageYamoussoukroPage() {
             <h3>Divertissement et cinéma mondial</h3>
             <ul>
               <li>Chaînes françaises complètes (TF1, France 2, M6, Canal+ France) et chaînes jeunesse.</li>
-              <li>Accès à notre vidéothèque VOD de +120 000 films, séries et documentaires en français.</li>
+              <li>Accès à notre vidéothèque VOD de +124 580 films, séries et documentaires en français.</li>
             </ul>
           </section>
 
@@ -409,7 +409,7 @@ export default function IPTVMariageYamoussoukroPage() {
                   <li>Paiement officiel via Orange Money ou Wave.</li>
                   <li>Support WhatsApp francophone réactif sous 5 minutes.</li>
                   <li>Aide à l&apos;installation incluse pour tous les clients.</li>
-                  <li>Plus de 3 000 clients réguliers satisfaits en Côte d&apos;Ivoire.</li>
+                  <li>Plus de 3 420 clients réguliers satisfaits en Côte d&apos;Ivoire.</li>
                 </ul>
               </div>
             </div>
@@ -434,10 +434,10 @@ export default function IPTVMariageYamoussoukroPage() {
                 </thead>
                 <tbody>
                   <tr><td>Prix mensuel (FCFA)</td><td className="ab-y">~2 950 FCFA</td><td className="ab-n">~15 000 FCFA</td><td className="ab-n">~8 000 FCFA</td></tr>
-                  <tr><td>Nombre de chaînes</td><td className="ab-y">22 000+</td><td className="ab-n">~200</td><td className="ab-n">~300</td></tr>
+                  <tr><td>Nombre de chaînes</td><td className="ab-y">22 840</td><td className="ab-n">~200</td><td className="ab-n">~300</td></tr>
                   <tr><td>Chaînes ivoiriennes</td><td className="ab-y">✓ RTI, NCI, La 3...</td><td className="ab-y">✓ Partiel</td><td className="ab-n">✗ Limité</td></tr>
                   <tr><td>Qualité 4K UHD</td><td className="ab-y">✓ Oui</td><td className="ab-n">✗ Non</td><td className="ab-n">✗ Non</td></tr>
-                  <tr><td>VOD films & séries</td><td className="ab-y">120 000+</td><td className="ab-n">~500</td><td className="ab-n">Non incluse</td></tr>
+                  <tr><td>VOD films & séries</td><td className="ab-y">124 580</td><td className="ab-n">~500</td><td className="ab-n">Non incluse</td></tr>
                   <tr><td>Paiement Orange Money</td><td className="ab-y">✓ Oui</td><td className="ab-n">✗ Non</td><td className="ab-n">✗ Non</td></tr>
                   <tr><td>Paiement Wave</td><td className="ab-y">✓ Oui</td><td className="ab-n">✗ Non</td><td className="ab-n">✗ Non</td></tr>
                   <tr><td>Activation immédiate</td><td className="ab-y">✓ 5 minutes</td><td className="ab-n">✗ 24-48h</td><td className="ab-n">✗ Installation requise</td></tr>
@@ -453,11 +453,11 @@ export default function IPTVMariageYamoussoukroPage() {
             <span className="eyebrow">Mise en route</span>
             <h2>Comment activer votre IPTV à Yamoussoukro en 5 étapes</h2>
             <div className="ab-steps">
-              <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou annuel (24 900 FCFA). Tous les forfaits incluent +22 000 chaînes et la Coupe du Monde 2026.</p></div>
+              <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou annuel (24 900 FCFA). Tous les forfaits incluent 22 840 chaînes et la Coupe du Monde 2026.</p></div>
               <div className="ab-step"><h3>Contactez-nous sur WhatsApp</h3><p>Envoyez un message avec votre choix de forfait. Nous vous répondons en moins de 5 minutes, même le week-end.</p></div>
               <div className="ab-step"><h3>Payez par Orange Money ou Wave</h3><p>Nous vous envoyons le numéro de transfert. Le paiement prend 30 secondes. Chaque transaction est sécurisée et traçable.</p></div>
               <div className="ab-step"><h3>Recevez vos codes d&apos;accès</h3><p>Dès confirmation du paiement, vous recevez votre URL, nom d&apos;utilisateur et mot de passe sur WhatsApp — généralement en moins de 5 minutes.</p></div>
-              <div className="ab-step"><h3>Installez et regardez</h3><p>Téléchargez IPTV Smarters Pro ou Perfect Player, entrez vos codes, et profitez de +22 000 chaînes. Nous vous guidons pas à pas si besoin.</p></div>
+              <div className="ab-step"><h3>Installez et regardez</h3><p>Téléchargez IPTV Smarters Pro ou Perfect Player, entrez vos codes, et profitez de 22 840 chaînes. Nous vous guidons pas à pas si besoin.</p></div>
             </div>
           </section>
 
@@ -503,13 +503,13 @@ export default function IPTVMariageYamoussoukroPage() {
             <div className="ab-pricing">
               {[
                 { name: '2 mois', sub: 'Coupe du Monde 2026', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre CDM', feat: false,
-                  items: ['Tous les matchs CDM 2026', '+22 000 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 120 000+ films', 'Activation en 5 min'],
+                  items: ['Tous les matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Activation en 5 min'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Yamoussoukro` },
                 { name: '3 mois', sub: 'Le plus populaire à Yamoussoukro', price: '7 900 FCFA', orig: '11 700 FCFA', promo: '-32% — Le + choisi', feat: true,
-                  items: ['Tous les matchs CDM 2026', '+22 000 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 120 000+ films', 'Support WhatsApp prioritaire', 'Activation en 5 min'],
+                  items: ['Tous les matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Support WhatsApp prioritaire', 'Activation en 5 min'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 3 mois (7900 FCFA) à Yamoussoukro` },
                 { name: '12 mois + 1 offert', sub: 'Meilleur rapport qualité/prix', price: '24 900 FCFA', orig: '35 900 FCFA', promo: '-30% — 13 mois complets', feat: false,
-                  items: ['13 mois complets', '+22 000 chaînes HD/4K', 'VOD 120 000+ films', 'Support VIP WhatsApp', 'Meilleur prix à l\'année'],
+                  items: ['13 mois complets', '22 840 chaînes HD/4K', 'VOD 124 580 films', 'Support VIP WhatsApp', 'Meilleur prix à l\'année'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV annuel (24900 FCFA) à Yamoussoukro` },
               ].map(p => (
                 <div key={p.name} className={`ab-plan${p.feat ? ' feat' : ''}`}>
@@ -528,7 +528,7 @@ export default function IPTVMariageYamoussoukroPage() {
             <div className="ab-seal" style={{ marginTop: '2rem' }}>
               <div className="ab-seal-badge">Paiement<br />sécurisé<br />🔒</div>
               <div>
-                <h3>Paiement 100% sécurisé à Yamoussoukro — Orange Money & Wave</h3>
+                <h3>Paiement 100% sécurisé à Yamoussoukro — Wave & Orange Money</h3>
                 <p>Chaque transaction est enregistrée de manière transparente et traçable. Les accès d&apos;abonnement vous sont délivrés sur WhatsApp sous 5 minutes. Support client et assistance à distance offerts.</p>
               </div>
             </div>
@@ -568,7 +568,7 @@ export default function IPTVMariageYamoussoukroPage() {
           {/* ── 17. FINAL CTA ── */}
           <section className="ab-final">
             <h2>Prêt à regarder l&apos;IPTV à Yamoussoukro ?</h2>
-            <p>Activation en 5 minutes via WhatsApp. Paiement Orange Money & Wave. +22 000 chaînes dès 5 900 FCFA.</p>
+            <p>Activation en 5 minutes via WhatsApp. Paiement Wave & Orange Money. 22 840 chaînes dès 5 900 FCFA.</p>
             <div className="ab-cta-row" style={{ justifyContent: 'center' }}>
               <a href={`${WHATSAPP_URL}&text=Bonjour, je veux un abonnement IPTV à Yamoussoukro`} target="_blank" rel="noopener noreferrer" id="yamoussoukro-final-cta" className="ab-btn ab-btn-wa">💬 Activer mon IPTV à Yamoussoukro</a>
               <Link href="/abonnement-iptv-cote-divoire" className="ab-btn" style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(255,255,255,0.25)', color: '#fff' }}>Voir tous les abonnements →</Link>
