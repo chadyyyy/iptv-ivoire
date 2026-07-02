@@ -24,7 +24,14 @@ const blogSlugs = [
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
-const citySlugs = ['iptv-abidjan', 'iptv-bouake', 'iptv-yamoussoukro']
+const citySlugs = [
+  'iptv-abidjan',
+  'iptv-bouake',
+  'iptv-yamoussoukro',
+  'iptv-san-pedro',
+  'iptv-korhogo',
+  'iptv-daloa'
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://iptvivoire.com'
