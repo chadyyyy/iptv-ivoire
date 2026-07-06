@@ -13,7 +13,7 @@ const footerLinks = [
   { href: '/blog', label: 'Blog' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
-  { href: '/revendeur', label: 'Revendeur' },
+  { href: '/devenir-revendeur-iptv', label: 'Revendeur' },
   { href: '/essai-gratuit', label: 'Essai Gratuit' },
 ]
 

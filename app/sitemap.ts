@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/chaines`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.85 },
     { url: `${base}/paiement`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: `${base}/revendeur`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.75 },
+    { url: `${base}/devenir-revendeur-iptv`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.75 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${base}/installation`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/appareils`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.75 },

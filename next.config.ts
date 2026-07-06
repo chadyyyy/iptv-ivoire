@@ -21,6 +21,11 @@ const config: NextConfig = {
         destination: '/blog/cote-divoire-coupe-du-monde-2026-streaming',
         permanent: true,
       },
+      {
+        source: '/revendeur',
+        destination: '/devenir-revendeur-iptv',
+        permanent: true,
+      },
     ]
   },
   headers: async () => [

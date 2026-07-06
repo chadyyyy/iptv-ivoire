@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     'devenir revendeur iptv', 'credit iptv en gros', 'fournisseur iptv afrique',
     'revendeur iptv cote d\'ivoire', 'revendeur iptv senegal', 'panel iptv pas cher'
   ],
-  alternates: { canonical: 'https://iptvivoire.com/revendeur' },
+  alternates: { canonical: 'https://iptvivoire.com/devenir-revendeur-iptv' },
   openGraph: {
     title: "Panel Revendeur IPTV Afrique 2026 — Marges jusqu'à 300%",
     description: "Lancez votre activité de revente IPTV en Côte d'Ivoire, Sénégal et Afrique de l'Ouest. Packs de crédits en gros, panel autonome, support 24/7.",
-    url: 'https://iptvivoire.com/revendeur',
+    url: 'https://iptvivoire.com/devenir-revendeur-iptv',
     images: [{ url: 'https://iptvivoire.com/og/default.jpg', width: 1200, height: 630, alt: "Panel Revendeur IPTV Afrique" }],
   },
 }
@@ -35,7 +35,7 @@ export default function RevendeurPage() {
   const faqSchema = getFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://iptvivoire.com' },
-    { name: 'Devenir Revendeur IPTV', url: 'https://iptvivoire.com/revendeur' },
+    { name: 'Devenir Revendeur IPTV', url: 'https://iptvivoire.com/devenir-revendeur-iptv' },
   ])
   const productSchema = getProductSchema({
     name: 'Pack Professionnel Revendeur IPTV — 120 crédits + 12 offerts',
@@ -194,16 +194,17 @@ export default function RevendeurPage() {
               <h2>Combien pouvez-vous gagner en revente ?</h2>
               <p>Le business de l&apos;IPTV propose l&apos;une des marges bénéficiaires les plus élevées du marché de la revente numérique. Voici la démonstration financière :</p>
               <ul className="roi-list">
-                <li>Vous achetez notre <strong>Pack Professionnel (120 + 12 crédits)</strong> pour <strong>200 € (131 000 FCFA)</strong>.</li>
-                <li>Votre coût de revient par crédit unitaire (1 an) est de seulement <strong>992 FCFA</strong>.</li>
-                <li>Vous revendez chaque abonnement de 12 mois à vos clients à un prix public conseillé de <strong>15 000 FCFA</strong>.</li>
-                <li>Votre chiffre d&apos;affaires total généré est de : <strong>132 abonnements × 15 000 FCFA = 1 980 000 FCFA</strong>.</li>
-                <li>Votre bénéfice net s&apos;élève à <strong>+1 849 000 FCFA</strong> !</li>
+                <li>Vous achetez notre <strong>Pack Professionnel (120 crédits + 12 offerts)</strong> pour <strong>200 € (131 000 FCFA)</strong>.</li>
+                <li>Le pack vous donne un total de 132 crédits, équivalent à exactement <strong>11 codes de 1 an</strong> (12 crédits = 1 an d&apos;abonnement).</li>
+                <li>Votre coût de revient par abonnement annuel n&apos;est que de <strong>11 900 FCFA (18 €)</strong>.</li>
+                <li>Vous revendez chaque abonnement de 12 mois à vos clients à un prix public conseillé de <strong>25 000 FCFA</strong>.</li>
+                <li>Votre chiffre d&apos;affaires total généré est de : <strong>11 abonnements × 25 000 FCFA = 275 000 FCFA</strong>.</li>
+                <li>Votre bénéfice net s&apos;élève à <strong>+144 000 FCFA</strong> (+110% de bénéfice net) dès votre premier pack !</li>
               </ul>
             </div>
             <div className="roi-math">
               <span className="roi-math-lbl">Marge Bénéficiaire</span>
-              <div className="roi-math-val">15X ROI</div>
+              <div className="roi-math-val">x2,1 ROI</div>
               <span className="roi-math-lbl">Sur chaque pack professionnel</span>
             </div>
           </section>
@@ -214,38 +215,22 @@ export default function RevendeurPage() {
               <span className="rev-badge">Nos Tarifs Gros</span>
               <h2 style={{ fontSize: '1.85rem' }}>Achetez vos packs de crédits revendeur</h2>
             </div>
-            <div className="pricing-grid">
+            <div className="pricing-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', maxWidth: '900px', margin: '30px auto 0' }}>
               <div className="price-card">
                 <div>
                   <h3>Pack Débutant</h3>
-                  <div className="price-qty">20 Crédits inclus</div>
-                  <div className="price-val">50 €</div>
-                  <span className="price-unit">~ 32 500 FCFA</span>
-                </div>
-                <ul className="price-features">
-                  <li>Panel de gestion standard</li>
-                  <li>Création de tests gratuits 24h</li>
-                  <li>Coût crédit : 1 625 FCFA</li>
-                  <li>Support par ticket</li>
-                </ul>
-                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Débutant Revendeur (50 euros)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
-              </div>
-
-              <div className="price-card">
-                <div>
-                  <h3>Pack Intermédiaire</h3>
-                  <div className="price-qty">50 Crédits + 3 Offerts</div>
-                  <div className="price-val">100 €</div>
+                  <div className="price-qty">60 Crédits inclus</div>
+                  <div className="price-val" style={{ fontSize: '2.5rem', fontWeight: '900', margin: '15px 0' }}>100 €</div>
                   <span className="price-unit">~ 65 000 FCFA</span>
                 </div>
-                <ul className="price-features">
-                  <li>Panel de gestion complet</li>
+                <ul className="price-features" style={{ margin: '20px 0' }}>
+                  <li><strong>5 Codes de 1 An</strong> inclus (12 crédits = 1 an)</li>
+                  <li>Panel de gestion autonome</li>
                   <li>Création de tests gratuits 24h</li>
-                  <li>Coût crédit : 1 226 FCFA</li>
-                  <li>Support WhatsApp standard</li>
-                  <li>Mise à jour VOD hebdomadaire</li>
+                  <li>Coût par code de 1 an : 13 000 FCFA</li>
+                  <li>Support WhatsApp prioritaire</li>
                 </ul>
-                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Intermédiaire Revendeur (100 euros)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
+                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Débutant Revendeur (100 euros - 60 credits)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
               </div>
 
               <div className="price-card featured">
@@ -253,36 +238,38 @@ export default function RevendeurPage() {
                 <div>
                   <h3>Pack Professionnel</h3>
                   <div className="price-qty">120 Crédits + 12 Offerts</div>
-                  <div className="price-val">200 €</div>
+                  <div className="price-val" style={{ fontSize: '2.5rem', fontWeight: '900', margin: '15px 0' }}>200 €</div>
                   <span className="price-unit">~ 131 000 FCFA</span>
                 </div>
-                <ul className="price-features">
+                <ul className="price-features" style={{ margin: '20px 0' }}>
+                  <li><strong>11 Codes de 1 An</strong> inclus (12 crédits = 1 an)</li>
                   <li>Panel de gestion Avancé</li>
                   <li>Création de tests gratuits 24h</li>
-                  <li>Coût crédit : <strong>992 FCFA</strong></li>
+                  <li>Coût par code de 1 an : <strong>11 900 FCFA</strong></li>
                   <li>Support VIP WhatsApp 24/7</li>
                   <li>Création de sous-revendeurs</li>
                   <li>DNS Personnalisé inclus</li>
                 </ul>
-                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Professionnel Revendeur (200 euros)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
+                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Professionnel Revendeur (200 euros - 120 credits %2B 12 offerts)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
               </div>
 
               <div className="price-card">
                 <div>
                   <h3>Pack Partenaire</h3>
-                  <div className="price-qty">300 Crédits + 40 Offerts</div>
-                  <div className="price-val">450 €</div>
+                  <div className="price-qty">300 Crédits + 36 Offerts</div>
+                  <div className="price-val" style={{ fontSize: '2.5rem', fontWeight: '900', margin: '15px 0' }}>450 €</div>
                   <span className="price-unit">~ 295 000 FCFA</span>
                 </div>
-                <ul className="price-features">
+                <ul className="price-features" style={{ margin: '20px 0' }}>
+                  <li><strong>28 Codes de 1 An</strong> inclus (12 crédits = 1 an)</li>
                   <li>Panel de gestion Master</li>
                   <li>Création de tests gratuits 24h</li>
-                  <li>Coût crédit : <strong>867 FCFA</strong></li>
+                  <li>Coût par code de 1 an : <strong>10 500 FCFA</strong></li>
                   <li>DNS Personnalisé inclus</li>
                   <li>Sous-revendeurs illimités</li>
-                  <li>Support technique dédié</li>
+                  <li>Support technique dédié 24/7</li>
                 </ul>
-                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Partenaire Revendeur (450 euros)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
+                <a href={`${WHATSAPP_URL}&text=Bonjour, je souhaite commander le Pack Partenaire Revendeur (450 euros - 300 credits %2B 36 offerts)`} className="pricing-cta" target="_blank" rel="noopener noreferrer">💬 Acheter sur WhatsApp</a>
               </div>
             </div>
           </section>
