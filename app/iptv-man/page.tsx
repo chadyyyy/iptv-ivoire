@@ -7,47 +7,47 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Korhogo 2026 — Abonnement 4K Ultra-Stable (Officiel)",
-  description: "IPTV Korhogo : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Koko, Soba, Sinistré.",
-  keywords: ['iptv korhogo', 'abonnement iptv korhogo', 'fournisseur iptv korhogo', 'iptv koko korhogo', 'iptv soba', 'installateur iptv korhogo', 'iptv 4k korhogo'],
-  alternates: { canonical: 'https://iptvivoire.com/iptv-korhogo' },
+  title: "IPTV Man 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  description: "IPTV Man : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Domoraud, Libreville, Habitat.",
+  keywords: ['iptv man', 'abonnement iptv man', 'fournisseur iptv man', 'iptv domoraud', 'iptv habitat', 'installateur iptv man', 'iptv 4k man'],
+  alternates: { canonical: 'https://iptvivoire.com/iptv-man' },
   openGraph: {
-    title: "IPTV Korhogo 2026 — 22 840 Chaînes 4K, Wave & Orange Money",
-    description: "Le meilleur service IPTV à Korhogo. Paiement sécurisé Wave & Orange Money, activation rapide. Koko, Soba, Sinistré, Belleville et tous les quartiers.",
-    url: 'https://iptvivoire.com/iptv-korhogo',
-    images: [{ url: 'https://iptvivoire.com/cities/korhogo.jpg', width: 1200, height: 630, alt: "IPTV Korhogo — Ville de Korhogo au pied du mont" }],
+    title: "IPTV Man 2026 — 22 840 Chaînes 4K, Wave & Orange Money",
+    description: "Le meilleur service IPTV à Man. Paiement sécurisé Wave & Orange Money, activation rapide. Domoraud, Libreville, Habitat, Grand Gbapleu et tous les quartiers.",
+    url: 'https://iptvivoire.com/iptv-man',
+    images: [{ url: 'https://iptvivoire.com/cities/man.jpg', width: 1200, height: 630, alt: "IPTV Man — Ville et montagnes de Man" }],
   },
 }
 
 const faqs = [
-  { q: "L'IPTV fonctionne-t-il bien à Korhogo avec la 4G Orange et MTN ?", a: "Oui, notre service est pleinement compatible avec la 4G/5G Orange CI, MTN et Moov à Korhogo. Une vitesse de 10 Mbps suffit pour la HD et 25 Mbps pour la 4K. Des quartiers comme Koko, Soba, Preste et le Centre Administratif bénéficient d'un excellent débit." },
-  { q: "Comment payer mon IPTV à Korhogo ?", a: "Contactez-nous sur WhatsApp, indiquez le forfait de votre choix, puis réglez en quelques secondes par Wave, Orange Money ou MTN MoMo. Votre compte est activé sous 5 minutes." },
-  { q: "L'IPTV est-il disponible dans tous les quartiers de Korhogo ?", a: "Oui, notre couverture s'étend sur tout Korhogo : Koko, Soba, Sinistré, Haoussabougou, Belleville, Preste, Quartier Administratif, etc." },
-  { q: "Puis-je regarder RTI 1 et RTI 2 depuis Korhogo ?", a: "Absolument. Notre abonnement inclut toutes les chaînes locales de Côte d'Ivoire (RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire) ainsi que les bouquets internationaux comme beIN Sports et Canal+." },
-  { q: "Sur quels appareils puis-je utiliser mon IPTV à Korhogo ?", a: "Le service est compatible avec les Smart TV (Samsung, LG, Sony, Hisense), Box Android, smartphones (Android & iOS), tablettes et ordinateurs. Nous vous guidons pas à pas pour l'installation sur WhatsApp." },
-  { q: "Quel abonnement IPTV choisir à Korhogo pour la Coupe du Monde ?", a: "L'offre 2 mois à 5 900 FCFA couvre toute la durée du tournoi (jusqu'au 19 juillet). Pour un meilleur prix à long terme, l'offre 3 mois à 7 900 FCFA est la plus populaire à Korhogo (soit 2 633 FCFA/mois)." },
-  { q: "Quelle connexion internet est requise à Korhogo ?", a: "Une simple connexion internet stable (Fibre, Box 4G ou Mobile) de 10 Mbps suffit pour de la HD fluide, et 25 Mbps pour le flux 4K." },
+  { q: "L'IPTV fonctionne-t-il bien à Man avec le relief montagneux ?", a: "Oui, notre service est parfaitement optimisé pour la 4G/5G d'Orange CI, MTN et Moov à Man. Bien que le relief soit montagneux, les infrastructures réseau dans les quartiers comme Domoraud, Habitat, et Libreville offrent un débit stable largement suffisant de 10 Mbps pour la HD et 25 Mbps pour la 4K." },
+  { q: "Comment payer mon IPTV à Man ?", a: "Contactez-nous sur WhatsApp, indiquez le forfait choisi, puis réglez en toute sécurité via Wave, Orange Money ou MTN MoMo. Votre compte est activé sous 5 minutes." },
+  { q: "L'IPTV est-il disponible dans tous les quartiers de Man ?", a: "Oui, notre couverture s'étend sur tout Man : Domoraud, Libreville, Habitat, Grand Gbapleu, Petit Gbapleu, ainsi que Sangouiné et Logoualé." },
+  { q: "Puis-je regarder RTI 1 et RTI 2 depuis Man ?", a: "Absolument. Notre abonnement inclut toutes les chaînes locales de Côte d'Ivoire (RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire) ainsi que les bouquets internationaux comme beIN Sports et Canal+." },
+  { q: "Sur quels appareils puis-je utiliser mon IPTV à Man ?", a: "Le service est compatible avec les Smart TV (Samsung, LG, Sony, Hisense), Box Android, smartphones (Android & iOS), tablettes et ordinateurs. Nous vous guidons pas à pas pour l'installation sur WhatsApp." },
+  { q: "Quel abonnement IPTV choisir à Man pour la Coupe du Monde ?", a: "L'offre 2 mois à 5 900 FCFA couvre toute la durée du tournoi. Pour un meilleur prix à long terme, l'offre 3 mois à 7 900 FCFA est la plus populaire à Man (soit 2 633 FCFA/mois)." },
+  { q: "Quelle connexion internet est requise à Man ?", a: "Une simple connexion internet stable (Fibre, Box 4G ou Mobile) de 10 Mbps suffit pour de la HD fluide, et 25 Mbps pour le flux 4K." },
 ]
 
-export default function IPTVKorhogoPage() {
+export default function IPTVManPage() {
   const faqSchema = getFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://iptvivoire.com' },
-    { name: 'IPTV Korhogo', url: 'https://iptvivoire.com/iptv-korhogo' },
+    { name: 'IPTV Man', url: 'https://iptvivoire.com/iptv-man' },
   ])
   const productSchema = getProductSchema({
-    name: 'IPTV Korhogo — Abonnement 3 mois',
+    name: 'IPTV Man — Abonnement 3 mois',
     price: '7900',
-    description: "IPTV Korhogo 3 mois à 7 900 FCFA. 22 840 chaînes HD/4K, VOD 124 580 films. Wave & Orange Money. Activation en 5 min.",
+    description: "IPTV Man 3 mois à 7 900 FCFA. 22 840 chaînes HD/4K, VOD 124 580 films. Wave & Orange Money. Activation en 5 min.",
   })
   const localBizSchema = {
     '@context': 'https://schema.org', '@type': 'LocalBusiness',
-    name: 'IPTV Ivoire — Korhogo', url: 'https://iptvivoire.com/iptv-korhogo',
-    image: 'https://iptvivoire.com/cities/korhogo.jpg',
+    name: 'IPTV Ivoire — Man', url: 'https://iptvivoire.com/iptv-man',
+    image: 'https://iptvivoire.com/cities/man.jpg',
     priceRange: '5900-24900 FCFA', currenciesAccepted: 'XOF',
     paymentAccepted: 'Orange Money, Wave, MTN MoMo, Moov Money',
-    areaServed: { '@type': 'City', name: 'Korhogo', containedInPlace: { '@type': 'Country', name: "Côte d'Ivoire" } },
-    address: { '@type': 'PostalAddress', addressCountry: 'CI', addressLocality: 'Korhogo' },
+    areaServed: { '@type': 'City', name: 'Man', containedInPlace: { '@type': 'Country', name: "Côte d'Ivoire" } },
+    address: { '@type': 'PostalAddress', addressCountry: 'CI', addressLocality: 'Man' },
     openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'], opens: '00:00', closes: '23:59' },
   }
 
@@ -105,7 +105,6 @@ export default function IPTVKorhogoPage() {
           box-shadow:0 14px 40px rgba(15,23,42,.07);margin:18px 0;position:relative;}
         .ab-trust:before{content:"";position:absolute;top:0;left:26px;right:26px;height:4px;border-radius:0 0 6px 6px;
           background:linear-gradient(90deg,#F97316 0 33%,#fff 33% 66%,#138a3a 66% 100%);}
-        .ab-trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
         .ab-trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
         .ab-trust-cell{display:flex;align-items:center;gap:12px;padding:18px 14px;border-radius:14px;transition:background .15s;}
         .ab-trust-cell:hover{background:#f8fafc;}
@@ -264,10 +263,10 @@ export default function IPTVKorhogoPage() {
           <section className="ab-hero">
             <div>
               <div className="ab-rating">
-                <span className="ab-stars">★★★★★</span> 4,9/5 — Service N°1 à Korhogo
+                <span className="ab-stars">★★★★★</span> 4,9/5 — Service N°1 à Man
               </div>
-              <h1>IPTV Korhogo : <span className="grad">22 840 Chaînes en 4K</span>, Sans Coupure et Sécurisé (2026)</h1>
-              <p>Marre des coupures en plein match ? Découvrez l&apos;<strong>IPTV Korhogo</strong> de référence : paiement sécurisé Wave & Orange Money, activation immédiate et support WhatsApp 24/7.</p>
+              <h1>IPTV Man : <span className="grad">22 840 Chaînes en 4K</span>, Sans Coupure et Sécurisé (2026)</h1>
+              <p>Marre des coupures en plein match ? Découvrez l&apos;<strong>IPTV Man</strong> de référence dans la région des 18 Montagnes : paiement sécurisé Wave & Orange Money, activation immédiate et support WhatsApp 24/7.</p>
               <div className="ab-chips">
                 <span className="ab-chip">⚡ Stream-Stable™ (Anti-Freeze)</span>
                 <span className="ab-chip">📺 4K UHD</span>
@@ -277,12 +276,12 @@ export default function IPTVKorhogoPage() {
               </div>
               <div className="ab-cta-row">
                 <a href="#ab-tarifs" className="ab-btn ab-btn-primary">Voir les prix en FCFA →</a>
-                <a href={`${WHATSAPP_URL}&text=Bonjour, je veux un abonnement IPTV à Korhogo`} className="ab-btn ab-btn-wa" target="_blank" rel="noopener noreferrer">💬 Commander sur WhatsApp</a>
+                <a href={`${WHATSAPP_URL}&text=Bonjour, je veux un abonnement IPTV à Man`} className="ab-btn ab-btn-wa" target="_blank" rel="noopener noreferrer">💬 Commander sur WhatsApp</a>
               </div>
               <div className="ab-hero-note">🔒 Paiement sécurisé Wave & Orange Money — activation en 5 minutes.</div>
             </div>
             <div style={{ position: 'relative' }}>
-              <Image src="/cities/korhogo.jpg" alt="IPTV Korhogo — Ville de Korhogo" width={540} height={360} style={{ width: '100%', borderRadius: '20px', boxShadow: '0 30px 70px rgba(0,0,0,.5)' }} priority />
+              <Image src="/cities/man.jpg" alt="IPTV Man — Montagnes et cascades de Man" width={540} height={360} style={{ width: '100%', borderRadius: '20px', boxShadow: '0 30px 70px rgba(0,0,0,.5)' }} priority />
             </div>
           </section>
 
@@ -291,19 +290,17 @@ export default function IPTVKorhogoPage() {
             <div className="ab-trust-grid">
               <div className="ab-trust-cell"><div className="ab-trust-ico">🟢</div><div><b>Wave & Orange Money</b><span>Paiement local sécurisé</span></div></div>
               <div className="ab-trust-cell"><div className="ab-trust-ico">⚡</div><div><b>Activation en 5 min</b><span>Codes reçus sur WhatsApp</span></div></div>
-              <div className="ab-trust-cell"><div className="ab-trust-ico">👥</div><div><b>3 420 clients CI</b><span>À Korhogo et partout en CI</span></div></div>
+              <div className="ab-trust-cell"><div className="ab-trust-ico">👥</div><div><b>3 420 clients CI</b><span>À Man et partout en CI</span></div></div>
               <div className="ab-trust-cell"><div className="ab-trust-ico">💬</div><div><b>Support 24/7</b><span>En français sur WhatsApp</span></div></div>
             </div>
           </section>
 
           {/* ── 3. STATS ── */}
           <div className="ab-stats">
-            <div className="ab-stats">
-              <div className="ab-stat"><b>22 840</b><span>Chaînes TV en direct</span></div>
-              <div className="ab-stat"><b>124 580</b><span>Films & séries VOD</span></div>
-              <div className="ab-stat"><b>99,98 %</b><span>Disponibilité serveur</span></div>
-              <div className="ab-stat"><b>4,9/5</b><span>Note de nos clients</span></div>
-            </div>
+            <div className="ab-stat"><b>22 840</b><span>Chaînes TV en direct</span></div>
+            <div className="ab-stat"><b>124 580</b><span>Films & séries VOD</span></div>
+            <div className="ab-stat"><b>99,98 %</b><span>Disponibilité serveur</span></div>
+            <div className="ab-stat"><b>4,9/5</b><span>Note de nos clients</span></div>
           </div>
 
           {/* ── 4. TLDR ── */}
@@ -311,15 +308,14 @@ export default function IPTVKorhogoPage() {
             <div className="ab-tldr">
               <h3>📌 L&apos;essentiel en bref</h3>
               <ul>
-                <li>L&apos;<strong>IPTV à Korhogo</strong> donne accès à 22 840 chaînes et 124 580 films via internet, sans parabole.</li>
+                <li>L&apos;<strong>IPTV à Man</strong> donne accès à 22 840 chaînes et 124 580 films via internet, sans parabole.</li>
                 <li>Paiement sécurisé par <strong>Wave</strong>, <strong>Orange Money</strong> ou MTN MoMo — vos codes arrivent sous 5 minutes.</li>
                 <li>Tarifs clairs en <strong>FCFA</strong> : dès 5 900 FCFA pour 2 mois, sans frais cachés.</li>
                 <li>Compatible Smart TV, Android Box, téléphones et ordinateurs — installation gratuite guidée sur WhatsApp.</li>
-                <li>Disponible dans <strong>tous les quartiers de Korhogo</strong> : Koko, Soba, Sinistré, Preste, Belleville, etc.</li>
+                <li>Disponible dans <strong>tous les quartiers de Man</strong> : Domoraud, Habitat, Libreville, Grand Gbapleu, Sangouiné, etc.</li>
               </ul>
             </div>
-            <p>Korhogo, capitale de la région du Poro au nord de la Côte d&apos;Ivoire, est en pleine transformation numérique. Grâce au déploiement de la fibre optique et de la 4G par Orange et MTN, les foyers de Korhogo profitent désormais d&apos;une connexion internet stable. C&apos;est l&apos;occasion idéale pour passer à la télévision connectée : notre offre <strong>IPTV Korhogo</strong> vous apporte tous les bouquets mondiaux en Haute Définition, sans aucune installation d&apos;antenne ou de parabole complexe.</p>
-            <p>Découvrez ci-dessous comment configurer votre abonnement, éviter les offres frauduleuses et commander votre forfait en toute sécurité.</p>
+            <p>Man, la capitale de la région du Tonkpi entourée de ses majestueuses montagnes et célèbre pour ses cascades et son pont de lianes, profite désormais d&apos;une excellente connectivité 4G et fibre. Malgré le relief physique de la région des 18 Montagnes, les réseaux d&apos;Orange, MTN et Moov permettent de streamer sans aucun problème. C&apos;est pourquoi notre service <strong>IPTV Man</strong> est devenu la meilleure alternative locale pour s&apos;abonner sans les contraintes météo et techniques d&apos;une parabole satellite.</p>
           </section>
 
           {/* ── 5. TOC ── */}
@@ -327,14 +323,14 @@ export default function IPTVKorhogoPage() {
             <div className="ab-toc">
               <h3>📖 Sommaire</h3>
               <ol>
-                <li><a href="#ab-quoi">Qu&apos;est-ce que l&apos;IPTV à Korhogo ?</a></li>
-                <li><a href="#ab-pourquoi">Pourquoi l&apos;IPTV séduit à Korhogo</a></li>
+                <li><a href="#ab-quoi">Qu&apos;est-ce que l&apos;IPTV à Man ?</a></li>
+                <li><a href="#ab-pourquoi">Pourquoi l&apos;IPTV séduit à Man</a></li>
                 <li><a href="#ab-contenus">Que pouvez-vous regarder ?</a></li>
                 <li><a href="#ab-arnaque">Attention aux arnaques IPTV</a></li>
                 <li><a href="#ab-compare">Comparatif : IPTV Ivoire vs autres</a></li>
                 <li><a href="#ab-install">Installation en 5 étapes</a></li>
                 <li><a href="#ab-appareils">Appareils compatibles</a></li>
-                <li><a href="#ab-avis">Avis de nos clients Korhogo</a></li>
+                <li><a href="#ab-avis">Avis de nos clients Man</a></li>
                 <li><a href="#ab-tarifs">Tarifs en FCFA & paiement</a></li>
                 <li><a href="#ab-faq">Questions fréquentes</a></li>
               </ol>
@@ -344,22 +340,22 @@ export default function IPTVKorhogoPage() {
           {/* ── 6. WHAT IS IPTV ── */}
           <section id="ab-quoi">
             <span className="eyebrow">Comprendre</span>
-            <h2>Qu&apos;est-ce que l&apos;IPTV et comment ça marche à Korhogo ?</h2>
-            <p>L&apos;IPTV (Internet Protocol Television) est un système de diffusion de chaînes télévisées via votre connexion internet. Contrairement au décodeur satellite traditionnel, l&apos;IPTV n&apos;est pas sensible aux intempéries (notamment lors de la saison des pluies dans le nord). Il vous suffit de connecter votre Smart TV, Box Android ou téléphone au réseau local pour avoir instantanément toutes vos chaînes préférées.</p>
+            <h2>Qu&apos;est-ce que l&apos;IPTV et comment ça fonctionne à Man ?</h2>
+            <p>L&apos;IPTV transmet vos chaînes et vidéos directement via votre connexion internet, éliminant le besoin d&apos;une parabole sensible aux intempéries. Entrez simplement vos codes dans notre application recommandée pour avoir accès à toutes vos chaînes en direct et à la demande.</p>
             <div className="ab-callout warn">
-              <p>💡 <b>Vitesse requise :</b> 10 Mbps pour la HD et 25 Mbps pour la 4K. La couverture 4G Orange et MTN à Korhogo est parfaitement adaptée pour un flux sans coupure.</p>
+              <p>💡 <b>Débit recommandé :</b> 10 Mbps pour la HD et 25 Mbps pour la 4K. La couverture 4G Orange et MTN à Man est idéale pour streamer de façon ultra-fluide.</p>
             </div>
-            <h3>L&apos;IPTV Korhogo, secteur par secteur</h3>
-            <p>Notre service fonctionne parfaitement dans tous les quartiers de Korhogo, notamment à <strong>Koko</strong>, <strong>Soba</strong>, <strong>Sinistré</strong>, <strong>Belleville</strong>, <strong>Haoussabougou</strong>, <strong>Preste</strong> et le <strong>Quartier Administratif</strong>.</p>
+            <h3>Disponibilité dans tous les quartiers</h3>
+            <p>Notre couverture IPTV est validée dans tous les secteurs de Man : <strong>Domoraud</strong>, <strong>Libreville</strong>, <strong>Habitat</strong>, <strong>Grand Gbapleu</strong>, <strong>Petit Gbapleu</strong>, ainsi qu&apos;à <strong>Sangouiné</strong>, <strong>Logoualé</strong> et <strong>Blopleu</strong>.</p>
           </section>
 
           {/* ── 7. WHY IPTV ── */}
           <section id="ab-pourquoi">
             <span className="eyebrow">Les avantages</span>
-            <h2>Pourquoi l&apos;IPTV séduit autant les habitants de Korhogo</h2>
+            <h2>Pourquoi l&apos;IPTV séduit autant à Man</h2>
             <div className="ab-cards">
-              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Champions League, et tous les matchs de la Coupe du Monde 2026 en direct HD/4K.</p></div>
-              <div className="ab-card"><span className="ic">🇨🇮</span><h3>Toutes les chaînes ivoiriennes</h3><p>RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire en excellente qualité d&apos;image.</p></div>
+              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Champions League, et les matchs de la Coupe du Monde 2026 en direct HD/4K.</p></div>
+              <div className="ab-card"><span className="ic">🇨🇮</span><h3>Chaînes locales ivoiriennes</h3><p>RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire en excellente qualité.</p></div>
               <div className="ab-card"><span className="ic">🎬</span><h3>VOD de 124 580 titres</h3><p>Accès illimité à une immense bibliothèque de films et séries récents mis à jour chaque semaine.</p></div>
               <div className="ab-card"><span className="ic">💰</span><h3>Économique & sans parabole</h3><p>Abonnement à partir de 2 950 FCFA/mois, sans frais d&apos;installation ni décodeur satellite obligatoire.</p></div>
             </div>
@@ -368,20 +364,20 @@ export default function IPTVKorhogoPage() {
           {/* ── 8. CONTENT ── */}
           <section id="ab-contenus">
             <span className="eyebrow">Le catalogue</span>
-            <h2>Que pouvez-vous regarder avec l&apos;IPTV à Korhogo ?</h2>
+            <h2>Que pouvez-vous regarder avec l&apos;IPTV à Man ?</h2>
             <h3>Direct Sport & Divertissement</h3>
             <ul>
               <li>Tous les grands championnats européens et coupes africaines.</li>
               <li>Coupe du Monde 2026 : diffusion des 64 matchs via beIN Sports et TF1.</li>
               <li>Bouquets français, africains, arabes et internationaux complets.</li>
-              <li>Chaînes jeunesse (Disney, Nickelodeon) et documentaires.</li>
+              <li>Chaînes jeunesse (Disney, Gulli, Nickelodeon) et documentaires.</li>
             </ul>
           </section>
 
           {/* ── 9. ANTI-ARNAQUE ── */}
           <section id="ab-arnaque">
             <span className="eyebrow">Sécurité</span>
-            <h2>Évitez les fraudes IPTV à Korhogo</h2>
+            <h2>Évitez les fraudes IPTV à Man</h2>
             <div className="ab-vs">
               <div className="ab-panel ab-danger">
                 <h3>🚩 Signaux de fraude</h3>
@@ -405,7 +401,7 @@ export default function IPTVKorhogoPage() {
           {/* ── 10. COMPARISON TABLE ── */}
           <section id="ab-compare">
             <span className="eyebrow">Comparatif</span>
-            <h2>IPTV Ivoire vs Satellite à Korhogo</h2>
+            <h2>IPTV Ivoire vs Satellite à Man</h2>
             <div className="ab-tw">
               <table className="ab-table">
                 <thead>
@@ -428,7 +424,7 @@ export default function IPTVKorhogoPage() {
           {/* ── 11. INSTALLATION ── */}
           <section id="ab-install">
             <span className="eyebrow">Mise en route</span>
-            <h2>Comment s&apos;abonner à Korhogo en 5 étapes</h2>
+            <h2>Comment s&apos;abonner à Man en 5 étapes</h2>
             <div className="ab-steps">
               <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou 12 mois (24 900 FCFA).</p></div>
               <div className="ab-step"><h3>Contactez-nous sur WhatsApp</h3><p>Envoyez un message et notre équipe vous répondra sous 5 minutes.</p></div>
@@ -441,19 +437,19 @@ export default function IPTVKorhogoPage() {
           {/* ── 12. DEVICES ── */}
           <section id="ab-appareils">
             <span className="eyebrow">Appareils</span>
-            <h2>Appareils compatibles à Korhogo</h2>
+            <h2>Appareils compatibles à Man</h2>
             <p>Notre service fonctionne sur : Smart TV, Android Box TV, Fire Stick, Smartphones Android/iOS, Tablettes et PC/Mac.</p>
           </section>
 
           {/* ── 13. TESTIMONIALS ── */}
           <section id="ab-avis">
             <span className="eyebrow">Avis</span>
-            <h2>Ce que disent nos clients à Korhogo</h2>
+            <h2>Ce que disent nos clients à Man</h2>
             <div className="ab-revs">
               {[
-                { init: 'T', name: 'Tuo N.', loc: 'Koko, Korhogo', stars: '★★★★★', text: "Vraiment surpris par la stabilité. Même sans fibre, sur ma connexion 4G Orange à Koko, les matchs passent nickel en HD. Wave simplifie le paiement." },
-                { init: 'C', name: 'Coulibaly A.', loc: 'Soba, Korhogo', stars: '★★★★★', text: "Service client très disponible. Les codes ont été envoyés sur WhatsApp en moins de 5 minutes. Très satisfait de la VOD." },
-                { init: 'K', name: 'Kone M.', loc: 'Belleville, Korhogo', stars: '★★★★★', text: "Une bibliothèque immense de films et de séries. La qualité 4K est superbe sur ma Smart TV Samsung. Je recommande sans hésiter." },
+                { init: 'G', name: 'Goué D.', loc: 'Domoraud, Man', stars: '★★★★★', text: "Incroyablement stable sur ma Smart TV avec ma connexion 4G Orange à Domoraud. Le paiement Wave est simple et rapide, les chaînes de sport fonctionnent parfaitement." },
+                { init: 'T', name: 'Touré K.', loc: 'Libreville, Man', stars: '★★★★★', text: "Le service client sur WhatsApp m'a envoyé les codes en 5 minutes. L'installation d'IPTV Smarters a été super facile grâce à leur guide." },
+                { init: 'B', name: 'Bley M.', loc: 'Habitat, Man', stars: '★★★★★', text: "Le catalogue VOD de plus de 124 580 films est super riche, mes enfants adorent les dessins animés et moi la Premier League en direct." },
               ].map(r => (
                 <div key={r.name} className="ab-rev">
                   <span className="ab-stars">{r.stars}</span>
@@ -470,18 +466,18 @@ export default function IPTVKorhogoPage() {
           {/* ── 14. PRICING ── */}
           <section id="ab-tarifs">
             <span className="eyebrow">Tarifs</span>
-            <h2>Choisissez votre abonnement IPTV Korhogo</h2>
+            <h2>Choisissez votre abonnement IPTV Man</h2>
             <div className="ab-pricing">
               {[
                 { name: '2 mois', sub: 'Coupe du Monde 2026', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre CDM', feat: false,
                   items: ['Matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Activation en 5 min'],
-                  wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Korhogo` },
-                { name: '3 mois', sub: 'Le plus populaire à Korhogo', price: '7 900 FCFA', orig: '11 700 FCFA', promo: '-32% — Le + choisi', feat: true,
+                  wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Man` },
+                { name: '3 mois', sub: 'Le plus populaire à Man', price: '7 900 FCFA', orig: '11 700 FCFA', promo: '-32% — Le + choisi', feat: true,
                   items: ['Matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Support prioritaire', 'Activation en 5 min'],
-                  wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 3 mois (7900 FCFA) à Korhogo` },
+                  wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 3 mois (7900 FCFA) à Man` },
                 { name: '12 mois + 1 offert', sub: 'Meilleur rapport qualité/prix', price: '24 900 FCFA', orig: '35 900 FCFA', promo: '-30% — 13 mois complets', feat: false,
                   items: ['13 mois complets', '22 840 chaînes HD/4K', 'VOD 124 580 films', 'Support VIP WhatsApp', 'Meilleur prix à l\'année'],
-                  wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV annuel (24900 FCFA) à Korhogo` },
+                  wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV annuel (24900 FCFA) à Man` },
               ].map(p => (
                 <div key={p.name} className={`ab-plan${p.feat ? ' feat' : ''}`}>
                   <h3>{p.name}</h3>
@@ -507,7 +503,7 @@ export default function IPTVKorhogoPage() {
           {/* ── 15. FAQ ── */}
           <section id="ab-faq">
             <span className="eyebrow">FAQ</span>
-            <h2>Questions fréquentes — IPTV Korhogo</h2>
+            <h2>Questions fréquentes — IPTV Man</h2>
             <div className="ab-faq">
               {faqs.map(f => (
                 <details key={f.q}>
@@ -530,7 +526,6 @@ export default function IPTVKorhogoPage() {
                 { name: 'IPTV San Pedro', href: '/iptv-san-pedro' },
                 { name: 'IPTV Korhogo', href: '/iptv-korhogo' },
                 { name: 'IPTV Daloa', href: '/iptv-daloa' },
-                { name: 'IPTV Man', href: '/iptv-man' },
                 { name: 'IPTV Gagnoa', href: '/iptv-gagnoa' },
                 { name: 'IPTV Divo', href: '/iptv-divo' },
               ].map(c => <Link key={c.name} href={c.href} className="ab-city-link">📍 {c.name}</Link>)}
@@ -539,10 +534,10 @@ export default function IPTVKorhogoPage() {
 
           {/* ── 17. FINAL CTA ── */}
           <section className="ab-final">
-            <h2>Prêt à regarder l&apos;IPTV à Korhogo ?</h2>
+            <h2>Prêt à regarder l&apos;IPTV à Man ?</h2>
             <p>Activation en 5 minutes via WhatsApp. Paiement Wave & Orange Money. 22 840 chaînes dès 5 900 FCFA.</p>
             <div className="ab-cta-row" style={{ justifyContent: 'center' }}>
-              <a href={`${WHATSAPP_URL}&text=Bonjour, je veux un abonnement IPTV à Korhogo`} target="_blank" rel="noopener noreferrer" id="korhogo-final-cta" className="ab-btn ab-btn-wa">💬 Activer mon IPTV à Korhogo</a>
+              <a href={`${WHATSAPP_URL}&text=Bonjour, je veux un abonnement IPTV à Man`} target="_blank" rel="noopener noreferrer" id="man-final-cta" className="ab-btn ab-btn-wa">💬 Activer mon IPTV à Man</a>
               <Link href="/abonnement-iptv-cote-divoire" className="ab-btn" style={{ background: 'rgba(255,255,255,0.1)', border: '1.5px solid rgba(255,255,255,0.25)', color: '#fff' }}>Voir tous les abonnements →</Link>
             </div>
           </section>
