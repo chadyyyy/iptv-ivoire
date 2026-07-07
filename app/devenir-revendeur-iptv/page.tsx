@@ -101,9 +101,9 @@ export default function RevendeurPage() {
         .price-qty{font-size:0.9rem;color:var(--text-muted);margin-bottom:14px;}
         .price-val{font-size:2rem;font-weight:900;color:#fff;font-family:'Outfit',sans-serif;margin-bottom:4px;}
         .price-unit{font-size:0.8rem;color:var(--text-muted);margin-bottom:18px;display:block;}
-        .price-features{list-style:none;padding:0;margin:18px 0;text-align:left;display:flex;flex-direction:column;gap:10px;font-size:0.85rem;}
-        .price-features li{display:flex;align-items:flex-start;gap:6px;}
-        .price-features li:before{content:"✓";color:var(--primary);font-weight:bold;flex-shrink:0;}
+        .price-features{list-style:none;padding:0;margin:18px 0;text-align:left;display:flex;flex-direction:column;gap:12px;}
+        .price-features li{position:relative;padding-left:22px;font-size:0.88rem;line-height:1.5;color:rgba(229,231,235,0.95);}
+        .price-features li:before{content:"✓";color:var(--primary);font-weight:bold;position:absolute;left:0;top:1px;}
         .pricing-cta{background:var(--wa);color:#fff;text-decoration:none;font-weight:800;font-size:0.9rem;
           padding:12px;border-radius:100px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 8px 20px rgba(37,211,102,0.2);margin-top:auto;}
         .pricing-cta:hover{opacity:0.95;}
