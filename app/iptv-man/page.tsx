@@ -526,8 +526,12 @@ export default function IPTVManPage() {
                 { name: 'IPTV San Pedro', href: '/iptv-san-pedro' },
                 { name: 'IPTV Korhogo', href: '/iptv-korhogo' },
                 { name: 'IPTV Daloa', href: '/iptv-daloa' },
+                { name: 'IPTV Man', href: '/iptv-man' },
                 { name: 'IPTV Gagnoa', href: '/iptv-gagnoa' },
                 { name: 'IPTV Divo', href: '/iptv-divo' },
+                { name: 'IPTV Anyama', href: '/iptv-anyama' },
+                { name: 'IPTV Abengourou', href: '/iptv-abengourou' },
+                { name: 'IPTV Grand-Bassam', href: '/iptv-grand-bassam' },
               ].map(c => <Link key={c.name} href={c.href} className="ab-city-link">📍 {c.name}</Link>)}
             </div>
           </section>

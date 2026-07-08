@@ -33,7 +33,10 @@ const citySlugs = [
   'iptv-daloa',
   'iptv-man',
   'iptv-gagnoa',
-  'iptv-divo'
+  'iptv-divo',
+  'iptv-anyama',
+  'iptv-abengourou',
+  'iptv-grand-bassam'
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
