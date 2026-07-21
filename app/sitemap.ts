@@ -54,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${base}/installation`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.85 },
     { url: `${base}/appareils`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.75 },
+    { url: `${base}/prix-iptv-abidjan`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'daily' as const, priority: 0.9 },
   ]
 
