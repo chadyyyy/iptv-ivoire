@@ -7,13 +7,13 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "Prix IPTV Abidjan 2026 — Tarifs en FCFA dès 2 950 FCFA/mois (Comparatif)",
-  description: "Découvrez les prix IPTV à Abidjan en 2026. Abonnement dès 5 900 FCFA (2 mois). Comparatif Canal+ vs IPTV Ivoire. Paiement Wave & Orange Money. 22 840 chaînes 4K. Grille tarifaire complète en FCFA.",
+  title: "Prix IPTV Abidjan 2026 : Tarifs dès 2 950 FCFA",
+  description: "Prix IPTV à Abidjan 2026 : dès 5 900 FCFA (2 mois). Comparatif vs Canal+, 22 840 chaînes 4K, paiement Wave & Orange Money. Activation en 5 min.",
   keywords: ['prix iptv abidjan', 'iptv abidjan prix', 'abonnement iptv prix abidjan', 'tarif iptv abidjan', 'combien coute iptv abidjan', 'iptv pas cher abidjan', 'prix abonnement iptv cote d ivoire', 'iptv abidjan prix fcfa', 'meilleur prix iptv abidjan'],
   alternates: { canonical: 'https://iptvivoire.com/prix-iptv-abidjan' },
   openGraph: {
-    title: "Prix IPTV Abidjan 2026 — Tous les Tarifs en FCFA (Comparatif Complet)",
-    description: "Grille complète des prix IPTV à Abidjan. Dès 2 950 FCFA/mois. 22 840 chaînes 4K. Paiement Wave & Orange Money. Comparatif vs Canal+ et StarSat.",
+    title: "Prix IPTV Abidjan 2026 : Tarifs dès 2 950 FCFA",
+    description: "Prix IPTV à Abidjan 2026 : dès 5 900 FCFA (2 mois). Comparatif vs Canal+, 22 840 chaînes 4K, paiement Wave & Orange Money.",
     url: 'https://iptvivoire.com/prix-iptv-abidjan',
     images: [{ url: 'https://iptvivoire.com/cities/abidjan.jpg', width: 1200, height: 630, alt: "Prix IPTV Abidjan — Tarifs en FCFA 2026" }],
   },
