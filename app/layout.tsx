@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "IPTV Côte d'Ivoire",
     "abonnement IPTV Côte d'Ivoire",
     'IPTV Abidjan',
+    'télé ip',
+    'box iptv abidjan',
     "IPTV Orange Money Côte d'Ivoire",
     'IPTV Wave CI',
     "IPTV smarters pro Côte d'Ivoire",

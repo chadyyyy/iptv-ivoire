@@ -10,7 +10,7 @@ import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck
 export const metadata: Metadata = {
   title: "IPTV Côte d'Ivoire — 22 840 Chaînes en 4K dès 5 900 FCFA | Wave & Orange Money",
   description: "Meilleur abonnement IPTV en Côte d'Ivoire. 22 840 chaînes HD/4K, 124 580 VOD. Paiement sécurisé Wave & Orange Money. Activation immédiate en 5 min. Essai gratuit 24h.",
-  keywords: ['iptv cote divoire', 'iptv coupe du monde 2026', 'abonnement iptv fcfa', 'wave iptv', 'orange money iptv', 'iptv abidjan'],
+  keywords: ['iptv cote divoire', 'télé ip', 'box iptv abidjan', 'iptv coupe du monde 2026', 'abonnement iptv fcfa', 'wave iptv', 'orange money iptv', 'iptv abidjan'],
   alternates: {
     canonical: 'https://iptvivoire.com',
   },
