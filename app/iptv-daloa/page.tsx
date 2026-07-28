@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Daloa 2026 — Abonnement 4K Ultra-Stable (Officiel)",
+  title: "IPTV Daloa 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Daloa : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Tazibouo, Gbeuliville, Marais.",
   keywords: ['iptv daloa', 'abonnement iptv daloa', 'fournisseur iptv daloa', 'iptv tazibouo daloa', 'iptv gbeuliville', 'installateur iptv daloa', 'iptv 4k daloa'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-daloa' },

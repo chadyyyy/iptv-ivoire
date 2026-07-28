@@ -70,6 +70,25 @@ export default function BlogIndexPage() {
                 ))}
               </div>
             )}
+
+            {/* SEO content section for word count */}
+            <div style={{ marginTop: '4rem', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto' }}>
+              <div className="divider" style={{ marginBottom: '2.5rem' }} />
+              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.6rem', color: 'var(--color-text)', marginBottom: '1rem', textAlign: 'center' }}>
+                Blog IPTV Côte d&apos;Ivoire — Guides et Ressources
+              </h2>
+              <div style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.8 }}>
+                <p style={{ marginBottom: '1rem' }}>
+                  Bienvenue sur le blog d&apos;<strong>IPTV Ivoire</strong>, votre source d&apos;informations complète sur l&apos;<strong>IPTV en Côte d&apos;Ivoire</strong>. Retrouvez ici nos guides détaillés pour installer et configurer votre service IPTV sur tous vos appareils : <Link href="/installation/smart-tv" style={{ color: '#F97316' }}>Smart TV Samsung et LG</Link>, <Link href="/installation/android" style={{ color: '#F97316' }}>Android TV Box</Link>, <Link href="/installation/iphone" style={{ color: '#F97316' }}>iPhone et iPad</Link>, et <Link href="/installation/pc" style={{ color: '#F97316' }}>ordinateur PC/Mac</Link>.
+                </p>
+                <p style={{ marginBottom: '1rem' }}>
+                  Découvrez nos <strong>comparatifs IPTV</strong> pour choisir le meilleur abonnement selon vos besoins : qualité 4K, nombre de chaînes, prix en FCFA, et méthodes de paiement (<Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316' }}>Orange Money, Wave, MTN MoMo</Link>). Nous publions également des guides sur les événements sportifs comme la <strong>Coupe du Monde 2026</strong>, avec des instructions pour regarder tous les matchs des Éléphants en direct depuis Abidjan.
+                </p>
+                <p style={{ marginBottom: '1rem' }}>
+                  Que vous soyez à <Link href="/iptv-abidjan" style={{ color: '#F97316' }}>Abidjan</Link>, <Link href="/iptv-bouake" style={{ color: '#F97316' }}>Bouaké</Link>, <Link href="/iptv-yamoussoukro" style={{ color: '#F97316' }}>Yamoussoukro</Link> ou ailleurs en Côte d&apos;Ivoire, nos articles vous aident à profiter pleinement de votre <strong>abonnement IPTV</strong> avec plus de 22 840 chaînes HD/4K et 124 580 contenus VOD. Consultez nos <Link href="/prix-iptv-abidjan" style={{ color: '#F97316' }}>tarifs complets en FCFA</Link> pour choisir l&apos;offre adaptée à votre budget.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>

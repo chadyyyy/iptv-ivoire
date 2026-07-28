@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: "Appareils Compatibles IPTV — Smart TV, Android, iPhone, PC | Côte d'Ivoire",
+  title: "Appareils IPTV : Smart TV, Android, iPhone",
   description: "Compatibilité IPTV : Smart TV Samsung/LG, Android TV Box, iPhone, iPad, Android, PC Windows/Mac. Un abonnement, 5 appareils simultanés.",
 }
 

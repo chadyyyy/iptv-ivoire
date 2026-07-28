@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: "Installation IPTV — Guide Complet Smart TV, Android, iPhone, PC | Côte d'Ivoire",
+  title: "Installation IPTV : Smart TV, Android, PC",
   description: "Guides d'installation IPTV pour Smart TV Samsung/LG, Android TV Box, iPhone, Android, PC et Amazon Fire TV en Côte d'Ivoire.",
 }
 

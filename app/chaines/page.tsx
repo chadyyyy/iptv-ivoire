@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: "Chaînes IPTV Côte d'Ivoire — RTI, beIN Sports, Chaînes Africaines",
+  title: "Chaînes IPTV CI — RTI, beIN Sports, 4K",
   description: "+22 000 chaînes IPTV disponibles en Côte d'Ivoire. RTI 1, RTI 2, La 3, beIN Sports, Canal+, chaînes françaises, africaines et internationales en HD/4K.",
 }
 

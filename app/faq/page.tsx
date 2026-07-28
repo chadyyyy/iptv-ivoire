@@ -5,7 +5,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "FAQ IPTV Côte d'Ivoire — Toutes vos Questions sur l'IPTV",
+  title: "FAQ IPTV Côte d'Ivoire : Prix & Paiement",
   description: "Réponses à toutes vos questions sur l'IPTV en Côte d'Ivoire. Orange Money, Wave, installation, chaînes, légalité, Coupe du Monde 2026.",
 }
 

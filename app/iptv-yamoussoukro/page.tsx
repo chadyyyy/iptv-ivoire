@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Yamoussoukro 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  title: "IPTV Yamoussoukro 2026 — 4K Sans Coupure",
   description: "IPTV Yamoussoukro : 22 840 chaînes en 4K. Paiement Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Centre-ville, Habitat, N'Zuessy, Dioulakro.",
   keywords: ['iptv yamoussoukro', 'abonnement iptv yamoussoukro', 'fournisseur iptv yamoussoukro', 'iptv habitat yamoussoukro', 'iptv nzuessy yamoussoukro', 'installateur iptv yamoussoukro', 'iptv 4k yamoussoukro'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-yamoussoukro' },

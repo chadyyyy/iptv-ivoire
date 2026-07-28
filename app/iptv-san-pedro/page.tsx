@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV San Pedro 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  title: "IPTV San Pedro 2026 — 4K dès 5 900 FCFA",
   description: "IPTV San Pedro : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Bardot, Séwéké, Zimbabwe.",
   keywords: ['iptv san pedro', 'abonnement iptv san pedro', 'fournisseur iptv san pedro', 'iptv seweke', 'iptv bardot', 'installateur iptv san pedro', 'iptv 4k san pedro'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-san-pedro' },

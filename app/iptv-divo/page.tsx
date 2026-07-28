@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Divo 2026 — Abonnement 4K Ultra-Stable (Officiel)",
+  title: "IPTV Divo 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Divo : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Hire-Watta, Bolo, Locodjro.",
   keywords: ['iptv divo', 'abonnement iptv divo', 'fournisseur iptv divo', 'iptv hire-watta', 'iptv bolo', 'installateur iptv divo', 'iptv 4k divo'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-divo' },

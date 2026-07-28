@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Grand-Bassam 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  title: "IPTV Grand-Bassam 2026 — 4K Sans Coupure",
   description: "IPTV Grand-Bassam : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Quartier de France, Petit Paris, Rosiers.",
   keywords: ['iptv grand-bassam', 'abonnement iptv grand-bassam', 'fournisseur iptv grand-bassam', 'iptv quartier de france', 'iptv petit paris', 'installateur iptv grand-bassam', 'iptv 4k grand-bassam'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-grand-bassam' },

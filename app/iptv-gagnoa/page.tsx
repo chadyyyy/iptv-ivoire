@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Gagnoa 2026 — Abonnement 4K Ultra-Stable (Officiel)",
+  title: "IPTV Gagnoa 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Gagnoa : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Dioulabougou, Soleil, Garahio.",
   keywords: ['iptv gagnoa', 'abonnement iptv gagnoa', 'fournisseur iptv gagnoa', 'iptv dioulabougou', 'iptv garahio', 'installateur iptv gagnoa', 'iptv 4k gagnoa'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-gagnoa' },

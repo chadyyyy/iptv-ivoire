@@ -6,7 +6,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "Devenir Revendeur IPTV Afrique 2026 — Panel IPTV pas cher",
+  title: "Devenir Revendeur IPTV Afrique 2026",
   description: "Créez votre propre business IPTV en Afrique. Panel revendeur IPTV dès 100€, pack 120 crédits + 12 offerts à 200€ (131 000 FCFA). Wave & Orange Money.",
   keywords: [
     'revendeur iptv', 'revendeur iptv afrique', 'panel revendeur iptv',

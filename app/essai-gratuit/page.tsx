@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: "Essai Gratuit IPTV 24h — Côte d'Ivoire | Testez Sans Engagement",
+  title: "Essai Gratuit IPTV 24h — Côte d'Ivoire",
   description: "Testez notre service IPTV gratuitement pendant 24h en Côte d'Ivoire. Aucun paiement requis. +22 000 chaînes HD. Activation immédiate via WhatsApp.",
 }
 

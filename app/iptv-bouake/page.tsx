@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Bouaké 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  title: "IPTV Bouaké 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Bouaké : 22 840 chaînes en 4K. Paiement Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Commerce, Koko, Air France, Belleville, Dar es Salam.",
   keywords: ['iptv bouake', 'abonnement iptv bouake', 'fournisseur iptv bouake', 'iptv koko bouake', 'iptv commerce bouake', 'installateur iptv bouake', 'iptv 4k bouake'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-bouake' },

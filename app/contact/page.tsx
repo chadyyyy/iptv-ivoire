@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: "Contact IPTV Ivoire — WhatsApp 24/7 | Côte d'Ivoire",
+  title: "Contact IPTV Ivoire — Support WhatsApp 24/7",
   description: "Contactez IPTV Ivoire via WhatsApp pour activer votre abonnement, obtenir de l'aide ou poser vos questions. Réponse en moins de 5 minutes.",
 }
 

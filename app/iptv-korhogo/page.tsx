@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Korhogo 2026 — Abonnement 4K Ultra-Stable (Officiel)",
+  title: "IPTV Korhogo 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Korhogo : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Koko, Soba, Sinistré.",
   keywords: ['iptv korhogo', 'abonnement iptv korhogo', 'fournisseur iptv korhogo', 'iptv koko korhogo', 'iptv soba', 'installateur iptv korhogo', 'iptv 4k korhogo'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-korhogo' },

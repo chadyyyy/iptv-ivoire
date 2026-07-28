@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Abengourou 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  title: "IPTV Abengourou 2026 — 4K Sans Coupure",
   description: "IPTV Abengourou : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Agnikro, Plateau, Cafétou, Lobikro.",
   keywords: ['iptv abengourou', 'abonnement iptv abengourou', 'fournisseur iptv abengourou', 'iptv agnikro', 'iptv plateau abengourou', 'installateur iptv abengourou', 'iptv 4k abengourou'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-abengourou' },

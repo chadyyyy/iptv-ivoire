@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Abidjan 2026 — Abonnement 4K Sécurisé & Pas Cher (Officiel)",
+  title: "IPTV Abidjan 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Abidjan : 22 840 chaînes en 4K, paiement Wave & Orange Money sécurisé, prix en FCFA. Activation immédiate. Fonctionne à Cocody, Plateau, Yopougon, Abobo. Meilleur service IPTV à Abidjan 2026.",
   keywords: ['iptv abidjan', 'abonnement iptv abidjan', 'fournisseur iptv abidjan', 'iptv cocody', 'iptv yopougon', 'iptv plateau abidjan', 'installateur iptv abidjan', 'iptv 4k abidjan'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-abidjan' },

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: "Paiement IPTV Orange Money, Wave, MTN — Côte d'Ivoire",
+  title: "Paiement IPTV : Wave, Orange Money, MTN",
   description: "Payez votre abonnement IPTV avec Orange Money, Wave, MTN MoMo ou Moov Money en Côte d'Ivoire. Instructions étape par étape. Activation immédiate.",
 }
 

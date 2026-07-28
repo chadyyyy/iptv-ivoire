@@ -7,7 +7,7 @@ import { WHATSAPP_URL } from '@/lib/seo'
 import { getFAQSchema, getBreadcrumbSchema, getProductSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: "IPTV Man 2026 — Abonnement 4K Sans Coupure (Officiel)",
+  title: "IPTV Man 2026 — 4K dès 5 900 FCFA",
   description: "IPTV Man : +22 840 chaînes en 4K. Paiement sécurisé Wave & Orange Money, prix en FCFA, activation en 5 min. Fonctionne à Domoraud, Libreville, Habitat.",
   keywords: ['iptv man', 'abonnement iptv man', 'fournisseur iptv man', 'iptv domoraud', 'iptv habitat', 'installateur iptv man', 'iptv 4k man'],
   alternates: { canonical: 'https://iptvivoire.com/iptv-man' },
