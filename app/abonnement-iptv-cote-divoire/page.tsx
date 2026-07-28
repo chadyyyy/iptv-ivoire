@@ -397,11 +397,23 @@ export default function AbonnementPage() {
           <div className="container" style={{ maxWidth: '850px', margin: '0 auto' }}>
             <div className="prose" style={{ color: 'var(--color-text-muted)', lineHeight: 1.8 }}>
               <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '2rem', color: 'var(--color-text)', marginBottom: '1.5rem', textAlign: 'center' }}>
-                Le Meilleur Abonnement IPTV en Côte d&apos;Ivoire
+                IPTV Côte d&apos;Ivoire — Le Fournisseur N°1 à Abidjan
               </h2>
-              <p style={{ marginBottom: '2rem', fontSize: '1.05rem', textAlign: 'center' }}>
-                À la recherche d&apos;un <strong>abonnement IPTV en Côte d&apos;Ivoire</strong> fiable, sans coupure et à petit prix ? IPTV Ivoire est la solution numéro 1 pour regarder la télévision par internet. Que vous soyez à Abidjan, Bouaké, San-Pédro ou Yamoussoukro, profitez d&apos;une qualité d&apos;image exceptionnelle en HD et 4K.
+              <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem', textAlign: 'center' }}>
+                Vous cherchez un <strong>abonnement IPTV en Côte d&apos;Ivoire</strong> fiable, sans coupure et à petit prix ? <strong>IPTV Ivoire</strong> est le fournisseur IPTV de référence pour regarder la télévision par internet (télé IP) en Côte d&apos;Ivoire. Que vous soyez à Abidjan, Bouaké, San-Pédro ou Yamoussoukro, profitez d&apos;une qualité d&apos;image exceptionnelle en HD et 4K.
               </p>
+
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.3rem', color: 'var(--color-text)', marginBottom: '1rem' }}>
+                Pourquoi choisir IPTV Ivoire comme fournisseur IPTV en Côte d&apos;Ivoire ?
+              </h3>
+              <ul style={{ marginBottom: '2rem', paddingLeft: '1.5rem', fontSize: '1rem', color: 'var(--color-text-muted)' }}>
+                <li style={{ marginBottom: '0.5rem' }}><strong>22 840 chaînes HD/4K</strong> — chaînes ivoiriennes (RTI, NCI), africaines, françaises et internationales</li>
+                <li style={{ marginBottom: '0.5rem' }}><strong>124 580 films et séries en VOD</strong> — Netflix, Disney+, et plus encore via votre box IPTV à Abidjan</li>
+                <li style={{ marginBottom: '0.5rem' }}><strong>Paiement local en FCFA</strong> — Wave, Orange Money, MTN MoMo directement depuis votre téléphone</li>
+                <li style={{ marginBottom: '0.5rem' }}><strong>Abonnement IPTV 12 mois</strong> à 24 900 FCFA (+ 1 mois offert) — le tarif le plus compétitif de Côte d&apos;Ivoire</li>
+                <li style={{ marginBottom: '0.5rem' }}><strong>Compatible tous appareils</strong> — Smart TV, Android TV Box, iPhone, tablette, PC. Votre télé IP fonctionne partout</li>
+                <li style={{ marginBottom: '0.5rem' }}><strong>Activation en 5 minutes</strong> — recevez vos codes sur WhatsApp immédiatement après paiement</li>
+              </ul>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
                 <div className="card" style={{ padding: '1.5rem' }}>
@@ -417,7 +429,7 @@ export default function AbonnementPage() {
                     <Smartphone size={20} color="#F97316" /> Paiement Wave &amp; Orange Money
                   </h3>
                   <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Payez votre abonnement IPTV facilement, en FCFA, via <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Wave, Orange Money, MTN MoMo ou Moov Money</strong></Link>.
+                    Payez votre abonnement IPTV facilement, en FCFA, via <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Wave, Orange Money, MTN MoMo ou Moov Money</strong></Link>. Consultez nos <Link href="/prix-iptv-abidjan" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>tarifs complets en FCFA</strong></Link>.
                   </p>
                 </div>
               </div>
