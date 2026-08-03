@@ -529,6 +529,11 @@ export default function IPTVAbidjanPage() {
                 </div>
               ))}
             </div>
+            <div style={{ textAlign: 'center', marginTop: '20px', padding: '16px', background: '#fff7ed', border: '1px solid #ffedd5', borderRadius: '12px' }}>
+              <p style={{ margin: 0, fontSize: '.95rem', color: '#9a3412', fontWeight: 600 }}>
+                💡 Vous souhaitez comparer en détail tous nos tarifs ? <Link href="/prix-iptv-abidjan" style={{ color: '#ea580c', textDecoration: 'underline' }}>Consultez la grille tarifaire complète des Prix IPTV à Abidjan</Link>.
+              </p>
+            </div>
 
             {/* Guarantee Seal */}
             <div className="ab-seal" style={{ marginTop: '2rem' }}>
