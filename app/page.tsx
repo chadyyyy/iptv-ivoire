@@ -8,9 +8,9 @@ import { getFAQSchema, getProductSchema, getHowToSchema, getBreadcrumbSchema } f
 import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck, Play, Globe, Gamepad2, Laptop, HardDrive, Target, CreditCard, PlayCircle, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "IPTV Côte d'Ivoire — 22 840 Chaînes en 4K dès 5 900 FCFA | Wave & Orange Money",
-  description: "Meilleur abonnement IPTV en Côte d'Ivoire. 22 840 chaînes HD/4K, 124 580 VOD. Paiement sécurisé Wave & Orange Money. Activation immédiate en 5 min. Essai gratuit 24h.",
-  keywords: ['iptv cote divoire', 'télé ip', 'box iptv abidjan', 'iptv coupe du monde 2026', 'abonnement iptv fcfa', 'wave iptv', 'orange money iptv', 'iptv abidjan'],
+  title: "IPTV Abidjan & Côte d'Ivoire — 22 840 Chaînes 4K dès 5 900 FCFA",
+  description: "Meilleur abonnement IPTV à Abidjan et en Côte d'Ivoire. 22 840 chaînes HD/4K, 124 580 VOD. Paiement Wave & Orange Money en FCFA. Activation en 5 min. Fournisseur IPTV #1 à Abidjan.",
+  keywords: ['iptv abidjan', 'iptv cote d ivoire', 'abonnement iptv abidjan', 'fournisseur iptv abidjan', 'télé ip', 'iptv prix abidjan', 'box iptv abidjan', 'abonnement iptv fcfa', 'wave iptv', 'orange money iptv'],
   alternates: {
     canonical: 'https://iptvivoire.com',
   },
@@ -185,7 +185,7 @@ export default function HomePage() {
               marginBottom: '1.25rem',
               lineHeight: 1.15,
             }}>
-              IPTV Côte d&apos;Ivoire<br />
+              IPTV Abidjan &amp; Côte d&apos;Ivoire<br />
               <span className="gradient-text">22 840 Chaînes en 4K</span>{' '}
               dès{' '}
               <span style={{ color: '#F97316' }}>5 900 FCFA</span>

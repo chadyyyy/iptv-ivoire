@@ -586,6 +586,39 @@ export default function IPTVAbidjanPage() {
             </div>
           </section>
 
+          {/* ── 18. RECHERCHES ASSOCIÉES (SEO) ── */}
+          <section>
+            <h2 style={{ fontSize: '1.4rem', marginBottom: '1rem' }}>Recherches associées à l&apos;IPTV à Abidjan</h2>
+            <p style={{ color: '#6B7280', marginBottom: '1.5rem' }}>Retrouvez toutes les réponses à vos questions sur l&apos;IPTV à Abidjan, Côte d&apos;Ivoire.</p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem' }}>
+              <div className="card" style={{ padding: '1.25rem' }}>
+                <h3 style={{ fontSize: '1.05rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#1e293b', marginBottom: '0.5rem' }}>💰 IPTV Abidjan prix</h3>
+                <p style={{ fontSize: '.9rem', color: '#6B7280', margin: 0 }}>Les abonnements IPTV à Abidjan démarrent à <strong>5 900 FCFA pour 2 mois</strong> (2 950 FCFA/mois). L&apos;offre 3 mois à 7 900 FCFA est la plus populaire. <Link href="/prix-iptv-abidjan" style={{ color: '#F97316' }}>Voir tous les tarifs IPTV →</Link></p>
+              </div>
+              <div className="card" style={{ padding: '1.25rem' }}>
+                <h3 style={{ fontSize: '1.05rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#1e293b', marginBottom: '0.5rem' }}>🏢 Fournisseur IPTV Abidjan</h3>
+                <p style={{ fontSize: '.9rem', color: '#6B7280', margin: 0 }}>IPTV Ivoire est le fournisseur IPTV de référence à Abidjan avec +3 420 clients satisfaits. Paiement sécurisé Wave &amp; Orange Money, activation en 5 minutes. <Link href="/abonnement-iptv-cote-divoire" style={{ color: '#F97316' }}>Découvrir nos offres →</Link></p>
+              </div>
+              <div className="card" style={{ padding: '1.25rem' }}>
+                <h3 style={{ fontSize: '1.05rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#1e293b', marginBottom: '0.5rem' }}>🔧 Installation IPTV Abidjan</h3>
+                <p style={{ fontSize: '.9rem', color: '#6B7280', margin: 0 }}>L&apos;installation de l&apos;IPTV à Abidjan prend moins de 10 minutes. Compatible Smart TV, Android Box, iPhone et PC. Notre équipe vous guide sur WhatsApp. <Link href="/blog/comment-installer-iptv-smarters-pro" style={{ color: '#F97316' }}>Guide d&apos;installation →</Link></p>
+              </div>
+              <div className="card" style={{ padding: '1.25rem' }}>
+                <h3 style={{ fontSize: '1.05rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#1e293b', marginBottom: '0.5rem' }}>📦 Box IPTV Abidjan</h3>
+                <p style={{ fontSize: '.9rem', color: '#6B7280', margin: 0 }}>Pas besoin d&apos;acheter une box spéciale ! Votre Smart TV, Android TV Box ou même votre smartphone suffisent pour regarder l&apos;IPTV à Abidjan en 4K. <Link href="/appareils" style={{ color: '#F97316' }}>Appareils compatibles →</Link></p>
+              </div>
+              <div className="card" style={{ padding: '1.25rem' }}>
+                <h3 style={{ fontSize: '1.05rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#1e293b', marginBottom: '0.5rem' }}>⚖️ IPTV interdit en Côte d&apos;Ivoire ?</h3>
+                <p style={{ fontSize: '.9rem', color: '#6B7280', margin: 0 }}>L&apos;IPTV en tant que technologie est parfaitement légale en Côte d&apos;Ivoire. C&apos;est simplement regarder la télévision via internet. Des milliers d&apos;Ivoiriens utilisent l&apos;IPTV au quotidien à Abidjan et dans tout le pays.</p>
+              </div>
+              <div className="card" style={{ padding: '1.25rem' }}>
+                <h3 style={{ fontSize: '1.05rem', fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: '#1e293b', marginBottom: '0.5rem' }}>📅 Abonnement IPTV 12 mois CI</h3>
+                <p style={{ fontSize: '.9rem', color: '#6B7280', margin: 0 }}>L&apos;offre annuelle à <strong>24 900 FCFA (13 mois)</strong> est le meilleur rapport qualité-prix en Côte d&apos;Ivoire : seulement 1 915 FCFA/mois avec un mois offert. <Link href="/prix-iptv-abidjan" style={{ color: '#F97316' }}>Comparer les offres →</Link></p>
+              </div>
+            </div>
+          </section>
+
         </div>{/* .ab */}
 
         {/* STICKY MOBILE BAR */}
