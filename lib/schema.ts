@@ -17,7 +17,9 @@ export function getOrganizationSchema() {
       { '@type': 'Country', name: 'Mali' },
       { '@type': 'Country', name: 'Burkina Faso' },
     ],
-    sameAs: [],
+    sameAs: [
+      'https://web.facebook.com/iptvabidjan/'
+    ],
   }
 }
 
@@ -35,9 +37,14 @@ export function getLocalBusinessSchema() {
     areaServed: 'CI',
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'CI',
+      streetAddress: 'Boulevard Latrille, Cocody',
       addressLocality: 'Abidjan',
+      addressRegion: "District Autonome d'Abidjan",
+      addressCountry: 'CI',
     },
+    sameAs: [
+      'https://web.facebook.com/iptvabidjan/'
+    ],
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
