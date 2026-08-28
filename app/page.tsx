@@ -109,7 +109,7 @@ const plans = [
 ]
 
 const channelCategories = [
-  { emoji: <PlayCircle size={32} color="#F97316" />, name: 'Chaînes Ivoiriennes', count: '15+', desc: 'RTI 1, RTI 2, La 3, NCI...' },
+  { emoji: <PlayCircle size={32} color="#F97316" />, name: 'Chaînes Ivoiriennes', count: '15+', desc: 'RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire' },
   { emoji: <Globe size={32} color="#F97316" />, name: 'Chaînes Africaines', count: '50+', desc: 'Sénégal, Mali, Cameroun...' },
   { emoji: <Trophy size={32} color="#F97316" />, name: 'Sport', count: '80+', desc: 'beIN Sports, Canal+ Sport, Eurosport...' },
   { emoji: <Film size={32} color="#F97316" />, name: 'Cinéma & VOD', count: '124 580', desc: 'Films et séries en streaming' },
@@ -273,8 +273,9 @@ export default function HomePage() {
             {Array(4).fill([
               'Plus de 3 420 clients satisfaits en Côte d\'Ivoire',
               'Noté 4.9/5 sur WhatsApp',
-              'Support 24/7 en Français',
-              'Technologie Stream-Stable™ anti-coupures',
+              'Uptime 99.9% garanti — 0 coupure',
+              'Technologie Anti-Freeze Stream-Stable™',
+              'Serveurs haut débit dédiés à l\'Afrique de l\'Ouest',
               'Paiement sécurisé Wave & Orange Money',
               'Tous les championnats de football en direct',
               '22 840 chaînes en direct HD/4K',
@@ -375,43 +376,61 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ─── PAYMENT METHODS ─── */}
+        {/* ─── COMMENT ÇA MARCHE (SETUP & PAYMENT) ─── */}
         <section className="section" style={{ background: 'var(--color-surface)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
-          <div className="container" style={{ textAlign: 'center' }}>
-            <span className="section-label">Paiement</span>
-            <h2 className="section-title">Paiement facile avec votre mobile</h2>
-            <p className="section-subtitle" style={{ margin: '0 auto 2.5rem' }}>
-              Payez directement depuis votre téléphone en 2 minutes. Vous recevez vos codes d&apos;accès sur WhatsApp immédiatement après le paiement.
-            </p>
+          <div className="container">
+            <div style={{ textAlign: 'center' }}>
+              <span className="section-label">Guide d&apos;Installation</span>
+              <h2 className="section-title">Comment ça marche en 3 étapes ?</h2>
+              <p className="section-subtitle" style={{ margin: '0 auto 3rem' }}>
+                L&apos;installation de votre IPTV à Abidjan ne prend que 5 minutes.
+              </p>
+            </div>
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-              gap: '1rem',
-              maxWidth: '800px',
-              margin: '0 auto 2.5rem',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '2rem',
+              maxWidth: '1000px',
+              margin: '0 auto',
             }}>
-              {[
-                { name: 'Orange Money', tag: 'Recommandé', img: '/payments/orange.png' },
-                { name: 'Wave', tag: 'Populaire', img: '/payments/wave.png' },
-                { name: 'MTN MoMo', tag: 'Disponible', img: '/payments/mtn.png' },
-                { name: 'Moov Money', tag: 'Disponible', img: '/payments/moov.png' },
-              ].map(pm => (
-                <div key={pm.name} className="card" style={{ textAlign: 'center', padding: '1.25rem 1rem' }}>
-                  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '0.6rem' }}>
-                    <Image src={pm.img} alt={pm.name} width={48} height={48} style={{ objectFit: 'contain', borderRadius: '8px' }} />
-                  </div>
-                  <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', fontSize: '0.9rem', marginBottom: '0.35rem' }}>{pm.name}</div>
-                  <div style={{ fontSize: '0.72rem', color: '#4ADE80', fontFamily: 'Outfit, sans-serif', fontWeight: 600 }}>{pm.tag}</div>
+              <div className="card" style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
+                <div style={{ background: 'rgba(249,115,22,0.1)', color: '#F97316', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.5rem', margin: '0 auto 1.5rem' }}>1</div>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, color: 'var(--color-text)', fontSize: '1.2rem', marginBottom: '1rem' }}>Paiement Local</h3>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
+                  Contactez-nous sur WhatsApp. Vous pouvez payer instantanément et de façon sécurisée via <strong>Wave</strong> ou <strong>Orange Money</strong> (Côte d&apos;Ivoire).
+                </p>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem' }}>
+                  <Image src="/payments/wave.png" alt="Wave" width={35} height={35} style={{ borderRadius: '6px' }} />
+                  <Image src="/payments/orange.png" alt="Orange Money" width={35} height={35} style={{ borderRadius: '6px' }} />
                 </div>
-              ))}
+              </div>
+
+              <div className="card" style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
+                <div style={{ background: 'rgba(249,115,22,0.1)', color: '#F97316', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.5rem', margin: '0 auto 1.5rem' }}>2</div>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, color: 'var(--color-text)', fontSize: '1.2rem', marginBottom: '1rem' }}>Réception des Accès</h3>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  Dès réception du paiement, notre équipe vous envoie vos identifiants uniques (URL, Username, Password) sur WhatsApp en <strong>moins de 2 minutes</strong>.
+                </p>
+              </div>
+
+              <div className="card" style={{ padding: '2rem', textAlign: 'center', position: 'relative' }}>
+                <div style={{ background: 'rgba(249,115,22,0.1)', color: '#F97316', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '1.5rem', margin: '0 auto 1.5rem' }}>3</div>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, color: 'var(--color-text)', fontSize: '1.2rem', marginBottom: '1rem' }}>Configuration</h3>
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  Téléchargez <strong>IPTV Smarters Pro</strong> sur votre Smart TV ou Téléphone. Entrez vos identifiants, et profitez immédiatement de vos 22 840 chaînes.
+                </p>
+              </div>
             </div>
 
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" id="payment-cta" className="btn-primary">
-              Payer maintenant via WhatsApp
-            </a>
+            <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                Démarrer l&apos;Étape 1 sur WhatsApp
+              </a>
+            </div>
           </div>
         </section>
+
 
         {/* ─── DEVICES ─── */}
         <section className="section">
