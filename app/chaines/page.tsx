@@ -17,7 +17,7 @@ const categories = [
   { emoji: '📺', name: 'Chaînes Françaises', count: '50+', channels: ['TF1', 'France 2', 'France 3', 'France 5', 'M6', 'Arte', 'W9', 'TMC', 'TFX', 'C8', 'CNews', 'BFMTV'] },
   { emoji: '🌐', name: 'Internationales', count: '22 000+', channels: ['BBC World', 'CNN International', 'Al Jazeera', 'Sky News Arabia', 'MBC', 'Nile TV', 'ART', 'TRT World'] },
   { emoji: '🎮', name: 'Kids & Famille', count: '30+', channels: ['Disney Channel', 'Cartoon Network', 'Nickelodeon', 'Canal+ Family', 'Gulli', 'TiJi', 'Tiji', 'Piwi+'] },
-  { emoji: '🏆', name: 'Coupe du Monde 2026', count: '64 matchs', channels: ['TF1', 'France 2', 'beIN Sports', 'Canal+ Sport', 'RTI 2', 'BBC', 'ITV', 'Telemundo'] },
+  { emoji: '🏆', name: 'Grands Championnats', count: '64 matchs', channels: ['TF1', 'France 2', 'beIN Sports', 'Canal+ Sport', 'RTI 2', 'BBC', 'ITV', 'Telemundo'] },
 ]
 
 export default function ChainesPage() {

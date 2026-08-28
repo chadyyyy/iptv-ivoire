@@ -14,13 +14,13 @@ const WORLD_CUP_END = new Date('2026-07-19T23:59:00')
 const promoPlans = [
   {
     id: 'cdm-2m',
-    name: 'Offre Coupe du Monde — 2 mois',
+    name: 'Offre Grands Championnats — 2 mois',
     originalPrice: '7 800',
     promoPrice: '5 900',
     perMonth: '2 950 FCFA/mois',
     badge: null,
     badgeBg: '',
-    promoLabel: '-24% · Offre CDM 2026',
+    promoLabel: '-24% · Offre Découverte 2026',
     promoColor: '#F97316',
     subtitle: 'couvre tout le tournoi',
     payment: 'Orange Money',
@@ -37,11 +37,11 @@ const promoPlans = [
   },
   {
     id: 'cdm-3m',
-    name: 'Offre Coupe du Monde — 3 mois',
+    name: 'Offre Grands Championnats — 3 mois',
     originalPrice: '11 700',
     promoPrice: '7 900',
     perMonth: '2 633 FCFA/mois',
-    badge: 'Mondial 2026',
+    badge: 'Sport en Direct',
     badgeBg: 'linear-gradient(135deg, #F97316, #EA580C)',
     promoLabel: '-32% · Le plus populaire',
     promoColor: '#F97316',
@@ -91,7 +91,7 @@ const features = [
   { icon: <Trophy size={26} color="#F97316" />, title: 'Sport en direct', desc: 'beIN Sports, Canal+ Sport...' },
   { icon: <Smartphone size={26} color="#F97316" />, title: '5 appareils simultanés', desc: 'Smart TV, mobile, PC...' },
   { icon: <MessageCircle size={26} color="#F97316" />, title: 'Support 24/7', desc: 'WhatsApp en Français' },
-  { icon: <Trophy size={26} color="#F59E0B" />, title: 'Coupe du Monde 2026', desc: 'Tous les 64 matchs' },
+  { icon: <Trophy size={26} color="#F59E0B" />, title: 'Grands Championnats', desc: 'Tous les 64 matchs' },
   { icon: <Zap size={26} color="#F97316" />, title: 'Activation en 5 min', desc: 'Dès réception du paiement' },
 ]
 
@@ -202,7 +202,7 @@ export default function AbonnementPage() {
               <span style={{ background: 'linear-gradient(90deg, #F97316, #FBBF24)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 Éléphants
               </span>
-              {' '}en Coupe du Monde
+              {' '}en Grands Championnats
             </h1>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'Outfit, sans-serif', fontSize: '1rem', marginBottom: '2rem' }}>
               11 juin → 19 juillet 2026 · Côte d&apos;Ivoire qualifiée · Offre valable pendant le Mondial
@@ -418,10 +418,10 @@ export default function AbonnementPage() {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
                 <div className="card" style={{ padding: '1.5rem' }}>
                   <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.75rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Trophy size={20} color="#F97316" /> Coupe du Monde 2026 en IPTV
+                    <Trophy size={20} color="#F97316" /> Grands Championnats en IPTV
                   </h3>
                   <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Ne manquez aucun match des Éléphants ! Notre abonnement IPTV inclut toutes les chaînes sportives (beIN Sports, Canal+ Sport, NCI) pour vivre la <Link href="/blog/cote-divoire-coupe-du-monde-2026-streaming" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Coupe du Monde 2026 en direct</strong></Link> depuis votre salon.
+                    Ne manquez aucun match des Éléphants ! Notre abonnement IPTV inclut toutes les chaînes sportives (beIN Sports, Canal+ Sport, NCI) pour vivre la <Link href="/blog/cote-divoire-coupe-du-monde-2026-streaming" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Grands Championnats en direct</strong></Link> depuis votre salon.
                   </p>
                 </div>
                 <div className="card" style={{ padding: '1.5rem' }}>
@@ -441,7 +441,7 @@ export default function AbonnementPage() {
               {[
                 { q: "En combien de temps mon abonnement IPTV est-il activé ?", a: "L'activation est immédiate. Après votre paiement via Orange Money ou Wave, vous recevez vos identifiants (lien m3u, Xtream Codes) sur WhatsApp en moins de 5 minutes.", hl: false },
                 { q: "Quels sont les appareils compatibles ?", a: "Notre abonnement fonctionne sur tous les supports : Smart TV (Samsung, LG), Android TV, Apple TV, smartphones (iOS/Android), tablettes, et ordinateurs (PC/Mac) via l'application IPTV Smarters Pro par exemple.", hl: false },
-                { q: "Comment profiter de l'offre Coupe du Monde ?", a: "Choisissez l'offre 2 mois (5 900 FCFA) ou 3 mois (7 900 FCFA) avant le 11 juin 23h59. Contactez-nous sur WhatsApp et indiquez votre forfait. L'activation se fait en 5 minutes, à temps pour le coup d'envoi !", hl: true },
+                { q: "Comment profiter de l'offre Grands Championnats ?", a: "Choisissez l'offre 2 mois (5 900 FCFA) ou 3 mois (7 900 FCFA) avant le 11 juin 23h59. Contactez-nous sur WhatsApp et indiquez votre forfait. L'activation se fait en 5 minutes, à temps pour le coup d'envoi !", hl: true },
               ].map(({ q, a, hl }) => (
                 <div key={q} style={{ marginBottom: '1.5rem', background: 'var(--color-surface-2)', padding: '1.25rem', borderRadius: '12px', borderLeft: hl ? '4px solid #F97316' : undefined }}>
                   <h4 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>{q}</h4>

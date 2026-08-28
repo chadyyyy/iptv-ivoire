@@ -24,9 +24,9 @@ const faqs = [
   { q: "L'IPTV est-il vraiment moins cher que Canal+ à Abidjan ?", a: "Oui, très nettement. Canal+ coûte environ 15 000 FCFA/mois pour ~200 chaînes. Notre abonnement IPTV à Abidjan revient à 2 633 FCFA/mois pour 22 840 chaînes + 124 580 films. Soit 5 à 6 fois moins cher, avec 100 fois plus de contenu." },
   { q: "Comment payer mon abonnement IPTV à Abidjan ?", a: "Paiement sécurisé par Wave, Orange Money ou MTN MoMo. Contactez-nous sur WhatsApp, choisissez votre forfait, effectuez le transfert. Vos codes d'accès arrivent en moins de 5 minutes. Chaque paiement est traçable." },
   { q: "Y a-t-il des frais cachés dans les prix IPTV affichés ?", a: "Aucun frais caché. Le prix affiché est le prix final. Pas de frais d'installation, pas de frais d'activation, pas de matériel obligatoire à acheter. Vous payez une seule fois pour la durée de votre abonnement." },
-  { q: "Quel forfait IPTV est le plus populaire à Abidjan ?", a: "Le forfait 3 mois à 7 900 FCFA est de loin le plus choisi par nos clients à Abidjan. Il revient à seulement 2 633 FCFA/mois et offre le meilleur équilibre entre prix et durée. Il inclut toutes les chaînes sportives pour la Coupe du Monde 2026." },
+  { q: "Quel forfait IPTV est le plus populaire à Abidjan ?", a: "Le forfait 3 mois à 7 900 FCFA est de loin le plus choisi par nos clients à Abidjan. Il revient à seulement 2 633 FCFA/mois et offre le meilleur équilibre entre prix et durée. Il inclut toutes les chaînes sportives (Ligue des champions, Premier League)." },
   { q: "Puis-je payer en plusieurs fois mon IPTV à Abidjan ?", a: "Nos tarifs sont déjà très accessibles (dès 5 900 FCFA pour 2 mois), le paiement en une seule fois via Wave ou Orange Money est instantané. Si vous préférez tester d'abord, nous proposons un essai gratuit de 24h." },
-  { q: "Combien coûte l'IPTV pour regarder la Coupe du Monde 2026 à Abidjan ?", a: "L'offre 2 mois à 5 900 FCFA couvre la totalité de la Coupe du Monde 2026 (du 11 juin au 19 juillet). Vous aurez accès à beIN Sports, Canal+ Sport, TF1 et France 2 — les 64 matchs en direct en HD/4K." },
+  { q: "Combien coûte l'IPTV pour regarder les grands championnats à Abidjan ?", a: "L'offre 2 mois à 5 900 FCFA est parfaite pour commencer. Vous aurez accès à beIN Sports, Canal+ Sport, TF1 et France 2 pour regarder tous les matchs en direct en HD/4K." },
   { q: "Le prix change-t-il selon le quartier d'Abidjan ?", a: "Non. Le prix est identique que vous soyez à Cocody, Plateau, Yopougon, Abobo, Adjamé, Marcory, Koumassi, Port-Bouët, Treichville ou n'importe quel quartier. C'est un service 100% en ligne, le lieu ne change rien." },
   { q: "Quel est le prix IPTV le moins cher à Abidjan ?", a: "Le prix le plus bas pour un IPTV de qualité à Abidjan est 5 900 FCFA pour 2 mois (soit 2 950 FCFA/mois). Attention aux offres à 1 000 ou 2 000 FCFA sur les réseaux sociaux : ce sont généralement des arnaques sans support ni garantie." },
   { q: "Est-ce que l'essai gratuit 24h est vraiment gratuit ?", a: "Oui, 100% gratuit, sans engagement et sans carte bancaire. Contactez-nous sur WhatsApp, nous activons votre test en 5 minutes. Vous accédez à toutes les 22 840 chaînes pendant 24 heures pour vérifier la qualité." },
@@ -331,7 +331,7 @@ export default function PrixIPTVAbidjanPage() {
             <div className="px-tldr">
               <h3>💰 Les prix IPTV à Abidjan en bref (Juillet 2026)</h3>
               <ul>
-                <li><strong>2 mois :</strong> 5 900 FCFA — idéal pour tester ou pour la Coupe du Monde 2026.</li>
+                <li><strong>2 mois :</strong> 5 900 FCFA — idéal pour tester ou pour les Grands Championnats.</li>
                 <li><strong>3 mois :</strong> 7 900 FCFA — le plus populaire (2 633 FCFA/mois).</li>
                 <li><strong>12 mois + 1 mois offert :</strong> 24 900 FCFA — le meilleur rapport qualité/prix (1 915 FCFA/mois).</li>
                 <li>Paiement <strong>Wave</strong> ou <strong>Orange Money</strong>. Pas de frais cachés. Prix identique dans tous les quartiers d&apos;Abidjan.</li>
@@ -364,10 +364,10 @@ export default function PrixIPTVAbidjanPage() {
           <section id="px-tarifs">
             <span className="eyebrow">Tarifs FCFA — Juillet 2026</span>
             <h2>Grille Tarifaire IPTV Abidjan — Tous les Prix en FCFA</h2>
-            <p>Voici les <strong>prix IPTV à Abidjan</strong> pour chaque durée d&apos;abonnement. Tous les forfaits incluent l&apos;accès à 22 840 chaînes HD/4K, 124 580 films et séries VOD, la Coupe du Monde 2026 en direct, et le support WhatsApp. Paiement par <strong>Wave</strong> ou <strong>Orange Money</strong>.</p>
+            <p>Voici les <strong>prix IPTV à Abidjan</strong> pour chaque durée d&apos;abonnement. Tous les forfaits incluent l&apos;accès à 22 840 chaînes HD/4K, 124 580 films et séries VOD, les Grands Championnats en direct, et le support WhatsApp. Paiement par <strong>Wave</strong> ou <strong>Orange Money</strong>.</p>
             <div className="px-pricing">
               {[
-                { name: '2 mois', sub: 'Coupe du Monde 2026', price: '5 900 FCFA', pm: '2 950 FCFA/mois', orig: '7 800 FCFA', promo: '-24% — Offre CDM', feat: false,
+                { name: '2 mois', sub: 'Grands Championnats', price: '5 900 FCFA', pm: '2 950 FCFA/mois', orig: '7 800 FCFA', promo: '-24% — Offre Découverte', feat: false,
                   items: ['22 840 chaînes HD/4K', 'CDM 2026 — 64 matchs en direct', 'VOD 124 580 films & séries', 'RTI + beIN Sports + Canal+ Sport', 'Support WhatsApp 24/7', 'Activation en 5 min'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Abidjan` },
                 { name: '3 mois', sub: 'Le + populaire à Abidjan', price: '7 900 FCFA', pm: '2 633 FCFA/mois', orig: '11 700 FCFA', promo: '-32% — Choix N°1', feat: true,
@@ -402,7 +402,7 @@ export default function PrixIPTVAbidjanPage() {
             <div className="px-breakdown">
               <div className="px-bd-card"><span className="ic">📺</span><h3>22 840 chaînes en direct</h3><p>Chaînes ivoiriennes (RTI 1, RTI 2, NCI, La 3, Life TV), françaises (TF1, France 2, Canal+), arabes, anglaises, portugaises et africaines. Sport, info, divertissement, jeunesse — tout y est.</p></div>
               <div className="px-bd-card"><span className="ic">🎬</span><h3>124 580 films & séries VOD</h3><p>Derniers blockbusters, séries du moment, productions africaines, dessins animés. Bibliothèque mise à jour quotidiennement, accessible à la demande 24h/24.</p></div>
-              <div className="px-bd-card"><span className="ic">⚽</span><h3>Sport en direct sans coupure</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Coupe du Monde 2026. Via beIN Sports, Canal+ Sport, TF1, France 2 — en HD et 4K.</p></div>
+              <div className="px-bd-card"><span className="ic">⚽</span><h3>Sport en direct sans coupure</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Grands Championnats. Via beIN Sports, Canal+ Sport, TF1, France 2 — en HD et 4K.</p></div>
               <div className="px-bd-card"><span className="ic">📱</span><h3>Multi-appareils inclus</h3><p>Smart TV, Android Box, iPhone, smartphone Android, PC/Mac, Fire TV Stick. Une seule souscription, tous vos écrans. <Link href="/appareils">Voir les appareils compatibles →</Link></p></div>
             </div>
           </section>

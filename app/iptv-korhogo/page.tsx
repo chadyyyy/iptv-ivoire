@@ -25,7 +25,7 @@ const faqs = [
   { q: "L'IPTV est-il disponible dans tous les quartiers de Korhogo ?", a: "Oui, notre couverture s'étend sur tout Korhogo : Koko, Soba, Sinistré, Haoussabougou, Belleville, Preste, Quartier Administratif, etc." },
   { q: "Puis-je regarder RTI 1 et RTI 2 depuis Korhogo ?", a: "Absolument. Notre abonnement inclut toutes les chaînes locales de Côte d'Ivoire (RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire) ainsi que les bouquets internationaux comme beIN Sports et Canal+." },
   { q: "Sur quels appareils puis-je utiliser mon IPTV à Korhogo ?", a: "Le service est compatible avec les Smart TV (Samsung, LG, Sony, Hisense), Box Android, smartphones (Android & iOS), tablettes et ordinateurs. Nous vous guidons pas à pas pour l'installation sur WhatsApp." },
-  { q: "Quel abonnement IPTV choisir à Korhogo pour la Coupe du Monde ?", a: "L'offre 2 mois à 5 900 FCFA couvre toute la durée du tournoi (jusqu'au 19 juillet). Pour un meilleur prix à long terme, l'offre 3 mois à 7 900 FCFA est la plus populaire à Korhogo (soit 2 633 FCFA/mois)." },
+  { q: "Quel abonnement IPTV choisir à Korhogo pour les Grands Championnats ?", a: "L'offre 2 mois à 5 900 FCFA couvre toute la durée du tournoi (jusqu'au 19 juillet). Pour un meilleur prix à long terme, l'offre 3 mois à 7 900 FCFA est la plus populaire à Korhogo (soit 2 633 FCFA/mois)." },
   { q: "Quelle connexion internet est requise à Korhogo ?", a: "Une simple connexion internet stable (Fibre, Box 4G ou Mobile) de 10 Mbps suffit pour de la HD fluide, et 25 Mbps pour le flux 4K." },
 ]
 
@@ -273,7 +273,7 @@ export default function IPTVKorhogoPage() {
                 <span className="ab-chip">📺 4K UHD</span>
                 <span className="ab-chip">💚 Wave</span>
                 <span className="ab-chip">🟠 Orange Money</span>
-                <span className="ab-chip">🏆 Coupe du Monde 2026</span>
+                <span className="ab-chip">🏆 Grands Championnats</span>
               </div>
               <div className="ab-cta-row">
                 <a href="#ab-tarifs" className="ab-btn ab-btn-primary">Voir les prix en FCFA →</a>
@@ -358,7 +358,7 @@ export default function IPTVKorhogoPage() {
             <span className="eyebrow">Les avantages</span>
             <h2>Pourquoi l&apos;IPTV séduit autant les habitants de Korhogo</h2>
             <div className="ab-cards">
-              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Champions League, et tous les matchs de la Coupe du Monde 2026 en direct HD/4K.</p></div>
+              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Champions League, et tous les matchs de les Grands Championnats en direct HD/4K.</p></div>
               <div className="ab-card"><span className="ic">🇨🇮</span><h3>Toutes les chaînes ivoiriennes</h3><p>RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire en excellente qualité d&apos;image.</p></div>
               <div className="ab-card"><span className="ic">🎬</span><h3>VOD de 124 580 titres</h3><p>Accès illimité à une immense bibliothèque de films et séries récents mis à jour chaque semaine.</p></div>
               <div className="ab-card"><span className="ic">💰</span><h3>Économique & sans parabole</h3><p>Abonnement à partir de 2 950 FCFA/mois, sans frais d&apos;installation ni décodeur satellite obligatoire.</p></div>
@@ -372,7 +372,7 @@ export default function IPTVKorhogoPage() {
             <h3>Direct Sport & Divertissement</h3>
             <ul>
               <li>Tous les grands championnats européens et coupes africaines.</li>
-              <li>Coupe du Monde 2026 : diffusion des 64 matchs via beIN Sports et TF1.</li>
+              <li>Grands Championnats : diffusion des 64 matchs via beIN Sports et TF1.</li>
               <li>Bouquets français, africains, arabes et internationaux complets.</li>
               <li>Chaînes jeunesse (Disney, Nickelodeon) et documentaires.</li>
             </ul>
@@ -473,7 +473,7 @@ export default function IPTVKorhogoPage() {
             <h2>Choisissez votre abonnement IPTV Korhogo</h2>
             <div className="ab-pricing">
               {[
-                { name: '2 mois', sub: 'Coupe du Monde 2026', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre CDM', feat: false,
+                { name: '2 mois', sub: 'Grands Championnats', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre Découverte', feat: false,
                   items: ['Matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Activation en 5 min'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Korhogo` },
                 { name: '3 mois', sub: 'Le plus populaire à Korhogo', price: '7 900 FCFA', orig: '11 700 FCFA', promo: '-32% — Le + choisi', feat: true,

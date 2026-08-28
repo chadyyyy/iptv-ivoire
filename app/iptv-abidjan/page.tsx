@@ -25,7 +25,7 @@ const faqs = [
   { q: "L'IPTV est-il disponible dans tous les quartiers d'Abidjan ?", a: "Oui — Cocody, Plateau, Yopougon, Abobo, Adjamé, Treichville, Marcory, Koumassi, Port-Bouët, Riviera, Angré, Deux Plateaux, Bingerville... partout où vous avez internet." },
   { q: "Puis-je regarder RTI 1 et RTI 2 depuis Abidjan ?", a: "Absolument. Notre abonnement inclut RTI 1, RTI 2, La 3, NCI, Life TV, Canal 3 CI, VIBE, A+ Ivoire, ainsi que Canal+, beIN Sports, TF1, France 2, M6 et 22 840 chaînes internationales." },
   { q: "Sur quels appareils puis-je regarder l'IPTV à Abidjan ?", a: "Smart TV Samsung, LG, Sony, Hisense — Android TV Box — iPhone & iPad — Smartphones Android — PC/Mac — Amazon Fire TV Stick. Nous vous guidons gratuitement sur WhatsApp pour l'installation." },
-  { q: "Quel abonnement IPTV choisir à Abidjan pour la Coupe du Monde ?", a: "L'offre 2 mois à 5 900 FCFA couvre tout le tournoi (jusqu'au 19 juillet). Pour continuer après, l'offre 3 mois à 7 900 FCFA est la plus populaire à Abidjan (2 633 FCFA/mois)." },
+  { q: "Quel abonnement IPTV choisir à Abidjan pour les Grands Championnats ?", a: "L'offre 2 mois à 5 900 FCFA couvre tout le tournoi (jusqu'au 19 juillet). Pour continuer après, l'offre 3 mois à 7 900 FCFA est la plus populaire à Abidjan (2 633 FCFA/mois)." },
   { q: "Combien de données consomme l'IPTV à Abidjan ?", a: "Environ 0,7 Go/h en HD et 2,5 Go/h en 4K. Une connexion fibre ou 4G illimitée est idéale. Pour les forfaits data limités, la qualité HD est recommandée : parfaite fluidité pour un faible coût data." },
 ]
 
@@ -272,7 +272,7 @@ export default function IPTVAbidjanPage() {
                 <span className="ab-chip">📺 4K UHD</span>
                 <span className="ab-chip">🟠 Orange Money</span>
                 <span className="ab-chip">💚 Wave</span>
-                <span className="ab-chip">🏆 Coupe du Monde 2026</span>
+                <span className="ab-chip">🏆 Grands Championnats</span>
               </div>
               <div className="ab-cta-row">
                 <a href="#ab-tarifs" className="ab-btn ab-btn-primary">Voir les prix en FCFA →</a>
@@ -358,7 +358,7 @@ export default function IPTVAbidjanPage() {
             <h2>Pourquoi l&apos;IPTV séduit autant les habitants d&apos;Abidjan</h2>
             <p>Abidjan vit au rythme du football, des séries, de la musique et de l&apos;information continue. Les habitants de Cocody, Yopougon, Marcory ou du Plateau veulent un accès simple à des contenus variés, sans se limiter aux quelques chaînes locales disponibles en clair. C&apos;est précisément ce que propose une bonne offre <strong>IPTV Abidjan</strong> : plus de choix, plus de liberté et un budget maîtrisé.</p>
             <div className="ab-cards">
-              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Coupe du Monde — en HD ou 4K, sans manquer une seconde de l&apos;action.</p></div>
+              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Grands Championnats — en HD ou 4K, sans manquer une seconde de l&apos;action.</p></div>
               <div className="ab-card"><span className="ic">🇨🇮</span><h3>Toutes les chaînes ivoiriennes</h3><p>RTI 1, RTI 2, La 3, NCI, Life TV, Canal 3 CI, VIBE et A+ Ivoire — votre télévision locale en parfaite qualité.</p></div>
               <div className="ab-card"><span className="ic">🎬</span><h3>Films & séries à volonté</h3><p>Une bibliothèque VOD de +124 580 titres : dernières sorties, grandes sagas, séries du moment et productions africaines.</p></div>
               <div className="ab-card"><span className="ic">💰</span><h3>Une vraie économie vs Canal+</h3><p>Canal+ Sénégal à ~15 000 FCFA/mois. Notre offre : dès 2 950 FCFA/mois. Même qualité, cinq fois moins cher.</p></div>
@@ -373,7 +373,7 @@ export default function IPTVAbidjanPage() {
             <ul>
               <li>Football : Ligue 1, Premier League, La Liga, Serie A, Bundesliga, Ligue des Champions et Europa League.</li>
               <li>Compétitions africaines : CAN, Ligue des Champions CAF, championnats locaux ivoiriens.</li>
-              <li>Coupe du Monde 2026 : les 64 matchs en direct via beIN Sports, Canal+ Sport, TF1 et France 2.</li>
+              <li>Grands Championnats : les 64 matchs en direct via beIN Sports, Canal+ Sport, TF1 et France 2.</li>
               <li>Autres sports : basket-ball, tennis, rugby, Formule 1, sports de combat.</li>
             </ul>
             <h3>Les chaînes ivoiriennes et africaines</h3>
@@ -459,7 +459,7 @@ export default function IPTVAbidjanPage() {
             <span className="eyebrow">Mise en route</span>
             <h2>Comment activer votre IPTV à Abidjan en 5 étapes</h2>
             <div className="ab-steps">
-              <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou annuel (24 900 FCFA). Tous les forfaits incluent 22 840 chaînes et la Coupe du Monde 2026.</p></div>
+              <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou annuel (24 900 FCFA). Tous les forfaits incluent 22 840 chaînes et les Grands Championnats.</p></div>
               <div className="ab-step"><h3>Contactez-nous sur WhatsApp</h3><p>Envoyez un message avec votre choix de forfait. Nous vous répondons en moins de 5 minutes, même le week-end.</p></div>
               <div className="ab-step"><h3>Payez par Orange Money ou Wave</h3><p>Nous vous envoyons le numéro de transfert. Le paiement prend 30 secondes. Chaque transaction est sécurisée et traçable.</p></div>
               <div className="ab-step"><h3>Recevez vos codes d&apos;accès</h3><p>Dès confirmation du paiement, vous recevez votre URL, nom d&apos;utilisateur et mot de passe sur WhatsApp — généralement en moins de 5 minutes.</p></div>
@@ -508,7 +508,7 @@ export default function IPTVAbidjanPage() {
             <p>Paiement par <strong>Orange Money</strong>, <strong>Wave</strong> ou <strong>MTN MoMo</strong>. Activation en moins de 5 minutes.</p>
             <div className="ab-pricing">
               {[
-                { name: '2 mois', sub: 'Coupe du Monde 2026', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre CDM', feat: false,
+                { name: '2 mois', sub: 'Grands Championnats', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre Découverte', feat: false,
                   items: ['Tous les matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Activation en 5 min'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Abidjan` },
                 { name: '3 mois', sub: 'Le plus populaire à Abidjan', price: '7 900 FCFA', orig: '11 700 FCFA', promo: '-32% — Le + choisi', feat: true,

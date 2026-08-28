@@ -6,7 +6,7 @@ import { getFAQSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: "FAQ IPTV Côte d'Ivoire : Prix & Paiement",
-  description: "Réponses à toutes vos questions sur l'IPTV en Côte d'Ivoire. Orange Money, Wave, installation, chaînes, légalité, Coupe du Monde 2026.",
+  description: "Réponses à toutes vos questions sur l'IPTV en Côte d'Ivoire. Orange Money, Wave, installation, chaînes, légalité, Grands Championnats.",
 }
 
 const faqs = [
@@ -14,7 +14,7 @@ const faqs = [
   { q: "Comment payer un abonnement IPTV avec Orange Money en Côte d'Ivoire ?", a: "Contactez-nous sur WhatsApp, choisissez votre forfait, et nous vous envoyons le numéro Orange Money. Effectuez le transfert via *144# ou l'application Orange Money. Activation en moins de 5 minutes." },
   { q: "IPTV Smarters Pro — comment configurer en Côte d'Ivoire ?", a: "Téléchargez IPTV Smarters Pro (Play Store ou App Store), choisissez 'Login with Xtream Codes API', et entrez l'URL, le nom d'utilisateur et le mot de passe reçus sur WhatsApp. Configuration en 2 minutes." },
   { q: "Quel est le meilleur abonnement IPTV à Abidjan ?", a: "Notre abonnement 3 mois à 2 000 FCFA/mois est le plus populaire. Excellent rapport qualité-prix avec +22 000 chaînes HD/4K, VOD illimitée, et support WhatsApp prioritaire." },
-  { q: "Puis-je regarder la Coupe du Monde 2026 sur IPTV ?", a: "Oui ! Tous les 64 matchs de la Coupe du Monde 2026 (11 juin – 19 juillet) sont disponibles via beIN Sports, Canal+ Sport, TF1, France 2 et RTI 2. La Côte d'Ivoire est qualifiée !" },
+  { q: "Puis-je regarder les Grands Championnats sur IPTV ?", a: "Oui ! Tous les 64 matchs de les Grands Championnats (11 juin – 19 juillet) sont disponibles via beIN Sports, Canal+ Sport, TF1, France 2 et RTI 2. La Côte d'Ivoire est qualifiée !" },
   { q: "L'IPTV fonctionne-t-il avec la 4G Orange en Côte d'Ivoire ?", a: "Oui, notre service est optimisé pour 4G Orange, MTN et Moov. Minimum 10 Mbps pour la HD, 25 Mbps pour la 4K. En wifi, une connexion ADSL de 8 Mbps suffit pour la HD." },
   { q: "Combien coûte un abonnement IPTV en Côte d'Ivoire ?", a: "Nos forfaits : 1 mois à 2 500 FCFA, 3 mois à 6 000 FCFA (2 000 FCFA/mois), 12 mois à 18 000 FCFA (1 500 FCFA/mois). Paiement Orange Money, Wave, MTN MoMo ou Moov Money." },
   { q: "L'IPTV est-il légal en Côte d'Ivoire ?", a: "L'IPTV est une technologie légale de streaming. IPTV Ivoire opère conformément aux lois ivoiriennes. Nous vous recommandons d'utiliser uniquement des services légaux et fiables comme le nôtre." },

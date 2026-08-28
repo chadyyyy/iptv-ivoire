@@ -25,7 +25,7 @@ const faqs = [
   { q: "L'IPTV est-il disponible dans tous les quartiers de Bouaké ?", a: "Absolument. Que vous soyez à Commerce, Koko, Air France (1, 2, 3), Belleville, Dar es Salam, Broukro, Kennedy, Ahougnansou, Zone, Nimbo ou N'Gattakro, notre service fonctionne partout tant que vous disposez d'une connexion internet." },
   { q: "Puis-je regarder RTI 1 et RTI 2 depuis Bouaké ?", a: "Oui, notre abonnement inclut toutes les chaînes ivoiriennes (RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire) ainsi que les grands bouquets internationaux de sport et divertissement (Canal+, beIN Sports, TF1, France 2, etc.)." },
   { q: "Sur quels appareils puis-je installer mon IPTV à Bouaké ?", a: "Le service est compatible avec les Smart TV (Samsung, LG, Sony, Hisense), les Box Android, les smartphones (Android & iPhone), les tablettes et les ordinateurs. Nous vous guidons gratuitement sur WhatsApp pour l'installation étape par étape." },
-  { q: "Quel abonnement IPTV choisir à Bouaké pour la Coupe du Monde ?", a: "Pour toute la durée de la Coupe du Monde 2026 (jusqu'au 19 juillet), l'offre 2 mois à 5 900 FCFA est idéale. Si vous voulez profiter d'un meilleur tarif mensuel, l'offre 3 mois à 7 900 FCFA est la plus populaire à Bouaké (soit 2 633 FCFA/mois)." },
+  { q: "Quel abonnement IPTV choisir à Bouaké pour les Grands Championnats ?", a: "Pour toute la durée de les Grands Championnats (jusqu'au 19 juillet), l'offre 2 mois à 5 900 FCFA est idéale. Si vous voulez profiter d'un meilleur tarif mensuel, l'offre 3 mois à 7 900 FCFA est la plus populaire à Bouaké (soit 2 633 FCFA/mois)." },
   { q: "Combien de données consomme l'IPTV à Bouaké ?", a: "L'IPTV consomme environ 0,7 Go par heure en HD et 2,5 Go par heure en 4K. Une connexion internet mobile illimitée ou une box fibre est idéale pour une utilisation régulière sans stress de data." },
 ]
 
@@ -272,7 +272,7 @@ export default function IPTVMariageBouakePage() {
                 <span className="ab-chip">📺 4K UHD</span>
                 <span className="ab-chip">🟠 Orange Money</span>
                 <span className="ab-chip">💚 Wave</span>
-                <span className="ab-chip">🏆 Coupe du Monde 2026</span>
+                <span className="ab-chip">🏆 Grands Championnats</span>
               </div>
               <div className="ab-cta-row">
                 <a href="#ab-tarifs" className="ab-btn ab-btn-primary">Voir les prix en FCFA →</a>
@@ -358,7 +358,7 @@ export default function IPTVMariageBouakePage() {
             <h2>Pourquoi l&apos;IPTV séduit autant les habitants de Bouaké</h2>
             <p>Les résidents de Bouaké recherchent la flexibilité et un large choix de divertissements sans avoir à s&apos;abonner à de multiples forfaits coûteux. Qu&apos;il s&apos;agisse de suivre les grands championnats de football européens, les chaînes ivoiriennes locales ou d&apos;occuper les enfants avec des dessins animés, l&apos;<strong>IPTV Bouaké</strong> répond à tous ces besoins au meilleur tarif.</p>
             <div className="ab-cards">
-              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Coupe du Monde — en HD ou 4K, sans manquer une seconde de l&apos;action.</p></div>
+              <div className="ab-card"><span className="ic">⚽</span><h3>Tout le sport en direct</h3><p>Ligue 1, Premier League, Liga, Ligue des Champions, CAN, Grands Championnats — en HD ou 4K, sans manquer une seconde de l&apos;action.</p></div>
               <div className="ab-card"><span className="ic">🇨🇮</span><h3>Toutes les chaînes ivoiriennes</h3><p>RTI 1, RTI 2, La 3, NCI, Life TV, Canal 3 CI, VIBE et A+ Ivoire — votre télévision locale en parfaite qualité.</p></div>
               <div className="ab-card"><span className="ic">🎬</span><h3>Films & séries à volonté</h3><p>Une bibliothèque VOD de +124 580 titres : dernières sorties, grandes sagas, séries du moment et productions africaines.</p></div>
               <div className="ab-card"><span className="ic">💰</span><h3>Une vraie économie vs Canal+</h3><p>Canal+ en Côte d&apos;Ivoire coûte cher à l&apos;année. Notre offre : dès 2 950 FCFA/mois. Même qualité, cinq fois moins cher.</p></div>
@@ -372,7 +372,7 @@ export default function IPTVMariageBouakePage() {
             <h3>Le sport en haute définition</h3>
             <ul>
               <li>Football : Tous les matchs de la Premier League, Liga, Serie A, Bundesliga, Ligue des Champions.</li>
-              <li>Compétitions majeures : La Coupe du Monde 2026 en direct via beIN Sports, Canal+ Sport, TF1 et France 2.</li>
+              <li>Compétitions majeures : La Grands Championnats en direct via beIN Sports, Canal+ Sport, TF1 et France 2.</li>
               <li>Autres sports populaires : Basket-ball (NBA), Formule 1, Tennis, UFC.</li>
             </ul>
             <h3>Les chaînes nationales et régionales</h3>
@@ -455,7 +455,7 @@ export default function IPTVMariageBouakePage() {
             <span className="eyebrow">Mise en route</span>
             <h2>Comment activer votre IPTV à Bouaké en 5 étapes</h2>
             <div className="ab-steps">
-              <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou annuel (24 900 FCFA). Tous les forfaits incluent 22 840 chaînes et la Coupe du Monde 2026.</p></div>
+              <div className="ab-step"><h3>Choisissez votre forfait</h3><p>Sélectionnez 2 mois (5 900 FCFA), 3 mois (7 900 FCFA) ou annuel (24 900 FCFA). Tous les forfaits incluent 22 840 chaînes et les Grands Championnats.</p></div>
               <div className="ab-step"><h3>Contactez-nous sur WhatsApp</h3><p>Envoyez un message avec votre choix de forfait. Nous vous répondons en moins de 5 minutes, même le week-end.</p></div>
               <div className="ab-step"><h3>Payez par Orange Money ou Wave</h3><p>Nous vous envoyons le numéro de transfert. Le paiement prend 30 secondes. Chaque transaction est sécurisée et traçable.</p></div>
               <div className="ab-step"><h3>Recevez vos codes d&apos;accès</h3><p>Dès confirmation du paiement, vous recevez votre URL, nom d&apos;utilisateur et mot de passe sur WhatsApp — généralement en moins de 5 minutes.</p></div>
@@ -481,7 +481,7 @@ export default function IPTVMariageBouakePage() {
             <h2>Ce que disent nos clients à Bouaké</h2>
             <div className="ab-revs">
               {[
-                { init: 'K', name: 'Kouadio J.', loc: 'Koko, Bouaké', stars: '★★★★★', text: "Paiement Wave en 1 min. Les chaînes beIN Sports marchent super bien pour la Coupe du Monde. Vraiment content de la qualité à Bouaké." },
+                { init: 'K', name: 'Kouadio J.', loc: 'Koko, Bouaké', stars: '★★★★★', text: "Paiement Wave en 1 min. Les chaînes beIN Sports marchent super bien pour les Grands Championnats. Vraiment content de la qualité à Bouaké." },
                 { init: 'B', name: 'Bamba S.', loc: 'Air France, Bouaké', stars: '★★★★★', text: "Finies les coupures de satellite quand il pleut sur Bouaké. Avec la 4G Orange et l'IPTV, c'est fluide et beaucoup moins cher." },
                 { init: 'Y', name: "Yao K.", loc: 'Belleville, Bouaké', stars: '★★★★★', text: "L'offre 12 mois est incroyable. Toutes les chaînes ivoiriennes et internationales pour le prix d'un seul mois de Canal+." },
               ].map(r => (
@@ -504,7 +504,7 @@ export default function IPTVMariageBouakePage() {
             <p>Paiement par <strong>Orange Money</strong>, <strong>Wave</strong> ou <strong>MTN MoMo</strong>. Activation en moins de 5 minutes.</p>
             <div className="ab-pricing">
               {[
-                { name: '2 mois', sub: 'Coupe du Monde 2026', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre CDM', feat: false,
+                { name: '2 mois', sub: 'Grands Championnats', price: '5 900 FCFA', orig: '7 800 FCFA', promo: '-24% — Offre Découverte', feat: false,
                   items: ['Tous les matchs CDM 2026', '22 840 chaînes HD/4K', 'RTI + beIN Sports + TF1', 'VOD 124 580 films', 'Activation en 5 min'],
                   wa: `${WHATSAPP_URL}&text=Bonjour, je veux l'abonnement IPTV 2 mois (5900 FCFA) à Bouaké` },
                 { name: '3 mois', sub: 'Le plus populaire à Bouaké', price: '7 900 FCFA', orig: '11 700 FCFA', promo: '-32% — Le + choisi', feat: true,

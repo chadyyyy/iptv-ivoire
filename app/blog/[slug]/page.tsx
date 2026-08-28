@@ -131,12 +131,12 @@ export default async function BlogPostPage({ params }: Props) {
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
                   <li>
                     <Link href="/abonnement-iptv-cote-divoire" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-                      → Abonnement IPTV Côte d&apos;Ivoire — Offre Coupe du Monde 2026
+                      → Abonnement IPTV Côte d&apos;Ivoire — Offre Grands Championnats
                     </Link>
                   </li>
                   <li>
                     <Link href="/blog/cote-divoire-coupe-du-monde-2026-streaming" style={{ color: '#F97316', textDecoration: 'none', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-                      → Regarder la Coupe du Monde 2026 en IPTV en Côte d&apos;Ivoire
+                      → Regarder les Grands Championnats en IPTV en Côte d&apos;Ivoire
                     </Link>
                   </li>
                   <li>

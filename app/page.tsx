@@ -30,8 +30,8 @@ const faqs = [
     answer: "Notre offre 3 mois à 7 900 FCFA (soit 2 633 FCFA/mois) est la plus populaire à Abidjan. Elle inclut +22 000 chaînes HD/4K, la VOD illimitée et un support WhatsApp 24/7.",
   },
   {
-    question: "Puis-je regarder la Coupe du Monde 2026 sur IPTV ?",
-    answer: "Oui, tous les matchs de la Coupe du Monde 2026 (11 juin – 19 juillet) sont disponibles sur notre service IPTV via beIN Sports, Canal+ Sport, et TF1. La Côte d'Ivoire est qualifiée — ne manquez aucun match !",
+    question: "Quels sont les événements sportifs disponibles sur IPTV ?",
+    answer: "Tous les plus grands événements sportifs sont inclus (Ligue des Champions, Premier League, CAN, etc.) sur vos chaînes préférées : beIN Sports, Canal+ Sport, et TF1.",
   },
   {
     question: "L'IPTV fonctionne-t-il avec la 4G Orange en Côte d'Ivoire ?",
@@ -57,43 +57,43 @@ const testimonials = [
   { name: "Yao F.", city: "Yamoussoukro", text: "L'offre annuelle, ça coûte moins qu'un trimestre de Canal+. Qualité excellente !", stars: 5 },
   { name: "Touré B.", city: "Abidjan (Cocody)", text: "Activation en 3 minutes via Orange Money. Service impeccable, support très réactif sur WhatsApp.", stars: 5 },
   { name: "N'Dri C.", city: "Daloa", text: "Je regarde beIN Sports, toutes les chaînes françaises et les chaînes ivoiriennes sans aucun problème.", stars: 5 },
-  { name: "Bamba S.", city: "San-Pédro", text: "Parfait pour voir tous les matchs des Éléphants en Coupe du Monde ! Qualité au top.", stars: 5 },
+  { name: "Bamba S.", city: "San-Pédro", text: "Parfait pour voir tous les grands matchs des Éléphants ! Qualité au top.", stars: 5 },
 ]
 
 const plans = [
   {
-    id: 'cdm-2m',
-    name: 'Offre CDM — 2 mois',
+    id: 'plan-2m',
+    name: 'Offre Découverte — 2 mois',
     originalPrice: '7 800',
     promoPrice: '5 900',
     perMonth: '2 950 FCFA/mois',
     badge: null,
     badgeBg: '',
-    promoLabel: '-24% · Offre CDM 2026',
+    promoLabel: '-24% · Essentiel',
     emoji: <Star size={32} color="#F97316" />,
     schemaPrice: '5900',
     payment: 'Orange Money',
-    features: ['🏆 Tous les matchs CDM 2026', '📺 BeIN Sports + TF1 + France 2', '🇨🇮 Les Éléphants en direct', '🎥 HD/4K sans coupure', '⚡ Activation en 5 minutes'],
+    features: ['⚽️ Championnats Européens', '📺 Canal+ / beIN Sports', '🇨🇮 Chaînes Ivoiriennes', '🎥 HD/4K sans coupure', '⚡ Activation en 5 minutes'],
     featured: false,
   },
   {
-    id: 'cdm-3m',
-    name: 'Offre CDM — 3 mois',
+    id: 'plan-3m',
+    name: 'Offre Standard — 3 mois',
     originalPrice: '11 700',
     promoPrice: '7 900',
     perMonth: '2 633 FCFA/mois',
-    badge: 'Mondial 2026',
+    badge: 'Populaire',
     badgeBg: 'linear-gradient(135deg, #F97316, #EA580C)',
     promoLabel: '-32% · Le plus populaire',
     emoji: <ShieldCheck size={32} color="#F97316" />,
     schemaPrice: '7900',
     payment: 'Wave',
-    features: ['🏆 Tous les matchs CDM 2026', '📺 BeIN Sports + TF1 + France 2', '🇨🇮 Les Éléphants en direct', '🎥 HD/4K sans coupure', '📡 22 840 chaînes incluses', '💬 Support WhatsApp prioritaire'],
+    features: ['⚽️ Tous les Sports en direct', '📺 Toutes les chaînes Premium', '🎬 VOD + Séries Netflix/Amazon', '🎥 HD/4K sans coupure', '📡 22 840 chaînes incluses', '💬 Support WhatsApp VIP'],
     featured: true,
   },
   {
-    id: 'cdm-annual',
-    name: 'Offre Annuelle + CDM',
+    id: 'plan-annual',
+    name: 'Offre Annuelle',
     originalPrice: '35 900',
     promoPrice: '24 900',
     perMonth: '2 075 FCFA/mois · 13 mois',
@@ -103,7 +103,7 @@ const plans = [
     emoji: <Trophy size={32} color="#F97316" />,
     schemaPrice: '24900',
     payment: 'Wave / OM',
-    features: ['📅 Tout inclus · 13 mois', '🏆 CDM 2026 complet', '📡 22 840 chaînes', '🎬 VOD 124 580 films', '💬 Support VIP WhatsApp'],
+    features: ['📅 Tout inclus · 13 mois', '🏆 Tous les grands événements', '📡 22 840 chaînes', '🎬 VOD 124 580 films', '💬 Support VIP WhatsApp'],
     featured: false,
   },
 ]
@@ -115,7 +115,7 @@ const channelCategories = [
   { emoji: <Film size={32} color="#F97316" />, name: 'Cinéma & VOD', count: '124 580', desc: 'Films et séries en streaming' },
   { emoji: <Tv size={32} color="#F97316" />, name: 'Chaînes Françaises', count: '50+', desc: 'TF1, M6, France 2, Arte...' },
   { emoji: <Globe size={32} color="#F97316" />, name: 'Internationales', count: '22 840', desc: 'USA, UK, Turquie, Espagne...' },
-  { emoji: <Trophy size={32} color="#F97316" />, name: 'Coupe du Monde 2026', count: '64 matchs', desc: 'Tous les matchs en direct !' },
+  { emoji: <Trophy size={32} color="#F97316" />, name: 'Événements Sportifs', count: '100+', desc: 'Ligue des Champions, Premier League...' },
   { emoji: <Gamepad2 size={32} color="#F97316" />, name: 'Kids & Famille', count: '30+', desc: 'Disney, Cartoon Network...' },
 ]
 
@@ -172,7 +172,7 @@ export default function HomePage() {
           <div className="container" style={{ position: 'relative', textAlign: 'center' }}>
             {/* Badges */}
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.5rem' }}>
-              <span className="badge badge-primary">Coupe du Monde 2026</span>
+              <span className="badge badge-primary">Sport en Direct 4K</span>
               <span className="badge badge-green">Activation immédiate</span>
               <span className="badge badge-gold">4.9/5 — 3 420 clients</span>
             </div>
@@ -276,7 +276,7 @@ export default function HomePage() {
               'Support 24/7 en Français',
               'Technologie Stream-Stable™ anti-coupures',
               'Paiement sécurisé Wave & Orange Money',
-              'Regardez la Coupe du Monde 2026',
+              'Tous les championnats de football en direct',
               '22 840 chaînes en direct HD/4K',
               '124 580 films & séries en VOD',
             ]).flat().map((item, i) => (
@@ -296,45 +296,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ─── WORLD CUP 2026 ─── */}
-        <section style={{
-          background: 'linear-gradient(135deg, rgba(22,163,74,0.15) 0%, rgba(249,115,22,0.1) 50%, rgba(22,163,74,0.15) 100%)',
-          border: '1px solid rgba(22,163,74,0.2)',
-          margin: '0',
-          padding: '3rem 1.5rem',
-        }}>
-          <div className="container" style={{ textAlign: 'center' }}>
-            <h2 style={{
-              fontFamily: 'Outfit, sans-serif', fontWeight: 900,
-              fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
-              color: 'var(--color-text)', marginBottom: '0.75rem',
-            }}>
-              Coupe du Monde 2026 — Regardez tous les matchs<br />
-              <span className="gradient-text-green">de la Côte d&apos;Ivoire en IPTV</span>
-            </h2>
-            <p style={{ color: '#9CA3AF', fontSize: '1rem', marginBottom: '1.5rem' }}>
-              11 Juin – 19 Juillet 2026 · 64 matchs · Les Éléphants sont qualifiés
-            </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem', marginBottom: '1.75rem' }}>
-              {['beIN Sports 1 & 2', 'Canal+ Sport', 'TF1', 'France 2', 'RTI 2'].map(ch => (
-                <span key={ch} style={{
-                  background: 'rgba(22,163,74,0.15)', border: '1px solid rgba(22,163,74,0.3)',
-                  padding: '0.35rem 0.85rem', borderRadius: '999px',
-                  color: '#4ADE80', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.82rem',
-                }}>{ch}</span>
-              ))}
-            </div>
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" id="worldcup-cta" className="btn-primary pulse-glow" style={{ fontSize: '1rem', padding: '0.875rem 2rem' }}>
-              Activer mon abonnement avant le coup d&apos;envoi →
-            </a>
-          </div>
-        </section>
-
-        {/* ─── PRICING CDM ─── */}
+        {/* ─── PRICING ─── */}
         <section id="abonnements" style={{ background: '#0F172A', padding: '4rem 1.5rem' }}>
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
-              <span style={{ color: 'rgba(249,115,22,0.8)', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>🏆 Offre Spéciale Coupe du Monde 2026</span>
+              <span style={{ color: 'rgba(249,115,22,0.8)', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>📺 Nos Abonnements IPTV</span>
             </div>
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
               <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', color: '#FFFFFF', marginBottom: '0.5rem' }}>Choisissez votre forfait IPTV</h2>

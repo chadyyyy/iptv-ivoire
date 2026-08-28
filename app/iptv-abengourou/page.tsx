@@ -24,7 +24,7 @@ const faqs = [
   { q: "Comment payer mon abonnement IPTV à Abengourou ?", a: "Vous pouvez payer directement via Wave ou Orange Money. C'est rapide, sans frais supplémentaires, et l'activation se fait en 5 minutes après validation sur WhatsApp." },
   { q: "Quelles sont les chaînes ivoiriennes incluses ?", a: "L'abonnement inclut RTI 1, RTI 2, La 3, NCI, Life TV, A+ Ivoire ainsi que toutes les grandes chaînes de la TNT ivoirienne et d'Afrique de l'Ouest." },
   { q: "Est-ce compatible avec les box Android et Smart TV à Abengourou ?", a: "Absolument. Notre service est compatible avec les téléviseurs connectés (Samsung, LG, Hisense), Box Android TV, téléphones, ordinateurs et tablettes. Nous vous fournissons un guide complet d'installation sur WhatsApp." },
-  { q: "Puis-je regarder les matchs de la Coupe du Monde 2026 ?", a: "Oui. Toutes les chaînes de diffusion internationales (beIN Sports, Canal+, TF1) sont disponibles en qualité 4K Ultra-Stable pour suivre les Éléphants et l'intégralité de la Coupe du Monde." },
+  { q: "Puis-je regarder les matchs de les Grands Championnats ?", a: "Oui. Toutes les chaînes de diffusion internationales (beIN Sports, Canal+, TF1) sont disponibles en qualité 4K Ultra-Stable pour suivre les Éléphants et l'intégralité de les Grands Championnats." },
   { q: "Quels sont les tarifs de l'IPTV à Abengourou ?", a: "Nos forfaits : Offre 2 mois à 5 900 FCFA, 3 mois à 7 900 FCFA, et l'abonnement annuel (13 mois) à seulement 24 900 FCFA." },
   { q: "Est-ce qu'il y a un service client disponible ?", a: "Oui, nous offrons une assistance VIP 24/7 sur WhatsApp. Nos techniciens vous aident à configurer votre appareil à distance en quelques minutes." },
 ]
@@ -212,7 +212,7 @@ export default function IPTVAbengourouPage() {
             <span className="eyebrow">IPTV Abengourou</span>
             <h2>Le leader du streaming IPTV à Abengourou et dans l&apos;Indénié-Djuablin</h2>
             <p>Abengourou, capitale royale de l&apos;Indénié, connaît elle aussi une révolution dans le domaine du divertissement télévisuel. Finies les perturbations fréquentes des antennes satellites lors des intempéries de la saison des pluies. Grâce aux réseaux de données 4G d&apos;Orange, MTN et Moov, la technologie IPTV vous offre une qualité d&apos;image d&apos;une stabilité inédite en haute définition et en 4K.</p>
-            <p>Notre service **Stream-Stable™** avec technologie anti-freeze avancée assure une fluidité totale lors de la retransmission des événements sportifs les plus attendus de l&apos;année, y compris l&apos;intégralité de la Coupe du Monde 2026. Du quartier historique d&apos;Agnikro au Plateau, en passant par Cafétou et Lobikro, nos clients profitent d&apos;une expérience de visionnage haut de gamme sans aucun ralentissement.</p>
+            <p>Notre service **Stream-Stable™** avec technologie anti-freeze avancée assure une fluidité totale lors de la retransmission des événements sportifs les plus attendus de l&apos;année, y compris l&apos;intégralité de les Grands Championnats. Du quartier historique d&apos;Agnikro au Plateau, en passant par Cafétou et Lobikro, nos clients profitent d&apos;une expérience de visionnage haut de gamme sans aucun ralentissement.</p>
           </section>
 
           {/* ── 4. CHANNELS BLOCK ── */}
@@ -237,15 +237,15 @@ export default function IPTVAbengourouPage() {
             </div>
             <div className="ab-plans">
               <div className="ab-plan-card">
-                <h3>Offre CDM — 2 mois</h3>
-                <span className="ab-plan-promo">-24% · Forfait Mondial 2026</span>
+                <h3>Offre Découverte — 2 mois</h3>
+                <span className="ab-plan-promo">-24% · Forfait Sport en Direct</span>
                 <div className="ab-plan-price">
                   <span className="unit">FCFA</span>
                   <span className="val">5 900</span>
                 </div>
                 <span className="ab-plan-orig">au lieu de 7 800 FCFA</span>
                 <ul className="ab-plan-features">
-                  <li>🏆 Coupe du Monde 2026 incluse</li>
+                  <li>🏆 Grands Championnats inclus</li>
                   <li>📡 +22 840 chaînes HD/4K</li>
                   <li>🎥 VOD Films &amp; Séries 124 580</li>
                   <li>⚡ Activation rapide en 5 min</li>
@@ -257,7 +257,7 @@ export default function IPTVAbengourouPage() {
 
               <div className="ab-plan-card featured">
                 <span className="badge">LE PLUS POPULAIRE</span>
-                <h3>Offre CDM — 3 mois</h3>
+                <h3>Offre Découverte — 3 mois</h3>
                 <span className="ab-plan-promo">-32% · Idéal pour toute la famille</span>
                 <div className="ab-plan-price">
                   <span className="unit">FCFA</span>
@@ -265,7 +265,7 @@ export default function IPTVAbengourouPage() {
                 </div>
                 <span className="ab-plan-orig">au lieu de 11 700 FCFA</span>
                 <ul className="ab-plan-features">
-                  <li>🏆 Coupe du Monde 2026 incluse</li>
+                  <li>🏆 Grands Championnats inclus</li>
                   <li>📡 +22 840 chaînes HD/4K</li>
                   <li>🎥 VOD Films &amp; Séries 124 580</li>
                   <li>💬 Support client prioritaire 24h/7</li>
