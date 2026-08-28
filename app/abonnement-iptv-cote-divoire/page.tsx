@@ -1,47 +1,43 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { WHATSAPP_URL } from '@/lib/seo'
-import { Tv, Film, PlayCircle, Trophy, Smartphone, MessageCircle, Zap, ShieldCheck, Star, Clock } from 'lucide-react'
+import { Tv, Film, PlayCircle, Trophy, Smartphone, MessageCircle, Zap, ShieldCheck } from 'lucide-react'
 import { getProductSchema, getBreadcrumbSchema } from '@/lib/schema'
 
-// World Cup runs June 11 - July 19, 2026
-const WORLD_CUP_END = new Date('2026-07-19T23:59:00')
-
-const promoPlans = [
+const plans = [
   {
-    id: 'cdm-2m',
-    name: 'Offre Grands Championnats — 2 mois',
+    id: 'plan-2m',
+    name: 'Offre Découverte — 2 mois',
     originalPrice: '7 800',
     promoPrice: '5 900',
     perMonth: '2 950 FCFA/mois',
     badge: null,
     badgeBg: '',
-    promoLabel: '-24% · Offre Découverte 2026',
+    promoLabel: '-24% · Essentiel',
     promoColor: '#F97316',
-    subtitle: 'couvre tout le tournoi',
+    subtitle: 'idéal pour tester',
     payment: 'Orange Money',
     paymentColor: '#FF6900',
     featured: false,
     schemaPrice: '5900',
     features: [
-      '🏆 Tous les matchs CDM 2026',
-      '📺 BeIN Sports + TF1 + France 2',
-      '🇨🇮 Les Éléphants en direct',
+      '⚽️ Championnats Européens',
+      '📺 Canal+ / beIN Sports',
+      '🇨🇮 Chaînes Ivoiriennes',
       '🎥 HD/4K sans coupure',
       '⚡ Activation en 5 minutes',
     ],
   },
   {
-    id: 'cdm-3m',
-    name: 'Offre Grands Championnats — 3 mois',
+    id: 'plan-3m',
+    name: 'Offre Standard — 3 mois',
     originalPrice: '11 700',
     promoPrice: '7 900',
     perMonth: '2 633 FCFA/mois',
-    badge: 'Sport en Direct',
+    badge: 'Populaire',
     badgeBg: 'linear-gradient(135deg, #F97316, #EA580C)',
     promoLabel: '-32% · Le plus populaire',
     promoColor: '#F97316',
@@ -51,17 +47,17 @@ const promoPlans = [
     featured: true,
     schemaPrice: '7900',
     features: [
-      '🏆 Tous les matchs CDM 2026',
-      '📺 BeIN Sports + TF1 + France 2',
-      '🇨🇮 Les Éléphants en direct',
+      '⚽️ Tous les Sports en direct',
+      '📺 Toutes les chaînes Premium',
+      '🎬 VOD + Séries Netflix',
       '🎥 HD/4K sans coupure',
       '📡 22 840 chaînes incluses',
-      '💬 Support WhatsApp prioritaire',
+      '💬 Support WhatsApp VIP',
     ],
   },
   {
-    id: 'cdm-annual',
-    name: 'Offre annuelle + CDM',
+    id: 'plan-annual',
+    name: 'Offre Annuelle',
     originalPrice: '35 900',
     promoPrice: '24 900',
     perMonth: '2 075 FCFA/mois · 13 mois',
@@ -69,14 +65,14 @@ const promoPlans = [
     badgeBg: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
     promoLabel: '-30% · +1 mois offert',
     promoColor: '#0EA5E9',
-    subtitle: 'soit 2 075 FCFA/mois · 13 mois',
+    subtitle: 'soit 2 075 FCFA/mois',
     payment: 'Wave / OM',
     paymentColor: '#FFCC00',
     featured: false,
     schemaPrice: '24900',
     features: [
       '📅 Tout inclus · 13 mois',
-      '🏆 CDM 2026 complet',
+      '🏆 Tous les événements',
       '📡 22 840 chaînes',
       '🎬 VOD 124 580 films',
       '💬 Support VIP WhatsApp',
@@ -89,75 +85,22 @@ const features = [
   { icon: <Film size={26} color="#F97316" />, title: '124 580 films & séries', desc: 'Bibliothèque VOD mise à jour' },
   { icon: <PlayCircle size={26} color="#F97316" />, title: 'Chaînes ivoiriennes', desc: 'RTI 1, RTI 2, La 3, NCI...' },
   { icon: <Trophy size={26} color="#F97316" />, title: 'Sport en direct', desc: 'beIN Sports, Canal+ Sport...' },
-  { icon: <Smartphone size={26} color="#F97316" />, title: '5 appareils simultanés', desc: 'Smart TV, mobile, PC...' },
-  { icon: <MessageCircle size={26} color="#F97316" />, title: 'Support 24/7', desc: 'WhatsApp en Français' },
-  { icon: <Trophy size={26} color="#F59E0B" />, title: 'Grands Championnats', desc: 'Tous les 64 matchs' },
+  { icon: <Smartphone size={26} color="#F97316" />, title: 'Multi-écrans', desc: 'Smart TV, mobile, PC, Box...' },
+  { icon: <MessageCircle size={26} color="#F97316" />, title: 'Support 24/7', desc: 'Assistance WhatsApp rapide' },
+  { icon: <ShieldCheck size={26} color="#F97316" />, title: 'Anti-coupure', desc: 'Serveurs premium ultra-stables' },
   { icon: <Zap size={26} color="#F97316" />, title: 'Activation en 5 min', desc: 'Dès réception du paiement' },
 ]
 
-function useCountdown(target: Date) {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0, expired: false })
-
-  useEffect(() => {
-    function calc() {
-      const diff = target.getTime() - Date.now()
-      if (diff <= 0) { setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0, expired: true }); return }
-      setTimeLeft({
-        days: Math.floor(diff / 86400000),
-        hours: Math.floor((diff % 86400000) / 3600000),
-        minutes: Math.floor((diff % 3600000) / 60000),
-        seconds: Math.floor((diff % 60000) / 1000),
-        expired: false,
-      })
-    }
-    calc()
-    const id = setInterval(calc, 1000)
-    return () => clearInterval(id)
-  }, [target])
-
-  return timeLeft
-}
-
-function CountdownBox({ value, label }: { value: number; label: string }) {
-  return (
-    <div style={{ textAlign: 'center', minWidth: '64px' }}>
-      <div style={{
-        background: 'rgba(0,0,0,0.4)',
-        border: '1px solid rgba(249,115,22,0.4)',
-        borderRadius: '10px',
-        padding: '0.6rem 0.75rem',
-        fontFamily: 'Outfit, sans-serif',
-        fontWeight: 900,
-        fontSize: 'clamp(1.6rem, 4vw, 2.2rem)',
-        color: '#FFFFFF',
-        lineHeight: 1,
-        minWidth: '60px',
-        display: 'inline-block',
-      }}>
-        {String(value).padStart(2, '0')}
-      </div>
-      <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.7rem', fontFamily: 'Outfit, sans-serif', marginTop: '0.35rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-        {label}
-      </div>
-    </div>
-  )
-}
-
-export default function AbonnementPage() {
-  const countdown = useCountdown(WORLD_CUP_END)
-
-  const whatsappMsg = (plan: typeof promoPlans[0]) =>
-    `${WHATSAPP_URL}&text=${encodeURIComponent(`Bonjour ! Je veux activer l'offre CDM 2026 "${plan.name}" à ${plan.promoPrice} FCFA. Merci !`)}`
-
+export default function AbonnementCoteDivoirePage() {
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Accueil', url: 'https://iptvivoire.com' },
-    { name: "Abonnement IPTV Côte d'Ivoire", url: 'https://iptvivoire.com/abonnement-iptv-cote-divoire' },
+    { name: 'Abonnement IPTV Côte d\'Ivoire', url: 'https://iptvivoire.com/abonnement-iptv-cote-divoire' },
   ])
 
-  const productSchemas = promoPlans.map(p => getProductSchema({
-    name: p.name,
+  const productSchemas = plans.map(p => getProductSchema({
+    name: `IPTV Ivoire — ${p.name}`,
     price: p.schemaPrice,
-    description: `${p.name} — ${p.promoPrice} FCFA (au lieu de ${p.originalPrice} FCFA) — 22 840 chaînes HD/4K en Côte d'Ivoire`,
+    description: `${p.name} — ${p.promoPrice} FCFA. Abonnement IPTV premium en Côte d'Ivoire avec 22 840 chaînes.`,
   }))
 
   return (
@@ -166,225 +109,151 @@ export default function AbonnementPage() {
       {productSchemas.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
+
       <Header />
       <main>
-        {/* ── HERO BANNER CDM ── */}
+        {/* ─── HERO SECTION ─── */}
         <section style={{
-          background: 'linear-gradient(135deg, #0F172A 0%, #1E1B4B 50%, #0F172A 100%)',
+          padding: '5rem 1.5rem 4rem',
           position: 'relative',
           overflow: 'hidden',
-          paddingTop: '3rem',
-          paddingBottom: '3rem',
+          background: 'var(--color-bg)',
+          minHeight: '80vh',
+          display: 'flex',
+          alignItems: 'center',
         }}>
-          {/* Animated glow blobs */}
-          <div style={{ position: 'absolute', top: '-80px', left: '-80px', width: '320px', height: '320px', background: 'radial-gradient(circle, rgba(249,115,22,0.2) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
-          <div style={{ position: 'absolute', bottom: '-60px', right: '-60px', width: '280px', height: '280px', background: 'radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
+          <div style={{
+            position: 'absolute', top: '20%', left: '50%', transform: 'translateX(-50%)',
+            width: '700px', height: '700px',
+            background: 'radial-gradient(circle, rgba(249,115,22,0.1) 0%, transparent 70%)',
+            pointerEvents: 'none',
+          }} />
 
-          <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
-            {/* Trophy + flag */}
-            <div style={{ fontSize: '3rem', marginBottom: '0.75rem' }}>🏆🇨🇮</div>
-
-            <div style={{ display: 'inline-block', background: 'rgba(249,115,22,0.15)', border: '1px solid rgba(249,115,22,0.4)', borderRadius: '999px', padding: '0.35rem 1.1rem', marginBottom: '1rem' }}>
-              <span style={{ color: '#FB923C', fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.06em' }}>
-                🏆 OFFRE SPÉCIALE COUPE DU MONDE 2026
-              </span>
+          <div className="container" style={{ position: 'relative', textAlign: 'center', maxWidth: '900px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+              <span className="badge badge-primary">Côte d&apos;Ivoire</span>
+              <span className="badge badge-green">Wave & Orange Money</span>
             </div>
 
             <h1 style={{
               fontFamily: 'Outfit, sans-serif',
               fontWeight: 900,
-              fontSize: 'clamp(1.8rem, 5vw, 3rem)',
-              color: '#FFFFFF',
+              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+              color: 'var(--color-text)',
+              marginBottom: '1.5rem',
               lineHeight: 1.15,
-              marginBottom: '0.5rem',
             }}>
-              Regardez les{' '}
-              <span style={{ background: 'linear-gradient(90deg, #F97316, #FBBF24)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                Éléphants
-              </span>
-              {' '}en Grands Championnats
+              Le Meilleur Abonnement <span className="gradient-text">IPTV en Côte d&apos;Ivoire</span>
             </h1>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'Outfit, sans-serif', fontSize: '1rem', marginBottom: '2rem' }}>
-              11 juin → 19 juillet 2026 · Côte d&apos;Ivoire qualifiée · Offre valable pendant le Mondial
+
+            <p style={{
+              fontSize: 'clamp(1.1rem, 2.5vw, 1.25rem)',
+              color: '#9CA3AF',
+              maxWidth: '700px',
+              margin: '0 auto 2.5rem',
+              lineHeight: 1.6,
+            }}>
+              Profitez de +22 000 chaînes en 4K (Sport, Cinéma, Documentaires) et 124 000 films VOD. 
+              Activation instantanée en 5 minutes. Fini les coupures !
             </p>
 
-            {/* COUNTDOWN */}
-            {!countdown.expired ? (
-              <div>
-                <div style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'Outfit, sans-serif', fontSize: '0.8rem', marginBottom: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                  ⏱ Fin du Mondial dans
-                </div>
-                <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-                  <CountdownBox value={countdown.days} label="jours" />
-                  <div style={{ color: '#F97316', fontSize: '2rem', fontWeight: 900, lineHeight: '1', paddingTop: '0.45rem' }}>:</div>
-                  <CountdownBox value={countdown.hours} label="heures" />
-                  <div style={{ color: '#F97316', fontSize: '2rem', fontWeight: 900, lineHeight: '1', paddingTop: '0.45rem' }}>:</div>
-                  <CountdownBox value={countdown.minutes} label="minutes" />
-                  <div style={{ color: '#F97316', fontSize: '2rem', fontWeight: 900, lineHeight: '1', paddingTop: '0.45rem' }}>:</div>
-                  <CountdownBox value={countdown.seconds} label="secondes" />
-                </div>
-              </div>
-            ) : (
-              <div style={{ color: '#9CA3AF', fontFamily: 'Outfit, sans-serif' }}>La promo est terminée — prix standard disponibles ci-dessous.</div>
-            )}
+            <a href="#tarifs" className="btn-primary pulse-glow" style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}>
+              Voir les Tarifs (dès 5 900 FCFA) ↓
+            </a>
           </div>
         </section>
 
-        {/* ── PRICING ── */}
-        <section style={{ background: '#0F172A', padding: '3rem 1.5rem' }}>
+        {/* ─── PRICING SECTION ─── */}
+        <section id="tarifs" style={{ background: '#0F172A', padding: '5rem 1.5rem' }}>
           <div className="container">
-            <div style={{ textAlign: 'center', marginBottom: '0.75rem' }}>
-              <span style={{ color: 'rgba(255,255,255,0.4)', fontFamily: 'Outfit, sans-serif', fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-                WORLD CUP PROMO PRICING — ACTIVEZ AVANT LE 11 JUIN
-              </span>
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', color: '#FFFFFF', marginBottom: '0.75rem' }}>
+                Nos Abonnements IPTV
+              </h2>
+              <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1.1rem' }}>Paiement rapide et sécurisé depuis votre téléphone</p>
             </div>
 
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '1.25rem',
-              maxWidth: '1050px',
-              margin: '0 auto',
-            }}>
-              {promoPlans.map((plan) => (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
+              {plans.map((plan) => (
                 <div key={plan.id} style={{
                   position: 'relative',
-                  background: plan.featured
-                    ? 'linear-gradient(145deg, #1E293B, #0F172A)'
-                    : 'rgba(255,255,255,0.04)',
-                  border: plan.featured
-                    ? '2px solid rgba(249,115,22,0.6)'
-                    : '1px solid rgba(255,255,255,0.08)',
-                  borderRadius: '16px',
-                  padding: '2rem 1.5rem',
+                  background: plan.featured ? 'linear-gradient(145deg, #1E293B, #0F172A)' : 'rgba(255,255,255,0.03)',
+                  border: plan.featured ? '2px solid rgba(249,115,22,0.5)' : '1px solid rgba(255,255,255,0.05)',
+                  borderRadius: '20px',
+                  padding: '2.5rem 2rem',
                   display: 'flex',
                   flexDirection: 'column',
-                  boxShadow: plan.featured ? '0 0 40px rgba(249,115,22,0.15)' : 'none',
                 }}>
-                  {/* Badge */}
                   {plan.badge && (
                     <div style={{
-                      position: 'absolute',
-                      top: '-13px',
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      background: plan.badgeBg,
-                      color: '#fff',
-                      fontFamily: 'Outfit, sans-serif',
-                      fontWeight: 800,
-                      fontSize: '0.72rem',
-                      letterSpacing: '0.05em',
-                      padding: '0.3rem 1rem',
-                      borderRadius: '999px',
-                      whiteSpace: 'nowrap',
-                    }}>{plan.badge}</div>
+                      position: 'absolute', top: '-15px', left: '50%', transform: 'translateX(-50%)',
+                      background: plan.badgeBg, color: '#fff', fontFamily: 'Outfit, sans-serif', fontWeight: 800,
+                      fontSize: '0.8rem', padding: '0.4rem 1.25rem', borderRadius: '999px', whiteSpace: 'nowrap',
+                      boxShadow: '0 4px 12px rgba(249,115,22,0.25)'
+                    }}>
+                      {plan.badge}
+                    </div>
                   )}
 
-                  {/* Name */}
-                  <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1rem', color: 'rgba(255,255,255,0.7)', marginBottom: '1rem' }}>
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.25rem', color: 'rgba(255,255,255,0.8)', marginBottom: '0.5rem', textAlign: 'center' }}>
                     {plan.name}
-                  </h2>
-
-                  {/* Original price crossed out */}
-                  <div style={{ color: 'rgba(255,255,255,0.3)', fontFamily: 'Outfit, sans-serif', fontSize: '0.9rem', textDecoration: 'line-through', marginBottom: '0.2rem' }}>
+                  </h3>
+                  
+                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '1rem', textDecoration: 'line-through', textAlign: 'center', marginBottom: '0.25rem' }}>
                     {plan.originalPrice} FCFA
                   </div>
 
-                  {/* Promo price */}
-                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem', marginBottom: '0.25rem' }}>
-                    <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(2.4rem, 5vw, 3.2rem)', color: '#FFFFFF', lineHeight: 1 }}>
-                      {plan.promoPrice}
-                    </span>
-                    <span style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'Outfit, sans-serif', fontWeight: 600, fontSize: '1rem' }}>FCFA</span>
+                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                    <span style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: '3rem', color: '#FFFFFF', lineHeight: 1 }}>{plan.promoPrice}</span>
+                    <span style={{ color: 'rgba(255,255,255,0.5)', fontWeight: 600, fontSize: '1.1rem' }}>FCFA</span>
                   </div>
 
-                  <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem', fontFamily: 'Outfit, sans-serif', marginBottom: '1rem' }}>
-                    {plan.subtitle}
-                  </div>
-
-                  {/* Promo badge */}
-                  <div style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.35rem',
-                    background: 'rgba(249,115,22,0.12)',
-                    border: '1px solid rgba(249,115,22,0.3)',
-                    color: '#FB923C',
-                    fontFamily: 'Outfit, sans-serif',
-                    fontWeight: 700,
-                    fontSize: '0.75rem',
-                    padding: '0.3rem 0.75rem',
-                    borderRadius: '999px',
-                    marginBottom: '1.5rem',
-                    width: 'fit-content',
-                  }}>
-                    <Clock size={12} />
+                  <div style={{ color: plan.promoColor, fontSize: '0.9rem', fontWeight: 600, textAlign: 'center', marginBottom: '2rem' }}>
                     {plan.promoLabel}
                   </div>
 
-                  {/* Features */}
-                  <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
-                    {plan.features.map((f) => (
-                      <li key={f} style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'Outfit, sans-serif', fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        <span style={{ color: '#22C55E', flexShrink: 0 }}>✓</span>
-                        {f}
+                  <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 2rem', display: 'flex', flexDirection: 'column', gap: '0.75rem', flex: 1 }}>
+                    {plan.features.map((f, i) => (
+                      <li key={i} style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                        <span style={{ color: '#22C55E', fontSize: '1.1rem' }}>✓</span>{f}
                       </li>
                     ))}
                   </ul>
 
-                  {/* CTA */}
                   <a
-                    href={whatsappMsg(plan)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id={`promo-cta-${plan.id}`}
+                    href={`${WHATSAPP_URL}&text=${encodeURIComponent(`Bonjour ! Je veux activer l'${plan.name} à ${plan.promoPrice} FCFA.`)}`}
+                    target="_blank" rel="noopener noreferrer"
                     style={{
-                      display: 'block',
-                      textAlign: 'center',
-                      padding: '0.85rem 1rem',
-                      borderRadius: '10px',
-                      fontFamily: 'Outfit, sans-serif',
-                      fontWeight: 800,
-                      fontSize: '0.95rem',
-                      textDecoration: 'none',
-                      transition: 'all 0.2s',
-                      background: plan.featured
-                        ? 'linear-gradient(135deg, #F97316, #EA580C)'
-                        : 'rgba(255,255,255,0.07)',
-                      color: plan.featured ? '#FFFFFF' : 'rgba(255,255,255,0.85)',
-                      border: plan.featured ? 'none' : '1px solid rgba(255,255,255,0.15)',
-                    }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.opacity = '0.85' }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.opacity = '1' }}
-                  >
-                    Activer via {plan.payment}
+                      display: 'block', textAlign: 'center', padding: '1rem', borderRadius: '12px',
+                      fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.05rem', textDecoration: 'none',
+                      background: plan.featured ? 'linear-gradient(135deg, #F97316, #EA580C)' : 'rgba(255,255,255,0.1)',
+                      color: '#FFFFFF', transition: 'all 0.2s ease',
+                    }}>
+                    Activer avec {plan.payment}
                   </a>
                 </div>
-              ))}
-            </div>
-
-            {/* Trust row */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem', marginTop: '2.5rem' }}>
-              {['✅ Paiement sécurisé', '⚡ Activation en 5 min', '💬 Support WhatsApp 24/7', '🔄 Sans engagement'].map(t => (
-                <span key={t} style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'Outfit, sans-serif', fontSize: '0.82rem' }}>{t}</span>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ── FEATURES ── */}
-        <section className="section" style={{ background: 'var(--color-surface)', borderTop: '1px solid var(--color-border)' }}>
+        {/* ─── FEATURES GRID ─── */}
+        <section style={{ padding: '5rem 1.5rem', background: 'var(--color-bg)' }}>
           <div className="container">
-            <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
-              <h2 className="section-title">Tout est inclus dans chaque abonnement</h2>
+            <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 900, fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', color: 'var(--color-text)' }}>
+                Pourquoi choisir IPTV Ivoire ?
+              </h2>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
-              {features.map(f => (
-                <div key={f.title} className="card" style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '48px', height: '48px', background: 'var(--color-surface-2)', borderRadius: '12px', flexShrink: 0 }}>{f.icon}</div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
+              {features.map((f, i) => (
+                <div key={i} style={{ background: 'var(--color-surface)', border: '1px solid var(--color-border)', borderRadius: '16px', padding: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ background: 'rgba(249,115,22,0.1)', padding: '0.75rem', borderRadius: '12px' }}>
+                    {f.icon}
+                  </div>
                   <div>
-                    <div style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.25rem' }}>{f.title}</div>
-                    <div style={{ color: '#6B7280', fontSize: '0.82rem' }}>{f.desc}</div>
+                    <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.05rem', color: 'var(--color-text)', marginBottom: '0.25rem' }}>{f.title}</h3>
+                    <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', margin: 0 }}>{f.desc}</p>
                   </div>
                 </div>
               ))}
@@ -392,74 +261,28 @@ export default function AbonnementPage() {
           </div>
         </section>
 
-        {/* ── SEO TEXT ── */}
-        <section className="section" style={{ background: 'var(--color-bg)', borderTop: '1px solid var(--color-border)', paddingBottom: '4rem' }}>
-          <div className="container" style={{ maxWidth: '850px', margin: '0 auto' }}>
-            <div className="prose" style={{ color: 'var(--color-text-muted)', lineHeight: 1.8 }}>
-              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '2rem', color: 'var(--color-text)', marginBottom: '1.5rem', textAlign: 'center' }}>
-                IPTV Côte d&apos;Ivoire — Le Fournisseur N°1 à Abidjan
-              </h2>
-              <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem', textAlign: 'center' }}>
-                Vous cherchez un <strong>abonnement IPTV en Côte d&apos;Ivoire</strong> fiable, sans coupure et à petit prix ? <strong>IPTV Ivoire</strong> est le fournisseur IPTV de référence pour regarder la télévision par internet (télé IP) en Côte d&apos;Ivoire. Que vous soyez à Abidjan, Bouaké, San-Pédro ou Yamoussoukro, profitez d&apos;une qualité d&apos;image exceptionnelle en HD et 4K.
-              </p>
-
-              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.3rem', color: 'var(--color-text)', marginBottom: '1rem' }}>
-                Pourquoi choisir IPTV Ivoire comme fournisseur IPTV en Côte d&apos;Ivoire ?
-              </h3>
-              <ul style={{ marginBottom: '2rem', paddingLeft: '1.5rem', fontSize: '1rem', color: 'var(--color-text-muted)' }}>
-                <li style={{ marginBottom: '0.5rem' }}><strong>22 840 chaînes HD/4K</strong> — chaînes ivoiriennes (RTI, NCI), africaines, françaises et internationales</li>
-                <li style={{ marginBottom: '0.5rem' }}><strong>124 580 films et séries en VOD</strong> — Netflix, Disney+, et plus encore via votre box IPTV à Abidjan</li>
-                <li style={{ marginBottom: '0.5rem' }}><strong>Paiement local en FCFA</strong> — Wave, Orange Money, MTN MoMo directement depuis votre téléphone</li>
-                <li style={{ marginBottom: '0.5rem' }}><strong>Abonnement IPTV 12 mois</strong> à 24 900 FCFA (+ 1 mois offert) — le tarif le plus compétitif de Côte d&apos;Ivoire</li>
-                <li style={{ marginBottom: '0.5rem' }}><strong>Compatible tous appareils</strong> — Smart TV, Android TV Box, iPhone, tablette, PC. Votre télé IP fonctionne partout</li>
-                <li style={{ marginBottom: '0.5rem' }}><strong>Activation en 5 minutes</strong> — recevez vos codes sur WhatsApp immédiatement après paiement</li>
-              </ul>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginBottom: '3rem' }}>
-                <div className="card" style={{ padding: '1.5rem' }}>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.75rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Trophy size={20} color="#F97316" /> Grands Championnats en IPTV
-                  </h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Ne manquez aucun match des Éléphants ! Notre abonnement IPTV inclut toutes les chaînes sportives (beIN Sports, Canal+ Sport, NCI) pour vivre la <Link href="/blog/cote-divoire-coupe-du-monde-2026-streaming" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Grands Championnats en direct</strong></Link> depuis votre salon.
-                  </p>
-                </div>
-                <div className="card" style={{ padding: '1.5rem' }}>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.75rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <Smartphone size={20} color="#F97316" /> Paiement Wave &amp; Orange Money
-                  </h3>
-                  <p style={{ fontSize: '0.95rem', marginBottom: 0, color: 'var(--color-text-muted)' }}>
-                    Payez votre abonnement IPTV facilement, en FCFA, via <Link href="/blog/iptv-orange-money-wave-cote-divoire" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>Wave, Orange Money, MTN MoMo ou Moov Money</strong></Link>. Consultez nos <Link href="/prix-iptv-abidjan" style={{ color: '#F97316', textDecoration: 'underline' }}><strong>tarifs complets en FCFA</strong></Link>.
-                  </p>
-                </div>
-              </div>
-
-              <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.8rem', color: 'var(--color-text)', marginBottom: '2rem', textAlign: 'center' }}>
-                Questions Fréquentes (FAQ)
-              </h2>
-
-              {[
-                { q: "En combien de temps mon abonnement IPTV est-il activé ?", a: "L'activation est immédiate. Après votre paiement via Orange Money ou Wave, vous recevez vos identifiants (lien m3u, Xtream Codes) sur WhatsApp en moins de 5 minutes.", hl: false },
-                { q: "Quels sont les appareils compatibles ?", a: "Notre abonnement fonctionne sur tous les supports : Smart TV (Samsung, LG), Android TV, Apple TV, smartphones (iOS/Android), tablettes, et ordinateurs (PC/Mac) via l'application IPTV Smarters Pro par exemple.", hl: false },
-                { q: "Comment profiter de l'offre Grands Championnats ?", a: "Choisissez l'offre 2 mois (5 900 FCFA) ou 3 mois (7 900 FCFA) avant le 11 juin 23h59. Contactez-nous sur WhatsApp et indiquez votre forfait. L'activation se fait en 5 minutes, à temps pour le coup d'envoi !", hl: true },
-              ].map(({ q, a, hl }) => (
-                <div key={q} style={{ marginBottom: '1.5rem', background: 'var(--color-surface-2)', padding: '1.25rem', borderRadius: '12px', borderLeft: hl ? '4px solid #F97316' : undefined }}>
-                  <h4 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--color-text)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>{q}</h4>
-                  <p style={{ fontSize: '0.95rem', margin: 0, color: 'var(--color-text-muted)' }}>{a}</p>
-                </div>
-              ))}
+        {/* ─── SEO CONTENT ─── */}
+        <section style={{ padding: '3rem 1.5rem', background: 'var(--color-surface-2)', borderTop: '1px solid var(--color-border)' }}>
+          <div className="container" style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.7 }}>
+            <h2 style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1.5rem', color: 'var(--color-text)', marginBottom: '1rem' }}>
+              IPTV Côte d&apos;Ivoire — Le Fournisseur N°1 à Abidjan
+            </h2>
+            <p style={{ marginBottom: '1rem' }}>
+              Vous cherchez le <strong>meilleur abonnement IPTV en Côte d&apos;Ivoire</strong> ? IPTV Ivoire vous propose un service premium sans coupure, parfaitement adapté à la connexion internet ivoirienne (Fibre, 4G Orange, MTN, Moov).
+            </p>
+            <p style={{ marginBottom: '1rem' }}>
+              Que vous soyez à la recherche du meilleur <strong>prix IPTV Abidjan</strong>, ou d&apos;un <strong>fournisseur IPTV Abidjan</strong> fiable, nous sommes la référence. Avec nos abonnements (2 mois, 3 mois ou 12 mois), vous transformez votre écran en cinéma. L&apos;installation de la <strong>télé IP</strong> se fait en 5 minutes.
+            </p>
+            <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
+              <li><strong>Activation facile :</strong> Compatible Smart TV, Android, iPhone, PC et toute <strong>box IPTV Abidjan</strong>.</li>
+              <li><strong>Paiement local :</strong> Réglez votre <strong>abonnement IPTV 12 mois</strong> ou 3 mois directement via Wave ou Orange Money en FCFA.</li>
+              <li><strong>Qualité :</strong> +22 000 chaînes (Sport, VOD, chaînes locales) en HD/4K.</li>
+            </ul>
+            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+              <Link href="/prix-iptv-abidjan" style={{ display: 'inline-block', padding: '0.75rem 1.5rem', background: 'rgba(249,115,22,0.1)', color: '#F97316', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
+                Consulter tous nos Prix IPTV Abidjan →
+              </Link>
             </div>
-          </div>
-        </section>
-
-        {/* ── FINAL CTA ── */}
-        <section className="section" style={{ textAlign: 'center' }}>
-          <div className="container">
-            <h2 className="section-title">Des questions ?</h2>
-            <p className="section-subtitle" style={{ margin: '0 auto 2rem' }}>Notre équipe répond sur WhatsApp 24h/24.</p>
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp pulse-glow" style={{ fontSize: '1.1rem' }}>
-              Contacter sur WhatsApp
-            </a>
           </div>
         </section>
       </main>
