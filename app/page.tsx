@@ -9,7 +9,7 @@ import { Trophy, Star, MessageCircle, Tv, Film, Smartphone, Monitor, ShieldCheck
 
 export const metadata: Metadata = {
   title: "IPTV Abidjan & Côte d'Ivoire — 22 840 Chaînes 4K dès 5 900 FCFA",
-  description: "Meilleur abonnement IPTV à Abidjan et en Côte d'Ivoire. 22 840 chaînes HD/4K, 124 580 VOD. Paiement Wave & Orange Money en FCFA. Activation en 5 min. Fournisseur IPTV #1 à Abidjan.",
+  description: "Prix abonnement IPTV à Abidjan et en Côte d'Ivoire : dès 5 900 FCFA. 22 840 chaînes HD/4K. Fournisseur IPTV #1 avec paiement sécurisé Wave & Orange Money.",
   keywords: ['iptv abidjan', 'iptv cote d ivoire', 'abonnement iptv abidjan', 'fournisseur iptv abidjan', 'télé ip', 'iptv prix abidjan', 'box iptv abidjan', 'abonnement iptv fcfa', 'wave iptv', 'orange money iptv'],
   alternates: {
     canonical: 'https://iptvivoire.com',
