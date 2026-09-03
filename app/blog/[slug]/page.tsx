@@ -61,11 +61,28 @@ export default async function BlogPostPage({ params }: Props) {
           {/* Header */}
           <section className="section geo-pattern" style={{ paddingBottom: '2rem' }}>
             <div className="container" style={{ maxWidth: '760px' }}>
-              <div style={{ marginBottom: '1rem' }}>
-                <Link href="/blog" style={{ color: '#9CA3AF', textDecoration: 'none', fontSize: '0.85rem', fontFamily: 'Outfit, sans-serif' }}>
-                  ← Blog
-                </Link>
-              </div>
+              {/* Visible Breadcrumb Nav — required by RankMath & Google */}
+              <nav aria-label="Fil d'Ariane" style={{ marginBottom: '1.25rem' }}>
+                <ol style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', listStyle: 'none', padding: 0, margin: 0, flexWrap: 'wrap' }}>
+                  <li>
+                    <Link href="/" style={{ color: '#9CA3AF', textDecoration: 'none', fontSize: '0.8rem', fontFamily: 'Outfit, sans-serif' }}>
+                      Accueil
+                    </Link>
+                  </li>
+                  <li style={{ color: '#6B7280', fontSize: '0.8rem' }}>›</li>
+                  <li>
+                    <Link href="/blog" style={{ color: '#9CA3AF', textDecoration: 'none', fontSize: '0.8rem', fontFamily: 'Outfit, sans-serif' }}>
+                      Blog
+                    </Link>
+                  </li>
+                  <li style={{ color: '#6B7280', fontSize: '0.8rem' }}>›</li>
+                  <li>
+                    <span style={{ color: '#F97316', fontSize: '0.8rem', fontFamily: 'Outfit, sans-serif', fontWeight: 600 }}>
+                      {post.category}
+                    </span>
+                  </li>
+                </ol>
+              </nav>
               <span className="badge badge-primary" style={{ marginBottom: '1rem' }}>{post.category}</span>
               <h1 style={{
                 fontFamily: 'Outfit, sans-serif', fontWeight: 900,
