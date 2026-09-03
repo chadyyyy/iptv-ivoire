@@ -21,6 +21,7 @@ const blogSlugs = [
   'rdc-vs-colombie-coupe-du-monde-2026-streaming',
   'maroc-vs-haiti-coupe-du-monde-2026-streaming',
   'meilleur-fournisseur-iptv-cote-divoire',
+  'comment-installer-wesopro-iptv-pro',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
