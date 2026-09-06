@@ -23,6 +23,7 @@ const blogSlugs = [
   'meilleur-fournisseur-iptv-cote-divoire',
   'comment-installer-wesopro-iptv-pro',
   'iptv-smarters-pro-vs-tivimate-vs-gse',
+  'iptv-pour-pc-windows-mac-cote-divoire',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
