@@ -22,6 +22,7 @@ const blogSlugs = [
   'maroc-vs-haiti-coupe-du-monde-2026-streaming',
   'meilleur-fournisseur-iptv-cote-divoire',
   'comment-installer-wesopro-iptv-pro',
+  'iptv-smarters-pro-vs-tivimate-vs-gse',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
