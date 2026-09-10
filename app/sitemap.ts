@@ -24,6 +24,7 @@ const blogSlugs = [
   'comment-installer-wesopro-iptv-pro',
   'iptv-smarters-pro-vs-tivimate-vs-gse',
   'iptv-pour-pc-windows-mac-cote-divoire',
+  'comment-installer-hot-player-iptv',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
