@@ -15,6 +15,7 @@ export interface BlogPost {
   category: string
   readingTime: string
   content: string
+  noindex?: boolean
 }
 
 export function getAllSlugs(): string[] {
@@ -42,6 +43,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     image: data.image ?? '/og/default.jpg',
     category: data.category ?? 'Guide',
     readingTime: data.readingTime ?? '5 min',
+    noindex: data.noindex ?? false,
     content,
   }
 }

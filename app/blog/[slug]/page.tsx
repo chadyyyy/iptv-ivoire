@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    robots: post.noindex ? { index: false, follow: true } : { index: true, follow: true },
     alternates: {
       canonical: `https://iptvivoire.com/blog/${post.slug}`,
     },

@@ -1,48 +1,36 @@
 import { MetadataRoute } from 'next'
 
+// Only include indexable, high-quality blog content
+// Noindexed articles (CDM match guides) are intentionally excluded
 const blogSlugs = [
-  'iptv-cote-divoire-coupe-du-monde-2026',
   'meilleur-abonnement-iptv-cote-divoire-2026',
-  'comment-installer-iptv-smarters-pro',
+  'meilleur-fournisseur-iptv-cote-divoire',
+  'meilleur-iptv-afrique-2026',
+  'iptv-abidjan-guide-complet',
   'iptv-vs-canal-plus-cote-divoire',
   'iptv-orange-money-wave-cote-divoire',
-  'regarder-coupe-du-monde-2026-iptv',
-  'iptv-abidjan-guide-complet',
   'iptv-smart-tv-samsung-lg-cote-divoire',
   'iptv-francophone-afrique-occidentale',
   'iptv-smarters-pro-apk-cote-divoire',
-  'meilleur-iptv-afrique-2026',
+  'comment-installer-iptv-smarters-pro',
+  'iptv-smarters-pro-vs-tivimate-vs-gse',
   'iptv-4k-cote-divoire',
-  'cote-divoire-coupe-du-monde-2026-streaming',
   'iptv-senegal-meilleur-abonnement-2026',
   'iptv-rdc-meilleur-abonnement-2026',
-  'programme-coupe-du-monde-2026-calendrier-matchs',
-  'france-vs-irak-coupe-du-monde-2026-streaming',
-  'rdc-vs-colombie-coupe-du-monde-2026-streaming',
-  'maroc-vs-haiti-coupe-du-monde-2026-streaming',
-  'meilleur-fournisseur-iptv-cote-divoire',
   'comment-installer-wesopro-iptv-pro',
-  'iptv-smarters-pro-vs-tivimate-vs-gse',
   'iptv-pour-pc-windows-mac-cote-divoire',
   'comment-installer-hot-player-iptv',
   'iptv-gratuit-danger-solutions',
+  // World Cup general articles (not match-specific) — kept as evergreen content
+  'iptv-cote-divoire-coupe-du-monde-2026',
+  'regarder-coupe-du-monde-2026-iptv',
+  'cote-divoire-coupe-du-monde-2026-streaming',
 ]
 
 const deviceSlugs = ['smart-tv', 'android', 'iphone', 'pc', 'iptv-smarters-pro']
-const citySlugs = [
-  'iptv-abidjan',
-  'iptv-bouake',
-  'iptv-yamoussoukro',
-  'iptv-san-pedro',
-  'iptv-korhogo',
-  'iptv-daloa',
-  'iptv-man',
-  'iptv-gagnoa',
-  'iptv-divo',
-  'iptv-anyama',
-  'iptv-abengourou',
-  'iptv-grand-bassam'
-]
+
+// Only iptv-abidjan is kept in sitemap — others are noindex
+const citySlugs = ['iptv-abidjan']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://iptvivoire.com'
