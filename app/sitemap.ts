@@ -21,6 +21,7 @@ const blogSlugs = [
   'iptv-pour-pc-windows-mac-cote-divoire',
   'comment-installer-hot-player-iptv',
   'iptv-gratuit-danger-solutions',
+  'iptv-abidjan-prix-abonnement',
   // World Cup general articles (not match-specific) — kept as evergreen content
   'iptv-cote-divoire-coupe-du-monde-2026',
   'regarder-coupe-du-monde-2026-iptv',
